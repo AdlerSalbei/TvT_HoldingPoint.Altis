@@ -2,67 +2,46 @@ class Weapons {
     displayName = "Weapons & Accessories";
     kindOf = "Weapons";
 
-    class rhs_acc_1p63 {
-        kindOf = "Items";
-
-        displayName = "1P63 Holo Sight";
-        price = 200;
-        stock = 40;
-    };
-
-    class rhs_acc_pkas {
-        kindOf = "Items";
-
-        displayName = "PK-AS Reddot Sight";
-        price = 300;
-        stock = 40;
-    };
-
-    class rhs_acc_perst1ik {
-        kindOf = "Items";
-
-        displayName = "Perst-1IK Laser";
-        price = 300;
-        stock = 40;
-    };
-
-    class rhs_acc_2dpZenit {
-        kindOf = "Items";
-
-        displayName = "2DP Gunlight";
-        price = 100;
-        stock = 40;
-    };
-
-    class rhs_acc_dtk4short {
-        kindOf = "Items";
-
-        displayName = "DTK-4 Suppressor";
-        price = 1200;
+    class LIB_MP40 {
+        displayName = "MP40 Mashienenpistole";
+        price = 550;
         stock = 20;
     };
-
-    class rhs_weap_svds {
-        displayName = "SVDS";
+	
+	class LIB_MP44 {
+        displayName = "Sturmgewehr 44";
         price = 1200;
-        stock = 2;
+        stock = 10;
     };
-
-    class rhs_weap_pkm {
-        displayName = "PKM";
-        price = 2000;
-        stock = 2;
+		
+	class LIB_K98 {
+        displayName = "K98k";
+        price = 300;
+        stock = 300;
     };
-
-    class rhs_weap_rpg26 {
-        displayName = "RPG-26";
+	
+	class LIB_K98ZF39 {
+        displayName = "Kar98k ZF39";
+        price = 2500;
+        stock = 1;
+    };
+	
+	class LIB_G43 {
+        displayName = "G43";
+        price = 700;
+        stock = 25;
+    };
+	
+	class LIB_MG42 {
+        displayName = "MG42";
         price = 800;
-        stock = 6;
+        stock = 30;
     };
-
-    class rhs_weap_rpg7 {
-        displayName = "RPG-7";
-        price = 1600;
-        stock = 4;
+	
+	class LIB_RPzB {
+        displayName = "Raketenpanzerbüchse";
+        price = 1200;
+        stock = 5;
     };
+	
 };

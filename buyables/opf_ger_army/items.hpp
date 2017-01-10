@@ -39,9 +39,21 @@ class Items {
         stock = 40;
     };
 
-    class rhs_pdu4 {
-        displayName = "PDU-4 Rangefinder";
-        price = 1200;
+    class lerca_1200_black {
+        displayName = "Lerca 1200 Rangefinder";
+        price = 800;
+        stock = 2;
+    };
+
+    class ACE_VectorDay {
+        displayName = "Vector Rangefinder";
+        price = 1000;
+        stock = 2;
+    };
+
+    class ACE_Vector {
+        displayName = "Vector Rangefinder (Night)";
+        price = 1500;
         stock = 2;
     };
 
@@ -51,19 +63,35 @@ class Items {
         stock = 10;
     };
 
-    class rhs_assault_umbts {
+    class rhsusf_falconii_mc {
         kindOf = "Wearables";
 
-        displayName = "UMBTS Backpack";
+        displayName = "Falcon-II Backpack";
+        price = 100;
+        stock = 20;
+    };
+
+    class rhsusf_assault_eagleaiii_ocp {
+        kindOf = "Wearables";
+
+        displayName = "Eagle A-III Backpack";
         price = 200;
         stock = 20;
     };
 
-    class tf_mr3000_rhs {
+    class B_Kitbag_mcamo {
         kindOf = "Wearables";
 
-        displayName = "MR3000 Manpack";
-        price = 1100;
+        displayName = "Kitbag Backpack";
+        price = 300;
+        stock = 20;
+    };
+
+    class tf_rt1523g {
+        kindOf = "Wearables";
+
+        displayName = "RT-1523G Manpack";
+        price = 1000;
         stock = 6;
     };
 };
