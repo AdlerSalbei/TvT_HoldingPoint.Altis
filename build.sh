@@ -6,9 +6,12 @@ missionname="TvT_HoldingPoint"
 
 islands=(
 	Altis
-
+	Baranow
+	Colleville
+	ivachev
+	Panovo
 	Stratis
-
+	Staszow
 	Tanoa
 )
 
