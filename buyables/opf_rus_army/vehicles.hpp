@@ -5,53 +5,56 @@ class Vehicles {
     kindOf = "Vehicles";
     spawnEmpty = 1;
 
-    class O_Quadbike_01_F {
-        permissionLevel = 0;
+    class LIB_Willys_MB {
 
-        displayName = "Quadbike";
+        displayName = "Willys";
+        price = 1000;
+        stock = 10;
+    };
+	
+	class LIB_Willys_MB {
+
+        displayName = "Willys";
         price = 1000;
         stock = 10;
     };
 
-    class rhs_tigr_m_msv {
-        condition = "uo_missionParam_ISWOODLAND";
-        displayName = "TIGR (unarmed)";
+    class LIB_SOV_M3_Halftrack {
+        displayName = "M3 Halftrack";
+        price = 10000;
+        stock = 1;
+    };
+
+    class LIB_M4A2_SOV {
+		displayName = "M4A2";
+        price = 10000;
+        stock = 1;
+    };
+
+    class LIB_T34_76 {
+        displayName = "T34 76mm";
+        price = 2000;
+        stock = 10;
+    };
+	
+	class LIB_T34_85 {
+        displayName = "T34 85mm";
         price = 2000;
         stock = 10;
     };
 
-    class rhs_tigr_m_3camo_msv {
-        condition = "!uo_missionParam_ISWOODLAND";
-        displayName = "TIGR (unarmed)";
-        price = 2000;
-        stock = 10;
+    class LIB_JS2_43 {
+        displayName = "IS2";
+        price = 20000;
+        stock = 2;
     };
-
-    class rhs_tigr_sts_msv {
-        condition = "uo_missionParam_ISWOODLAND";
-        displayName = "TIGR (PK)";
-        price = 2000;
-        stock = 10;
-        code = "for '_i' from 0 to 12 do {(_this select 2) removeMagazinesTurret ['RHS_mag_VOG30_30',[1]]}";
-    };
-
-    class rhs_tigr_sts_3camo_msv {
-        condition = "!uo_missionParam_ISWOODLAND";
-        displayName = "TIGR (PK)";
-        price = 2000;
-        stock = 10;
-        code = "for '_i' from 0 to 12 do {(_this select 2) removeMagazinesTurret ['RHS_mag_VOG30_30',[1]]}";
-    };
-
-    class rhsgref_BRDM2_msv {
-        displayName = "BRDM-2";
-        price = 6000;
-        stock = 10;
-    };
-
-    class RHS_Ural_MSV_01 {
-        displayName = "Ural-4320";
-        price = 1200;
-        stock = 10;
+	
+	class LIB_SU85 {
+        displayName = "SU85";
+        price = 20000;
+        stock = 2;
     };
 };
+
+		
+		

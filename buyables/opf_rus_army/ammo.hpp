@@ -2,39 +2,60 @@ class Ammo {
     displayName = "Ammunition";
     kindOf = "Items";
 
-    class rhs_30Rnd_545x39_AK {
-        displayName = "5.45mm 30Rnd";
-        description = "Used in:<br/>AK74M";
+    class rhs_mag_30Rnd_556x45_Mk318_Stanag {
+        displayName = "5.56mm 30Rnd";
+        description = "Used in:<br/>M4 variants";
         price = 100;
         stock = 50;
     };
 
-    class rhs_10Rnd_762x54mmR_7N1 {
-        displayName = "7.62 10Rnd";
-        description = "Used in:<br/>SVDS";
-        price = 100;
+    class rhsusf_20Rnd_762x51_m118_special_Mag {
+        displayName = "7.62mm 20Rnd";
+        description = "Used in:<br/>Mk 11 Mod 0";
+        price = 150;
         stock = 30;
     };
 
-    class rhs_100Rnd_762x54mmR {
-        displayName = "7.62 10Rnd";
-        description = "Used in:<br/>PKM<br/>PKP";
+    class rhsusf_100Rnd_762x51_m62_tracer {
+        displayName = "7.62mm 100Rnd Tracer Belt";
+        description = "Used in:<br/>M240G";
         price = 250;
         stock = 30;
     };
 
-    class rhs_rpg7_PG7VL_mag {
-        displayName = "PG7-VL";
-        description = "Used in:<br/>RPG-7<br/><br/>HEAT Rocket";
-        price = 200;
-        stock = 8;
+    class rhsusf_8Rnd_00Buck {
+        displayName = "8Rnd .00 Buckshot";
+        description = "Used in:<br/>M590A1";
+        price = 80;
+        stock = 50;
     };
 
-    class rhs_rpg7_PG7VR_mag {
-        displayName = "PG7-VR";
-        description = "Used in:<br/>RPG-7<br/><br/>Tandem HEAT Rocket";
+    class rhsusf_8Rnd_Slug {
+        displayName = "8Rnd 12g Slug";
+        description = "Used in:<br/>M590A1";
+        price = 80;
+        stock = 50;
+    };
+
+    class rhs_mag_smaw_HEAA {
+        displayName = "SMAW HEAA";
+        description = "Used in:<br/>SMAW";
         price = 200;
-        stock = 8;
+        stock = 4;
+    };
+
+    class rhs_mag_smaw_HEDP {
+        displayName = "SMAW HEDP";
+        description = "Used in:<br/>SMAW";
+        price = 200;
+        stock = 4;
+    };
+
+    class rhs_mag_smaw_SR {
+        displayName = "SMAW Spotting Rounds";
+        description = "Used in:<br/>SMAW";
+        price = 100;
+        stock = 4;
     };
 
     class DemoCharge_Remote_Mag {
@@ -49,14 +70,14 @@ class Ammo {
         stock = 6;
     };
 
-    class rhs_mag_rgo {
-        displayName = "RGO Fragmentation Grenade";
+    class HandGrenade {
+        displayName = "M67 Fragmentation Grenade";
         price = 600;
         stock = 20;
     };
 
-    class rhs_mag_rdg2_white {
-        displayName = "RDG-2 Smoke Grenade (White)";
+    class SmokeShell {
+        displayName = "M83 Smoke Grenade";
         price = 200;
         stock = 20;
     };
