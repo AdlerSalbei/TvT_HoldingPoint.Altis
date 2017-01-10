@@ -6,6 +6,9 @@
 #include "loadouts\loadouts.hpp"
 #include "dialogs\cfgDialogs.hpp"
 #include "node_modules\grad-listBuymenu\grad_listBuymenu.hpp"
+#include "node_modules\choosePilot\include\description.hpp"
+//#include "node_modules\grad-moneymenu\grad_moneymenu.hpp"
+
 
 //HEADER =======================================================================
 class Header
@@ -34,6 +37,8 @@ class CfgFunctions {
     #include "node_modules\grad-loadout\cfgFunctions.hpp"
     #include "node_modules\grad-customGear\cfgFunctions.hpp"
     #include "node_modules\grad-listbuymenu\cfgFunctions.hpp"
+	#include "node_modules\choosePilot\include\CfgFunctions.hpp"
+	//#include "node_modules\grad-moneymenu\cfgFunctions.hpp"
 };
 
 //CUSTOM GEAR ==================================================================
