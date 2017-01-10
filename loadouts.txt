@@ -1,0 +1,86 @@
+GERMANY:
+	Rifleman:
+
+		Uniform "U_LIB_GER_Recruit";
+		for "_i" from 1 to 2 do {Uniform "LIB_8Rnd_9x19";};
+
+		Vest "V_LIB_GER_VestKar98";
+		Backpack "B_LIB_GER_A_frame";
+		Headgear "H_LIB_GER_Helmet";
+
+		Weapon "LIB_P38";
+		
+	MEDIC:
+
+		Uniform "U_LIB_GER_Medic";
+
+		Vest "V_LIB_WP_Kar98Vest";
+		Vest "LIB_63Rnd_762x54";
+
+		Backpack "B_LIB_GER_Backpack";
+		Headgear "H_LIB_GER_Helmet";
+
+		Weapon "LIB_DT";
+		Weapon "LIB_RPzB";
+
+	OFFICER:
+
+		Uniform "U_LIB_GER_Hauptmann";
+		Vest "V_LIB_SOV_RA_Belt";
+		Headgear "H_LIB_GER_OfficerCap";
+		Goggles "G_LIB_GER_Gloves4";
+
+USA:
+	RIFLEMAN:
+
+		Uniform "U_LIB_US_NAC_Uniform_2";
+		for "_i" from 1 to 3 do {Uniform "LIB_7Rnd_45ACP";};
+
+		Vest "V_LIB_US_Vest_Garand";
+		Backpack "B_LIB_US_Backpack";
+		Headgear "H_LIB_US_Helmet";
+
+		Weapon "LIB_Colt_M1911";
+		
+	MEDIC:
+
+		Uniform "U_LIB_US_Med";
+		Vest "V_LIB_US_Vest_Medic";
+		Backpack "B_LIB_US_MedicBackpack_Empty";
+		Headgear "H_LIB_US_Helmet_Med_os";
+
+	OFFICER:
+
+		Uniform "U_LIB_US_Sergant";
+		Vest "V_LIB_US_Vest_Carbine";
+		Backpack "B_LIB_US_Backpack";
+		Headgear "H_LIB_US_Helmet_Cap";
+
+RUSSLAND:
+	RIFLEMAN:
+
+		Uniform "U_LIB_SOV_Efreitor_summer";
+		for "_i" from 1 to 3 do {Uniform "LIB_7Rnd_762x38";};
+
+		Vest "V_LIB_SOV_RA_MosinBelt";
+		Backpack "B_LIB_SOV_RA_Rucksack_Green";
+		Headgear "H_LIB_SOV_RA_Helmet";
+
+		Weapon "LIB_M1895";
+		
+	MEDIC:
+
+		Uniform "U_LIB_SOV_Efreitor_summer";
+		Vest "V_LIB_SOV_RA_MosinBelt";
+		Backpack "B_LIB_SOV_RA_MedicalBag_Empty";
+		Headgear "H_LIB_SOV_RA_Helmet";
+
+	OFFICER:
+
+		Uniform "U_LIB_SOV_Kapitan_summer";
+		Vest "V_LIB_SOV_RAZV_OfficerVest";
+		Backpack "B_LIB_SOV_RA_Rucksack_Green";
+		Headgear "H_LIB_SOV_RA_OfficerCap";
+		Goggles "G_LIB_GER_Gloves3";
+
+

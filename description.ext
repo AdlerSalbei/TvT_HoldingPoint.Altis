@@ -1,0 +1,46 @@
+#define MODULES_DIRECTORY node_modules
+#include "cfgParams.hpp"
+#include "cfgIslands.hpp"
+#include "cfgFactions.hpp"
+#include "buyables\cfgBuyables.hpp"
+#include "loadouts\loadouts.hpp"
+#include "dialogs\cfgDialogs.hpp"
+#include "node_modules\grad-listBuymenu\grad_listBuymenu.hpp"
+
+//HEADER =======================================================================
+class Header
+{
+    gameType = Seize;
+    minPlayers = 2;
+    maxPlayers = 150;
+};
+
+//LOAD SCREEN ==================================================================
+onLoadName = "Holding Point";
+onLoadMission = "";
+author = "Salbei for Gruppe Adler";
+loadScreen = "data\logo.paa";
+
+//MISC =========================================================================
+respawn = 3;
+respawnTemplates[] = {"ace_spectator"};
+disabledAI = 0;
+enableDebugConsole = 2;
+
+//FUNCTIONS ====================================================================
+class CfgFunctions {
+    #include "functions\cfgFunctions.hpp"
+    #include "dialogs\cfgFunctions.hpp"
+    #include "node_modules\grad-loadout\cfgFunctions.hpp"
+    #include "node_modules\grad-customGear\cfgFunctions.hpp"
+    #include "node_modules\grad-listbuymenu\cfgFunctions.hpp"
+};
+
+//CUSTOM GEAR ==================================================================
+class grad_customGear {
+    allowHelmet = 0;
+    allowGoggles = 1;
+    allowSimpleScopes = 0;
+    allowMagnifyingScopes = 0;
+    allowMarksmanScopes = 0;
+};
