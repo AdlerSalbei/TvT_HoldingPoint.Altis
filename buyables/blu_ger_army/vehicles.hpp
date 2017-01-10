@@ -81,9 +81,21 @@ class Vehicles {
         stock = 2;
     };
 	
-	class LIB_GrWr34 {
-        displayName = "Granatenwerfer 34";
-        price = 7500;
+	/*
+	class LIB_FW190F8 {;
+        displayName = "Focker-Wolf FW190F8";
+        price = 10000;
         stock = 1;
+		code = "deleteVehicle (_this select 2); [_this select 1] execVM "node_modules/choosePilot/planeSpawnInit.sqf;";
     };
+	
+	class LIB_Ju87 {;
+        displayName = "Junkers JU87";
+        price = 10000;
+        stock = 1;
+		code = "deleteVehicle (_this select 2); [_this select 1] execVM "node_modules/choosePilot/planeSpawnInit.sqf;";
+    };
+	*/
 };
+
+		
