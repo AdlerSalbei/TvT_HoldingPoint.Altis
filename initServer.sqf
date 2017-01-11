@@ -1,5 +1,5 @@
 if ("Preset" call BIS_fnc_getParamValue == 1) then {
-	OPFORSPAWN = nearestLocation [[13991.4,18699.7,0], "NameCity"];
+	OPFORSPAWN = [14930.4,16482.7,0];
     publicVariable "OPFORSPAWN";
     uo_init_cityChosen = true;
     publicVariable "uo_init_cityChosen";

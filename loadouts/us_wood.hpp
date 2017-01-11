@@ -7,7 +7,7 @@ class us_wood {
 		primaryWeaponUnderbarrel = "";
 		secondaryWeapon = "";
 		handgunWeapon = "LIB_Colt_M1911";
-		uniform = "U_LIB_US_NAC_Uniform_2";
+		uniform = "U_LIB_US_Private";
         vest = "V_LIB_US_Vest_Garand";
 		backpack = "B_LIB_US_Backpack";
 		headgear = "H_LIB_US_Helmet";
@@ -21,8 +21,9 @@ class us_wood {
 			LIST_6("ACE_fieldDressing"),
 			LIST_2("ACE_morphine"),
 			"ACE_epinephrine",
+			LIST_2("LIB_7Rnd_45ACP")
 	  	};
-		addItemsToVest[] = {LIST_2("LIB_7Rnd_45ACP")};
+		addItemsToVest[] = {};
         addItemsToBackpack[] = {};
 	};
 
@@ -52,7 +53,7 @@ class us_wood {
 			uniform = "U_LIB_US_Med";
 			vest = "V_LIB_US_Vest_Medic";
 			backpack = "B_LIB_US_MedicBackpack_Empty";
-			headgear = "H_LIB_US_Helmet_Med_os";
+			headgear = "H_LIB_US_Helmet_Med";
 			addItemsToBackpack[] = {
 				LIST_20("ACE_fieldDressing"),
 				LIST_10("ACE_fieldDressing"),

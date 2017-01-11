@@ -2,14 +2,12 @@
 [] call uo_fnc_setMissionParams;
 [] call uo_fnc_setOriginalSide;
 [{missionNamespace getVariable ["uo_init_missionParamsDone", false]}, {[] call uo_fnc_initPubVars}, []] call CBA_fnc_waitUntilAndExecute;
-[{missionNamespace getVariable ["uo_init_missionParamsDone", false]}, {[] call uo_fnc_initLoadoutFaction}, []] call CBA_fnc_waitUntilAndExecute;
-[{missionNamespace getVariable ["uo_init_pubVarsDone", false]}, {[] call uo_fnc_initWaveRespawn}, []] call CBA_fnc_waitUntilAndExecute;
+[{missionNamespace getVariable ["uo_init_missionParamsDone", false]}, {[] call uo_fnc_initLoadoutFaction}, []] call CBA_fnc_waitUntilAndExecute;;
 
 //setup on mission start
 [{missionNamespace getVariable ["uo_init_missionParamsDone", false]}, {[] call uo_fnc_setCommandVehicleClass}, []] call CBA_fnc_waitUntilAndExecute;
 [{missionNamespace getVariable ["uo_init_missionParamsDone", false]}, {[] call uo_fnc_setTime}, []] call CBA_fnc_waitUntilAndExecute;
 [{missionNamespace getVariable ["uo_init_missionParamsDone", false]}, {[] call uo_fnc_setWeather}, []] call CBA_fnc_waitUntilAndExecute;
-[{missionNamespace getVariable ["uo_init_missionParamsDone", false]}, {[] call uo_fnc_setMapRespawnPos}, []] call CBA_fnc_waitUntilAndExecute;
 [{missionNamespace getVariable ["uo_init_missionParamsDone", false]}, {[] call uo_fnc_setupCountdown}, []] call CBA_fnc_waitUntilAndExecute;
 [{missionNamespace getVariable ["uo_init_pubVarsDone", false]}, {[] call uo_fnc_setLocationMarkers}, []] call CBA_fnc_waitUntilAndExecute;
 [{missionNamespace getVariable ["uo_init_pubVarsDone", false]}, {[] call uo_fnc_chooseCity}, []] call CBA_fnc_waitUntilAndExecute;
@@ -26,7 +24,7 @@ if (isServer) then {[{["PRINT", "SERVER_SETUP"] call uo_fnc_diagReport}, [], 15]
 [{missionNamespace getVariable ["uo_init_opforSpawnSet", false]}, {[EAST] call uo_fnc_tpSide}, []] call CBA_fnc_waitUntilAndExecute;
 [{missionNamespace getVariable ["uo_init_bluforSpawnSet", false]}, {[WEST] call uo_fnc_tpSide}, []] call CBA_fnc_waitUntilAndExecute;
 [{missionNamespace getVariable ["uo_init_spawnChosen", false]}, {[BLUFORSPAWN] call uo_fnc_createCommandVehicle}, []] call CBA_fnc_waitUntilAndExecute;
-[{(!isNil "CITYPOSITION" && !isNil "CITYAREASIZE")}, {[] call uo_fnc_createTrigger}, []] call CBA_fnc_waitUntilAndExecute;
+[{!isNil "OPFORSPWAN"}, {[] call uo_fnc_createTrigger}, []] call CBA_fnc_waitUntilAndExecute;
 [{missionNamespace getVariable ["uo_init_cvCreated", false]}, {[] call uo_fnc_findBluStartPos}, []] call CBA_fnc_waitUntilAndExecute;
 
 //start ending checks

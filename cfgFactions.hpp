@@ -1,19 +1,19 @@
 class cfgFactions {
-    class us_army {
+    class us {
         commandVehicles[] = {"LIB_Willys_MB", "LIB_Willys_MB"};
         loadoutWood = "us_wood";
         loadoutDes = "us_des";
     };
 
-    class ger_heer {
+    class ger {
 		commandVehicles[] = {"LIB_Kfz1", "LIB_Kfz1"};
         loadoutWood = "ger_wood";
         loadoutDes = "ger_des";
     };
 
-    class rus_msv {
+    class rus {
         commandVehicles[] = {"LIB_Willys_MB", "LIB_Willys_MB"};
-        loadoutWood = "ru_wood";
-        loadoutDes = "ru_des";
+        loadoutWood = "rus_wood";
+        loadoutDes = "rus_des";
     };
 };
