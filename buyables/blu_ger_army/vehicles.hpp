@@ -75,13 +75,13 @@ class Vehicles {
         stock = 1;
     };
 	
-	class LIB_StuG_III_G {;
+	/*
+	class LIB_StuG_III_G {
         displayName = "Sturmgeschütz III Ausführung G";
         price = 4000;
         stock = 2;
     };
 	
-	/*
 	class LIB_FW190F8 {;
         displayName = "Focker-Wolf FW190F8";
         price = 10000;

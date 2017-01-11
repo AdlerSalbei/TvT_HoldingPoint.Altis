@@ -61,8 +61,6 @@ class uo {
         class briefingDone {postInit = 1;};
         class moveToMapStart {postInit = 1;};
         class setCommandVehicleClass {};
-        class setLocationMarkers {};
-        class setMapRespawnPos {};
         class setMissionParams {};
         class setMoney {};
         class setOriginalSide {};

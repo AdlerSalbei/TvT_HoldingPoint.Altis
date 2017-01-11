@@ -13,32 +13,31 @@ if (player getVariable ["originalSide", "UNKNOWN"] != "EAST") exitWith {};
 
     //MAPCLICK EVENT ===============================================================
     mcd_chooseCityClick = [
-        "mcd_chooseSpawn",
+        "mcd_chooseCity",
         "onMapSingleClick",
-		if (surfaceIsWater BLUFORSPAWN) then {["PLEASE CHOOSE A SPAWN POSITION ON LAND"] call uo_ui_fnc_confirmHint;};
         {
-            [EAST,"spawnMarker",true,_pos,"hd_start","COLORWEST"] call uo_fnc_createSideMarker;
-            OPFORSPAWN = _pos;
+			OPFORSPAWN = _pos;
+            [EAST,"selectionMarker",true,_pos,"hd_start","ColorGreen"] call uo_fnc_createSideMarker;
         }
     ] call BIS_fnc_addStackedEventHandler;
 
     //CONFIRM SELECTION ============================================================
     mcd_onCityKeyDown = (findDisplay 46) displayAddEventHandler ["KeyDown", {
         if ((_this select 1 == 28)||(_this select 1 == 156)) then {
-            if (isNil "CHOSENLOCATION") then {
+            if (isNil "OPFORSPAWN") then {
                 ["PLEASE CHOOSE A LOCATION!"] call uo_ui_fnc_confirmHint;
 
             } else {
 			
-				if (surfaceIsWater BLUFORSPAWN) then {
+				if (surfaceIsWater OPFORSPAWN) then {
                     ["PLEASE CHOOSE A SPAWN POSITION ON LAND"] call uo_ui_fnc_confirmHint;
                 } else {
-					["fn_chooseCity - %1 chose location %2", profileName, text CHOSENLOCATION] call uo_fnc_serverLog;
+					["fn_chooseCity - %1 chose location %2", profileName, str OPFORSPAWN] call uo_fnc_serverLog;
 					[EAST,"selectionMarker"] call uo_fnc_deleteSideMarker;
 
 					uo_init_cityChosen = true;
 					publicVariable "uo_init_cityChosen";
-					publicVariable "CHOSENLOCATION";
+					publicVariable "OPFORSPAWN";
 
 					["mcd_chooseCity", "onMapSingleClick"] call BIS_fnc_removeStackedEventHandler;
 					(findDisplay 46) displayRemoveEventHandler ["KeyDown", mcd_onCityKeyDown];

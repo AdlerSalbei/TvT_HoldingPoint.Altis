@@ -4,13 +4,6 @@ class Vehicles {
     displayName = "Vehicles";
     kindOf = "Vehicles";
     spawnEmpty = 1;
-
-    class LIB_Willys_MB {
-
-        displayName = "Willys";
-        price = 1000;
-        stock = 10;
-    };
 	
 	class LIB_Willys_MB {
 

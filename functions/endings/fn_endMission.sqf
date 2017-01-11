@@ -28,4 +28,5 @@ if (isServer) then {
     [{count (missionNamespace getVariable ["uo_gameEnded", []]) > 0}, {
         ["uo_gameEnded", uo_gameEnded] call (_this select 0);
     }, [_endMission]] call CBA_fnc_waitUntilAndExecute;
+	MISSION_COMPLETED = true;
 };

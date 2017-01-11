@@ -11,7 +11,7 @@ _tooCloseFound = true;
 _isWater = true;
 _repetitions = 0;
 _pos = [0,0,0];
-_spawnradius = CITYAREASIZE * 0.5;
+_spawnradius = 15 * 0.5;
 _originalspawnradius = _spawnradius;
 
 while {_tooCloseFound || _isWater} do {
@@ -20,7 +20,7 @@ while {_tooCloseFound || _isWater} do {
 
     //check water
     while {_isWater} do {
-        _pos = [CITYPOSITION,[0,_spawnradius], [0,360]] call SHK_pos;
+        _pos = [OPFORSPAWN,[0,_spawnradius], [0,360]] call SHK_pos;
         _isWater = surfaceIsWater _pos;
     };
 

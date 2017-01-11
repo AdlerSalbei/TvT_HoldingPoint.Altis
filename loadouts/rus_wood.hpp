@@ -20,7 +20,7 @@ class rus_wood {
         addItemsToUniform[] = {
 			LIST_6("ACE_fieldDressing"),
 			LIST_2("ACE_morphine"),
-			"ACE_epinephrine",
+			"ACE_epinephrine"
 	  	};
 		addItemsToVest[] = {LIST_2("LIB_7Rnd_762x38")};
         addItemsToBackpack[] = {};
@@ -61,12 +61,12 @@ class rus_wood {
 
         //squad leader
         class Soldier_SL_F {
-			uniform = "U_LIB_SOV_Kapitan_summer"
+			uniform = "U_LIB_SOV_Kapitan_summer";
 			vest = "V_LIB_SOV_RAZV_OfficerVest";
 			headgear = "H_LIB_SOV_RA_OfficerCap";
 			addItemsToUniform[] = {
 				"ACE_MapTools"
-			 };
+			};
 
 			binoculars = "Binocular";
 			map = "ItemMap";
@@ -75,12 +75,12 @@ class rus_wood {
 
         //team leader
 		class Soldier_TL_F {
-			uniform = "U_LIB_SOV_Kapitan_summer"
+			uniform = "U_LIB_SOV_Kapitan_summer";
 			vest = "V_LIB_SOV_RAZV_OfficerVest";
-			headgear = "H_LIB_SOV_RA_OfficerCap";;
+			headgear = "H_LIB_SOV_RA_OfficerCap";
 			addItemsToUniform[] = {
 				"ACE_MapTools"
-			 };
+			};
 
 			binoculars = "Binocular";
 			map = "ItemMap";

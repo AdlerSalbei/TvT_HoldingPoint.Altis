@@ -1,4 +1,5 @@
 _cfg = missionConfigFile >> "CfgFactions" >> uo_missionParam_BLUFORFACTION;
+diag_log format ["Class: %1", _cfg];
 if (!isClass _cfg) exitWith {diag_log format ["fn_setCommandVehicle - ERROR: %1 IS NOT A VALID FACTION.", uo_missionParam_BLUFORFACTION]};
 _cvs = getArray (_cfg >> "commandVehicles");
 

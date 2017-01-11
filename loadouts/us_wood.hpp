@@ -64,7 +64,7 @@ class us_wood {
 
         //squad leader
         class Soldier_SL_F {
-			uniform = "U_LIB_US_Sergant"
+			uniform = "U_LIB_US_Sergant";
 			vest = "V_LIB_US_Vest_Carbine";
 			headgear = "H_LIB_US_Helmet_Cap";
 			addItemsToUniform[] = {
@@ -78,10 +78,9 @@ class us_wood {
 
         //team leader
 		class Soldier_TL_F {
-			uniform = ""
-			vest = "";
-			backpack = "";
-			headgear = "";
+			uniform = "U_LIB_US_Sergant";
+			vest = "V_LIB_US_Vest_Carbine";
+			headgear = "H_LIB_US_Helmet_Cap";
 			addItemsToUniform[] = {
 				"ACE_MapTools"
 			 };

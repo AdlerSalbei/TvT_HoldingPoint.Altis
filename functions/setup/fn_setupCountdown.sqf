@@ -3,7 +3,7 @@ if (!isServer) exitWith {};
 SETUPTIMEREMAINING = uo_missionParam_SETUPTIME;
 publicVariable "SETUPTIMEREMAINING";
 
-[{!isNil "CITYPOSITION" && (missionNamespace getVariable ["uo_init_briefingDone", false])}, {
+[{!isNil "OPFORSPAWN" && (missionNamespace getVariable ["uo_init_briefingDone", false])}, {
     diag_log "fn_setupCountdown starting...";
     _countdown = {
         SETUPTIMEREMAINING = SETUPTIMEREMAINING - 1;
