@@ -204,7 +204,7 @@ class AddonsMetaData
 randomSeed=12065692;
 class ScenarioData
 {
-	author="McDiod";
+	author="Salbei";
 };
 class Mission
 {

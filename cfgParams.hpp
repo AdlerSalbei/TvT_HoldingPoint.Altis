@@ -21,7 +21,7 @@ class Params
         title = "Blufor Faction";
         values[] = {0,1,2};
         texts[] = {"USA", "Germany", "Russia"};
-        default = 0;
+        default = 1;
     };
 
     class OpforFaction
@@ -37,7 +37,7 @@ class Params
         title = "Preset";
         values[] = {0,1};
         texts[] = {"Custom", "Debug (Parameters below will be ignored.)"};
-        default = 1;
+        default = 0;
     };
 
     class DefenseTime

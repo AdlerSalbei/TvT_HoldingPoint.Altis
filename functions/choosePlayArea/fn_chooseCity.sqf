@@ -16,9 +16,8 @@ if (player getVariable ["originalSide", "UNKNOWN"] != "EAST") exitWith {};
         "mcd_chooseCity",
         "onMapSingleClick",
         {
-			OPFORSPAWN = _pos;
-			diag_log format ["Pos: %1", _pos];
             [EAST,"selectionMarker",true,_pos,"hd_start","ColorGreen"] call uo_fnc_createSideMarker;
+			OPFORSPAWN = _pos;
         }
     ] call BIS_fnc_addStackedEventHandler;
 

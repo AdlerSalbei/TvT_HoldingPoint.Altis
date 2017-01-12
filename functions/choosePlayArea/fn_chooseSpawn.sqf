@@ -20,6 +20,7 @@ if (player != bluforcommander) exitWith {};
         "mcd_chooseSpawn",
         "onMapSingleClick",
         {
+			diag_log format ["fn_chooseSpawn clicked Pos: %1", _pos];
             [WEST,"spawnMarker",true,_pos,"hd_start","COLORWEST"] call uo_fnc_createSideMarker;
             BLUFORSPAWN = _pos;
         }

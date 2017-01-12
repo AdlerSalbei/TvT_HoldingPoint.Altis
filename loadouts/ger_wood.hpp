@@ -26,6 +26,7 @@ class ger_wood {
 			LIST_2("LIB_8Rnd_9x19")
 		};
         addItemsToBackpack[] = {};
+		map = "ItemMap";
 	};
 
 	class Type {
@@ -73,7 +74,6 @@ class ger_wood {
 			 };
 
 			binoculars = "LIB_Binocular_GER";
-			map = "ItemMap";
 			compass = "ItemCompass";
         };
 
