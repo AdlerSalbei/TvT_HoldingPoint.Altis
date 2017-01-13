@@ -7,7 +7,7 @@
 #include "dialogs\cfgDialogs.hpp"
 #include "node_modules\grad-listBuymenu\grad_listBuymenu.hpp"
 #include "node_modules\choosePilot\include\description.hpp"
-//#include "node_modules\grad-moneymenu\grad_moneymenu.hpp"
+#include "node_modules\grad-moneymenu\grad_moneymenu.hpp"
 
 
 //HEADER =======================================================================
@@ -38,7 +38,7 @@ class CfgFunctions {
     #include "node_modules\grad-customGear\cfgFunctions.hpp"
     #include "node_modules\grad-listbuymenu\cfgFunctions.hpp"
 	#include "node_modules\choosePilot\include\CfgFunctions.hpp"
-	//#include "node_modules\grad-moneymenu\cfgFunctions.hpp"
+	#include "node_modules\grad-moneymenu\cfgFunctions.hpp"
 };
 
 //CUSTOM GEAR ==================================================================
@@ -48,4 +48,14 @@ class grad_customGear {
     allowSimpleScopes = 0;
     allowMagnifyingScopes = 0;
     allowMarksmanScopes = 0;
+};
+
+//Money Menu ==================================================================
+class CfgGradMoneymenu {
+    canGiveDefault = 1;                                                    
+    canTransferToSidesDefault[] = {};
+    canTakeFromDeadDefault = 1;        
+    canSendDirectlyDefault = 1;                                    
+    canTakeFromSurrenderedDefault = 1;                                                                                      
+    atmObjects[] = {};                                      
 };
