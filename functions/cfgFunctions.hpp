@@ -45,13 +45,11 @@ class uo {
         class createCommandVehicle {};
         class opforBuyAction {};
         class setCommandVehicle {};
-        class spawnDealer {};
     };
 
     class missionstart {
         class createTrigger {};
         class findOpfSpawnPos {};
-        class findOpfStartPos {};
         class findBluStartPos {};
         class playAreaSetup {};
         class tpSide {};

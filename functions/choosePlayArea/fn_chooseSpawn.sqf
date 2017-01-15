@@ -20,7 +20,6 @@ if (player != bluforcommander) exitWith {};
         "mcd_chooseSpawn",
         "onMapSingleClick",
         {
-			diag_log format ["fn_chooseSpawn clicked Pos: %1", _pos];
             [WEST,"spawnMarker",true,_pos,"hd_start","COLORWEST"] call uo_fnc_createSideMarker;
             BLUFORSPAWN = _pos;
         }
@@ -33,9 +32,8 @@ if (player != bluforcommander) exitWith {};
                 ["PLEASE CHOOSE A SPAWN POSITION BY CLICKING ON THE MAP"] call uo_ui_fnc_confirmHint;
 
             } else {
-
                 //position not in blue area
-                if (CHOSENLOCATION distance BLUFORSPAWN < BLUFORSPAWNDIST + BLUFORSPAWNBAND) then {
+                if (OPFORSPAWN distance BLUFORSPAWN < BLUFORSPAWNDIST + BLUFORSPAWNBAND) then {
                     ["PLEASE CHOOSE A SPAWN POSITION OUTSIDE THE BLUE RING"] call uo_ui_fnc_confirmHint;
                 } else {
 

@@ -30,27 +30,7 @@ class ger_wood {
 	};
 
 	class Type {
-        //rifleman
-		class Soldier_F {
-
-		};
-
-        //autorifleman
-		class Soldier_AR_F {
-			
-		};
-
-        //light AT
-		class Soldier_LAT_F {
-			
-		};
-
-        //ammo bearer
-		class Soldier_A_F {
-			
-		};
-
-        //medic
+         //medic
 		class Medic_F {
 			uniform = "U_LIB_GER_Medic";
 			addItemsToBackpack[] = {
@@ -75,6 +55,7 @@ class ger_wood {
 
 			binoculars = "LIB_Binocular_GER";
 			compass = "ItemCompass";
+			map = "ItemMap";
         };
 
         //team leader
