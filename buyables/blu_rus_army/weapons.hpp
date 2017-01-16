@@ -28,7 +28,7 @@ class Weapons {
         stock = 6;
     };
 
-    class Mosin Nagant M44 {
+    class LIB_M44 {
         displayName = "Mosin Nagant M44";
         price = 2000;
         stock = 2;
