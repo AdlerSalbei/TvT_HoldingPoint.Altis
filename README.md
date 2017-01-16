@@ -56,14 +56,16 @@ BLUFOR will start their game with a *Commandvehicle*.
 Each *Commandvehicle's* position is marked on BLUFOR's map at the start. 
 
 ## Factions
-Different factions for BLUFOR and OPFOR can be chosen during mission setup. The chosen faction will determine the loadouts, the *Commandvehicles* and the supplies that players can buy. Typical BLUFOR factions (e.g. USA) can be chosen for the OPFOR side to put them in the defending role.
+Different factions for BLUFOR and OPFOR can be chosen during mission setup. The chosen faction will determine the loadouts, the *Commandvehicles* and the supplies that players can buy. Typical BLUFOR factions (e.g. Russia) can be chosen for the OPFOR side to put them in the defending role.
 
 Buyables for each faction depending on side (click the *EAST* tab on the bottom) can be found [here (Google Docs)](https://docs.google.com/spreadsheets/d/1WVtMfU6J_OVLaHgVwJEiCAwPaTKqynqdLrqvwLkI4s8/edit?usp=sharing).
 
 playable:
-* USA
 * Germany
 * Russia
+
+planned:
+* USA
 
 ## Parameters
 
@@ -71,8 +73,8 @@ Parameter           | Default      | Explanation
 --------------------|--------------|----------------------------------------------------------------------------
 Weather             | Random       | sets weather
 Time of Day         | Random       | sets time (random is only day)
-BLUFOR Faction      | USA - Army   | sets BLUFOR faction
-OPFOR Faction       | Russia - MSV | sets OPFOR faction
+BLUFOR Faction      | Russia       | sets BLUFOR faction
+OPFOR Faction       | Germany      | sets OPFOR faction
 Preset              | Custom       | sets all other parameters for you, unless *Custom* is selected
 *DefenseTime*       | 45 min       | time that OPFOR has to defend the *Location* for
 *CaptureTime*       | 10 min       | time that BLUFOR has to be in control of the *Location* to win
