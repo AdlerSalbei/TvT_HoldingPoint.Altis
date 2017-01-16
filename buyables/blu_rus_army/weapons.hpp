@@ -2,34 +2,59 @@ class Weapons {
     displayName = "Weapons & Accessories";
     kindOf = "Weapons";
 
-    
-
-    class rhs_weap_sr25 {
-        displayName = "Mk 11 Mod 0";
+    class LIB_PPSh41_m {
+		condition = "uo_missionParam_ISWOODLAND";
+        displayName = "PPSh 41";
         price = 1200;
         stock = 2;
     };
 
-    class rhs_weap_m240G {
-        displayName = "M240G";
+    class LIB_PPSh41_d {
+		condition = "!uo_missionParam_ISWOODLAND";
+        displayName = "PPSh 41";
         price = 2000;
         stock = 2;
     };
 
-    class rhs_weap_M590_8RD {
-        displayName = "M590A1 (Long)";
+    class LIB_M9130 {
+        displayName = "Mosin-Nagant M9130";
         price = 1200;
         stock = 6;
     };
 
-    class rhs_weap_M136 {
-        displayName = "M136 HEAT";
+    class LIB_M38 {
+        displayName = "Mosin Nagant M38";
         price = 800;
         stock = 6;
     };
 
-    class rhs_weap_smaw_green {
-        displayName = "SMAW Launcher";
+    class Mosin Nagant M44 {
+        displayName = "Mosin Nagant M44";
+        price = 2000;
+        stock = 2;
+    };
+	class LIB_SVT_40 {
+        displayName = "SVT 40";
+        price = 2000;
+        stock = 2;
+    };
+	class LIB_DP28 {
+        displayName = "DP";
+        price = 2000;
+        stock = 2;
+    };
+	class LIB_DT {
+        displayName = "DT";
+        price = 2000;
+        stock = 2;
+    };
+	class LIB_DT_OPTIC {
+        displayName = "DT (optic)";
+        price = 2000;
+        stock = 2;
+    };
+	class LIB_M9130PU {
+        displayName = "Mosin-Nagant M9130 PU";
         price = 2000;
         stock = 2;
     };

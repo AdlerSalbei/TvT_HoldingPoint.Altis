@@ -2,83 +2,45 @@ class Ammo {
     displayName = "Ammunition";
     kindOf = "Items";
 
-    class rhs_mag_30Rnd_556x45_Mk318_Stanag {
-        displayName = "5.56mm 30Rnd";
-        description = "Used in:<br/>M4 variants";
+    class lib_8Rnd_762x25 {
+        displayName = "7.62mm 8Rnd";
+        description = "Used in:<br/>Tokarev TT-33";
         price = 100;
         stock = 50;
     };
 
-    class rhsusf_20Rnd_762x51_m118_special_Mag {
-        displayName = "7.62mm 20Rnd";
-        description = "Used in:<br/>Mk 11 Mod 0";
+    class lib_35Rnd_762x25 {
+        displayName = "7.62mm 35Rnd";
+        description = "Used in:<br/>PPSh-41";
         price = 150;
         stock = 30;
     };
 
-    class rhsusf_100Rnd_762x51_m62_tracer {
-        displayName = "7.62mm 100Rnd Tracer Belt";
-        description = "Used in:<br/>M240G";
+    class lib_5Rnd_762x54 {
+        displayName = "7.62mm 5Rnd";
+        description = "Used in:<br/>Mosin-Nagant";
         price = 250;
         stock = 30;
     };
 
-    class rhsusf_8Rnd_00Buck {
-        displayName = "8Rnd .00 Buckshot";
-        description = "Used in:<br/>M590A1";
+    class lib_5Rnd_762x54_t46 {
+        displayName = "7.62mm 5Rnd Tracer";
+        description = "Used in:<br/>Mosin-Nagant";
         price = 80;
         stock = 50;
     };
 
-    class rhsusf_8Rnd_Slug {
-        displayName = "8Rnd 12g Slug";
-        description = "Used in:<br/>M590A1";
+    class lib_47Rnd_762x54 {
+        displayName = "7.62mm 47Rnd";
+        description = "Used in:<br/>DP";
         price = 80;
         stock = 50;
     };
 
-    class rhs_mag_smaw_HEAA {
-        displayName = "SMAW HEAA";
-        description = "Used in:<br/>SMAW";
+    class lib_63Rnd_762x54 {
+        displayName = "7.62mm 63Rnd";
+        description = "Used in:<br/>DT";
         price = 200;
         stock = 4;
-    };
-
-    class rhs_mag_smaw_HEDP {
-        displayName = "SMAW HEDP";
-        description = "Used in:<br/>SMAW";
-        price = 200;
-        stock = 4;
-    };
-
-    class rhs_mag_smaw_SR {
-        displayName = "SMAW Spotting Rounds";
-        description = "Used in:<br/>SMAW";
-        price = 100;
-        stock = 4;
-    };
-
-    class DemoCharge_Remote_Mag {
-        displayName = "M112 Demo Charge";
-        price = 600;
-        stock = 6;
-    };
-
-    class SatchelCharge_Remote_Mag {
-        displayName = "M183 Satchel Charge";
-        price = 1400;
-        stock = 6;
-    };
-
-    class HandGrenade {
-        displayName = "M67 Fragmentation Grenade";
-        price = 600;
-        stock = 20;
-    };
-
-    class SmokeShell {
-        displayName = "M83 Smoke Grenade";
-        price = 200;
-        stock = 20;
     };
 };

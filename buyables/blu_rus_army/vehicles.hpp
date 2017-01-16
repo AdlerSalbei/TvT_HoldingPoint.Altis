@@ -5,93 +5,77 @@ class Vehicles {
     kindOf = "Vehicles";
     spawnEmpty = 1;
 
-    class B_Quadbike_01_F {
-        permissionLevel = 0;
-
-        displayName = "Quadbike";
+    class LIB_Willys_MB {
+        displayName = "Willys";
         price = 1000;
         stock = 10;
     };
 
-    class rhsusf_m998_w_s_4dr_fulltop {
-        condition = "uo_missionParam_ISWOODLAND";
-        displayName = "Commandvehicle";
-        description = "Functions as a backup respawn and buymenu access position.";
-        price = 10000;
-        stock = 1;
-
-        code = "[_this select 2] call uo_fnc_setCommandVehicle;";
-    };
-
-    class rhsusf_m998_d_s_4dr_fulltop {
-        condition = "!uo_missionParam_ISWOODLAND";
-        displayName = "Commandvehicle";
-        description = "Functions as a backup respawn and buymenu access position.";
-        price = 10000;
-        stock = 1;
-
-        code = "[_this select 2] call uo_fnc_setCommandVehicle;";
-    };
-
-    class rhsusf_m1025_w {
-        condition = "uo_missionParam_ISWOODLAND";
-        displayName = "HMMWV (unarmed)";
+    class LIB_zis5v {
+        displayName = "zis5v";
         price = 2000;
         stock = 10;
     };
 
-    class rhsusf_m1025_d {
-        condition = "!uo_missionParam_ISWOODLAND";
-        displayName = "HMMWV (unarmed)";
+    class LIB_SOV_M3_Halftrack {
+        displayName = "M3 Halftrack";
         price = 2000;
         stock = 10;
     };
 
-    class rhsusf_m998_w_2dr_halftop {
-        condition = "uo_missionParam_ISWOODLAND";
-        displayName = "HMMWV (2D/Open)";
+    class LIB_T34_76 {
+        displayName = "T34 76mm";
         price = 1800;
         stock = 10;
+		code = "(_this select 2) removeMagazine 'LIB_50x_OF350_HE';";
     };
 
-    class rhsusf_m998_d_2dr_halftop {
-        condition = "!uo_missionParam_ISWOODLAND";
-        displayName = "HMMWV (2D/Open)";
+    class LIB_T34_85 {
+        displayName = "T34 85mm";
+        price = 4000;
+        stock = 10;
+		code = "(_this select 2) removeMagazine 'LIB_36x_O365_HE';";
+    };
+
+    class LIB_M4A2_SOV {
+        displayName = "M4A2";
+        price = 4000;
+        stock = 10;
+		code = "(_this select 2) removeMagazine 'LIB_60x_M42A1_M1_HE';";
+    };
+
+	class LIB_JS2_43 {
+        displayName = "JS2";
         price = 1800;
         stock = 10;
+		code = "(_this select 2) removeMagazine 'LIB_16x_OF471_HE';";
     };
-
-    class rhsusf_m1025_w_m2 {
-        condition = "uo_missionParam_ISWOODLAND";
-        displayName = "HMMWV (M2)";
-        price = 4000;
-        stock = 10;
-    };
-
-    class rhsusf_m1025_d_m2 {
-        condition = "!uo_missionParam_ISWOODLAND";
-        displayName = "HMMWV (M2)";
-        price = 4000;
-        stock = 10;
-    };
-
-    class rhsusf_m113_usarmy {
-        condition = "uo_missionParam_ISWOODLAND";
-        displayName = "M113 (M2)";
+	
+	class LIB_SU85 {
+        displayName = "SU85";
         price = 6000;
         stock = 10;
+		code = "(_this select 2) removeMagazine 'LIB_25x_O365_HE';";
     };
-
-    class rhsusf_m113d_usarmy {
-        condition = "!uo_missionParam_ISWOODLAND";
-        displayName = "M113 (M2)";
-        price = 6000;
-        stock = 10;
-    };
-
-    class RHS_CH_47F_10 {
-        displayName = "CH-47F";
+	
+    class LIB_P39 {
+        displayName = "P39";
         price = 20000;
-        stock = 2;
+        stock = 1;
+		code = "deleteVehicle (_this select 2); [_this select 1] execVM 'node_modules/choosePilot/planeSpawnInit.sqf;'";
+    };
+	
+	class LIB_Pe2 {
+        displayName = "Pe2";
+        price = 20000;
+        stock = 1;
+		code = "deleteVehicle (_this select 2); [_this select 1] execVM 'node_modules/choosePilot/planeSpawnInit.sqf;'";
+    };
+	
+	class LIB_Li2 {
+        displayName = "Li2";
+        price = 20000;
+        stock = 1;
+		code = "deleteVehicle (_this select 2); [_this select 1] execVM 'node_modules/choosePilot/planeSpawnInit.sqf;'";
     };
 };

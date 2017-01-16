@@ -36,8 +36,8 @@ _marker setMarkerSize [BLUFORSPAWNDIST+BLUFORSPAWNBAND, BLUFORSPAWNDIST+BLUFORSP
     "",
     "COLOREAST",
     "",
-    "RECTANGLE",
-    [15,5],
+    "ELLIPSE",
+    [15,15],
     1,
     "SolidFull"
 ] call uo_fnc_createSideMarker;
@@ -46,7 +46,7 @@ _marker setMarkerSize [BLUFORSPAWNDIST+BLUFORSPAWNBAND, BLUFORSPAWNDIST+BLUFORSP
     WEST,
     "EXPLANATIONMARKER_CAPTURE_TEXT",
     true,
-    OPFORSPAWN vectorAdd [15,0,0],
+    OPFORSPAWN vectorAdd [15,15,0],
     "hd_dot",
     "COLOREAST",
     "CAPTURE ZONE",

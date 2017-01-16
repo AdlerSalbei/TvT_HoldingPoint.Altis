@@ -53,7 +53,7 @@ class Params
         title = "Time in Control to Capture Point (Minutes:Seconds)";
         values[] = {150,300,450,600,750,900};
         texts[] = {"2:30", "05:00", "07:30", "10:00", "12:30", "15:00"};
-        default = 600;
+        default = 300;
     };
 
     class SetupTime

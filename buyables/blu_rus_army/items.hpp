@@ -33,35 +33,10 @@ class Items {
         stock = 40;
     };
 
-    class rhsusf_falconii_mc {
-        kindOf = "Wearables";
-
-        displayName = "Falcon-II Backpack";
-        price = 100;
-        stock = 20;
-    };
-
-    class rhsusf_assault_eagleaiii_ocp {
-        kindOf = "Wearables";
-
-        displayName = "Eagle A-III Backpack";
+    class ACE_bloodIV_500 {
+        displayName = "Blood Bag (500ml)";
+        description = "500ml AB+ type blood in a blood bag with IV.";
         price = 200;
-        stock = 20;
-    };
-
-    class B_Kitbag_mcamo {
-        kindOf = "Wearables";
-
-        displayName = "Kitbag Backpack";
-        price = 300;
-        stock = 20;
-    };
-
-    class tf_rt1523g {
-        kindOf = "Wearables";
-
-        displayName = "RT-1523G Manpack";
-        price = 1000;
-        stock = 6;
+        stock = 40;
     };
 };

@@ -37,13 +37,11 @@ class Vehicles {
         stock = 10;
     };
 	
-	/*
 	class LIB_SdKfz_7 {
         displayName = "SonderKraftfahrzeug 7";
         price = 3000;
         stock = 5;
     };
-	*/
 	
 	class LIB_PzKpfwIV_H {
         displayName = "PanzerKampfwagen IV Ausführung H";
@@ -59,7 +57,6 @@ class Vehicles {
 		code = "(_this select 2) removeMagazine 'LIB_30x_SprGr42_KwK42_HE';";
     };
 	
-	/*
 	class LIB_PzKpfwVI_E {
         displayName = "PanzerKampfwagen VI Tiger";
         price = 10000;
@@ -82,7 +79,6 @@ class Vehicles {
         stock = 1;
 		code = "(_this select 2) removeMagazine 'LIB_40x_SprGr39_HE';";
     };
-	*/
 	
 	class LIB_StuG_III_G {
         displayName = "Sturmgeschütz III Ausführung G";
@@ -90,7 +86,7 @@ class Vehicles {
         stock = 2;
 		code = "(_this select 2) removeMagazine 'LIB_30x_SprGr34_StuK40_HE';";
     };
-	/*
+
 	class LIB_FW190F8 {
         displayName = "Focker-Wolf FW190F8";
         price = 10000;
@@ -104,7 +100,6 @@ class Vehicles {
         stock = 1;
 		code = "deleteVehicle (_this select 2); [_this select 1] execVM 'node_modules/choosePilot/planeSpawnInit.sqf;'";
     };
-	*/
 };
 
 		
