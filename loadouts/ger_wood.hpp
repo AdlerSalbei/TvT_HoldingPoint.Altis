@@ -14,7 +14,7 @@ class ger_wood {
 		nvgoggles = "";
 		radio = "";
 		binoculars = "";
-		map = "";
+		map = "ItemMap";
 		gps = "";
 		compass = "";
         addItemsToUniform[] = {
@@ -25,8 +25,6 @@ class ger_wood {
 		addItemsToVest[] = {
 			LIST_2("LIB_8Rnd_9x19")
 		};
-        addItemsToBackpack[] = {};
-		map = "ItemMap";
 	};
 
 	class Type {
