@@ -29,7 +29,7 @@ OPFOR chooses a point that they will have to defend for X minutes (*Capture Time
 ## Game Flow
 1. OPFOR commander chooses one of the available *Locations* from the map (OPFOR players can watch)
 2. OPFOR spawns at the chosen *Location* and has X minutes (*SetupTime*) to prepare for the attack
-3. OPFOR can buy equipment from the *Barrel* (position marked on map, visible to OPFOR)
+3. OPFOR can buy equipment from the *Barrel* 
 4. BLUFOR is on the map during preparation time and can make plans to attack (they see the chosen *Location*)
 5. BLUFOR commander chooses a start position outside the *Respawn Zone*
 6. BLUFOR can buy equipment at the *Commandvehicle* (spawns on start position, marked on map, visible to BLUFOR)
