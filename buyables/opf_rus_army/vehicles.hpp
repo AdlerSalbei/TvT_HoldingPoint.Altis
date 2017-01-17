@@ -57,25 +57,26 @@ class Vehicles {
         stock = 10;
 		code = "(_this select 2) removeMagazine 'LIB_25x_O365_HE';";
     };
-	
+	/*
     class LIB_P39 {
         displayName = "P39";
         price = 20000;
         stock = 1;
-		code = "deleteVehicle (_this select 2); [_this select 1] execVM 'node_modules/choosePilot/planeSpawnInit.sqf;'";
+		code = "deleteVehicle (_this select 2); [false] call HoldingPoint_choosePilot_fnc_open; [(_this select 1), (getPos player)] execVM 'functions/common/fn_planeSpawn.sqf';";
     };
 	
 	class LIB_Pe2 {
         displayName = "Pe2";
         price = 20000;
         stock = 1;
-		code = "deleteVehicle (_this select 2); [_this select 1] execVM 'node_modules/choosePilot/planeSpawnInit.sqf;'";
+		code = "deleteVehicle (_this select 2); [true] call HoldingPoint_choosePilot_fnc_open; [(_this select 1), (getPos player)] execVM 'functions/common/fn_planeSpawn.sqf';";
     };
 	
 	class LIB_Li2 {
         displayName = "Li2";
         price = 20000;
         stock = 1;
-		code = "deleteVehicle (_this select 2); [_this select 1] execVM 'node_modules/choosePilot/planeSpawnInit.sqf;'";
+		code = "deleteVehicle (_this select 2); [true] call HoldingPoint_choosePilot_fnc_open; [(_this select 1), (getPos player)] execVM 'functions/common/fn_planeSpawn.sqf';";
     };
+	*/
 };
