@@ -25,9 +25,17 @@ class Items {
         price = 100;
         stock = 40;
     };
-
+	
+	class ACE_EntrenchingToolclass {
+        displayName = "Compass";
+		description = "Just a standart army compass.";
+        price = 250;
+        stock = 20;
+    };
+	
     class ACE_bloodIV_250 {
-        displayName = "Blood Bag (250ml)";
+    
+	    displayName = "Blood Bag (250ml)";
         description = "250ml AB+ type blood in a blood bag with IV.";
         price = 100;
         stock = 40;
