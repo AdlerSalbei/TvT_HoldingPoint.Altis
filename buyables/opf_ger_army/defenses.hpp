@@ -1,6 +1,18 @@
 class Defenses {
     displayName = "Defenses";
     kindOf = "Vehicles";
+	
+	class LIB_MG42_Lafette_low {
+        displayName = "MG42 Niederig";
+        price = 5000;
+        stock = 1;
+    };
+	
+	class LIB_MG42_Lafette {
+        displayName = "MG42 Hoch";
+        price = 5000;
+        stock = 1;
+    };
 		
 	class LIB_Pak40 {
         displayName = "Panzerabwehrkanone 40";
