@@ -3,7 +3,7 @@ if (player getVariable ["originalSide", "UNKNOWN"] != "WEST") exitWith {};
 
 
 [{!isNull (findDisplay 46)}, {
-    openMap [true, false];
+    openMap [true, true];
     [] call uo_fnc_bluforWaitDialog;
 }, []] call CBA_fnc_waitUntilAndExecute;
 
@@ -33,7 +33,7 @@ if (player != bluforcommander) exitWith {};
 
             } else {
                 //position not in blue area
-                if (OPFORSPAWN distance BLUFORSPAWN < BLUFORSPAWNDIST + BLUFORSPAWNBAND) then {
+                if (OPFORSPAWN distance BLUFORSPAWN < BLUFORSPAWNBAND) then {
                     ["PLEASE CHOOSE A SPAWN POSITION OUTSIDE THE BLUE RING"] call uo_ui_fnc_confirmHint;
                 } else {
 
@@ -52,6 +52,8 @@ if (player != bluforcommander) exitWith {};
                         [WEST,"EXPLANATIONMARKER_CAPTURE"] call uo_fnc_deleteSideMarker;
                         [WEST,"EXPLANATIONMARKER_CAPTURE_TEXT"] call uo_fnc_deleteSideMarker;
 						[WEST,"spawnMarker"] call uo_fnc_deleteSideMarker;
+						openMap [true, false];
+						[]execVM "functions/common/fn_removeMap.sqf";
 
                         ["mcd_chooseSpawn", "onMapSingleClick"] call BIS_fnc_removeStackedEventHandler;
                         (findDisplay 46) displayRemoveEventHandler ["KeyDown", mcd_onSpawnKeyDown];

@@ -3,7 +3,7 @@ if (player getVariable ["originalSide", "UNKNOWN"] != "EAST") exitWith {};
 
 
 [{!isNull (findDisplay 46)}, {
-    openMap [true, false];
+    openMap [true, true];
     [] call uo_fnc_opforWaitDialog;
 
     if (isNil "opforcommander") exitWith {};
@@ -38,7 +38,8 @@ if (player getVariable ["originalSide", "UNKNOWN"] != "EAST") exitWith {};
 					uo_init_cityChosen = true;
 					publicVariable "uo_init_cityChosen";
 					publicVariable "OPFORSPAWN";
-
+					openMap [true, false];
+					
 					["mcd_chooseCity", "onMapSingleClick"] call BIS_fnc_removeStackedEventHandler;
 					(findDisplay 46) displayRemoveEventHandler ["KeyDown", mcd_onCityKeyDown];
 				};
