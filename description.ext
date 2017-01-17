@@ -26,9 +26,11 @@ loadScreen = "data\logo.paa";
 
 //MISC =========================================================================
 respawn = 3;
+respawnButton = 0;
 respawnTemplates[] = {"ace_spectator"};
-disabledAI = 0;
+disabledAI = 1;
 enableDebugConsole = 2;
+disableChannels[] = {1,2,3,4}
 
 //FUNCTIONS ====================================================================
 class CfgFunctions {

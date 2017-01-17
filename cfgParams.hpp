@@ -21,7 +21,7 @@ class Params
         title = "Blufor Faction";
         values[] = {0,1,2};
         texts[] = {"USA", "Germany", "Russia"};
-        default = 1;
+        default = 2;
     };
 
     class OpforFaction
@@ -29,7 +29,7 @@ class Params
         title = "Opfor Faction";
         values[] = {0,1,2};
         texts[] = {"USA", "Germany", "Russia"};
-        default = 2;
+        default = 1;
     };
 
     class Preset
