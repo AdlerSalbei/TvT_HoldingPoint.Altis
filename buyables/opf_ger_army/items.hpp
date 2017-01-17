@@ -27,7 +27,7 @@ class Items {
     };
 	
 	class ACE_EntrenchingToolclass {
-        displayName = "Compass";
+        displayName = "Entrenching Tool";
 		description = "Just a standart army compass.";
         price = 250;
         stock = 20;
