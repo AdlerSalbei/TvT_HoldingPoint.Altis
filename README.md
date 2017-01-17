@@ -1,6 +1,6 @@
-# HoldingPoint
+# Holding Point
 
-HoldingPoint is a dynamic seize/defend mission for all maps.  
+Holding Point is a dynamic seize/defend mission for all maps.  
 OPFOR chooses a point that they will have to defend for X minutes (*Capture Time*), while BLUFOR tries to capture it. 
 
 <!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
@@ -53,10 +53,10 @@ The *Barrel*'s position is marked on OPFOR's map. OPFOR units can buy supplies f
 ## Commandvehicles (BLUFOR)
 BLUFOR will start their game with a *Commandvehicle*. 
 
-Each *Commandvehicle's* position is marked on BLUFOR's map at the start. 
+The *Commandvehicles* position is marked on BLUFOR's map at the start. 
 
 ## Factions
-Different factions for BLUFOR and OPFOR can be chosen during mission setup. The chosen faction will determine the loadouts, the *Commandvehicles* and the supplies that players can buy. Typical BLUFOR factions (e.g. Russia) can be chosen for the OPFOR side to put them in the defending role.
+Different factions for BLUFOR and OPFOR can be chosen during mission setup. The chosen faction will determine the loadouts, the *Commandvehicle* and the supplies that players can buy. Typical BLUFOR factions (e.g. Russia) can be chosen for the OPFOR side to put them in the defending role.
 
 Buyables for each faction depending on side (click the *EAST* tab on the bottom) can be found [here (Google Docs)](https://docs.google.com/spreadsheets/d/1WVtMfU6J_OVLaHgVwJEiCAwPaTKqynqdLrqvwLkI4s8/edit?usp=sharing).
 
