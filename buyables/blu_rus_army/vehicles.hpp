@@ -60,6 +60,7 @@ class Vehicles {
 	
     class LIB_P39 {
         displayName = "P39";
+		description = "Jagdbomber mit einer 37mm Maschinenkanonen und vier 12.5mm Maschinenkanonen."
         price = 20000;
         stock = 1;
 		code = "deleteVehicle (_this select 2); [false] call HoldingPoint_choosePilot_fnc_open; [(_this select 1), (getPos player)] execVM 'functions/common/fn_planeSpawn.sqf';";
@@ -67,15 +68,19 @@ class Vehicles {
 	
 	class LIB_Pe2 {
         displayName = "Pe2";
+		description = "Bomber mit einer 250KG Bombe bewaffnet. Desweiter Verfügt er über einen Heckschützen mit einem 7.92mm Maschiengewehr."
         price = 20000;
         stock = 1;
 		code = "deleteVehicle (_this select 2); [true] call HoldingPoint_choosePilot_fnc_open; [(_this select 1), (getPos player)] execVM 'functions/common/fn_planeSpawn.sqf';";
     };
 	
+	/*
 	class LIB_Li2 {
         displayName = "Li2";
+		description = "Bomber mit einer 250KG Bombe bewaffnet. Desweiter Verfügt er über einen Heckschützen mit einem 7.92mm Maschiengewehr."
         price = 20000;
         stock = 1;
 		code = "deleteVehicle (_this select 2); [true] call HoldingPoint_choosePilot_fnc_open; [(_this select 1), (getPos player)] execVM 'functions/common/fn_planeSpawn.sqf';";
     };
+	*/
 };
