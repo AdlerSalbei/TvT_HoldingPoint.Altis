@@ -6,7 +6,11 @@ if (!hasInterface) exitWith {};
     if ([player] call uo_fnc_isCommander) then {
         _money = (10000 + 500 * ([player getVariable ["originalSide", str side player]] call uo_fnc_getNumberOfTeammates)) * uo_missionParam_MONEYFACTOR;
     } else {
-        _money = 600 * uo_missionParam_MONEYFACTOR;
+        if (player typeOf Soldier_SL_F || player typeOf Soldier_TL_F") then {
+            _money = 600 * 4 * uo_missionParam_MONEYFACTOR;    
+        }else{
+            _money = 600 * uo_missionParam_MONEYFACTOR;
+        };
     };
 
     diag_log format ["fn_setMoney - Giving player %1 credits.", _money];
