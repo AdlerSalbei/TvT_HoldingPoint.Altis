@@ -6,7 +6,7 @@ class rus_wood {
 		primaryWeaponPointer = "";
 		primaryWeaponUnderbarrel = "";
 		secondaryWeapon = "";
-		handgunWeapon = "LIB_M1895";
+		handgunWeapon = "LIB_TT33";
 		uniform = "U_LIB_SOV_Efreitor_summer";
         vest = "V_LIB_SOV_RA_MosinBelt";
 		backpack = "B_LIB_SOV_RA_Rucksack_Green";
@@ -14,15 +14,16 @@ class rus_wood {
 		nvgoggles = "";
 		radio = "";
 		binoculars = "";
-		map = "";
+		map = "ItemMap";
 		gps = "";
 		compass = "";
         addItemsToUniform[] = {
 			LIST_6("ACE_fieldDressing"),
 			LIST_2("ACE_morphine"),
+			LIST_2("lib_8Rnd_762x25"),
 			"ACE_epinephrine"
 	  	};
-		addItemsToVest[] = {LIST_2("LIB_7Rnd_762x38")};
+		addItemsToVest[] = {};
         addItemsToBackpack[] = {};
 	};
 
