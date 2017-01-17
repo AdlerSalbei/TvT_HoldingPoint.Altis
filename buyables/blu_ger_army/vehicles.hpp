@@ -59,7 +59,7 @@ class Vehicles {
 	
 	class LIB_PzKpfwVI_E {
         displayName = "PanzerKampfwagen VI Tiger";
-        price = 10000;
+        price = 1;
         stock = 1;
 		code = "(_this select 2) removeMagazine 'LIB_50x_SprGr_KwK36_HE';";
     };
@@ -89,14 +89,14 @@ class Vehicles {
 
 	class LIB_FW190F8 {
         displayName = "Focker-Wolf FW190F8";
-        price = 10000;
+        price = 1;
         stock = 1;
 		code = "deleteVehicle (_this select 2); [_this select 1] execVM 'node_modules/choosePilot/planeSpawnInit.sqf;'";
     };
 	
 	class LIB_Ju87 {
         displayName = "Junkers JU87";
-        price = 10000;
+        price = 1;
         stock = 1;
 		code = "deleteVehicle (_this select 2); [_this select 1] execVM 'node_modules/choosePilot/planeSpawnInit.sqf;'";
     };
