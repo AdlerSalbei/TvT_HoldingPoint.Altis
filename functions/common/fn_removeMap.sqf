@@ -1,7 +1,7 @@
 {	
-	diag_log format ["Player: %1", _x];
+	diag_log format ["ReMap: Player: %1", _x];
 	if !(_x != "opforcommand" && _x != "bluforcommand") then {
-		diag_log format ["Removing Map from %1", player];
+		openMap [false, false];
 		_x unassignItem "ItemMap";
 		_x removeItem "ItemMap";
 	};
