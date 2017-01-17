@@ -6,7 +6,7 @@ class Items {
         displayName = "Bandages (x10)";
         description = "10 simple bandages in sterile packaging.";
         amount = 10;
-        price = 100;
+        price = 50;
         stock = 40;
     };
 
@@ -14,7 +14,7 @@ class Items {
         displayName = "Morphine (x5)";
         description = "5 morphine autoinjectors. Heavy painkiller.";
         amount = 5;
-        price = 100;
+        price = 50;
         stock = 40;
     };
 
@@ -22,15 +22,15 @@ class Items {
         displayName = "Epinephrine (x5)";
         description = "5 epipen autoinjectors. Raises heart rate of patient.";
         amount = 5;
-        price = 100;
+        price = 50;
         stock = 40;
     };
 	
 	class ACE_EntrenchingToolclass {
         displayName = "Entrenching Tool";
-		description = "Just a standart army compass.";
-        price = 250;
-        stock = 20;
+		description = "Tool to build small trenches.";
+        price = 50;
+        stock = 40;
     };
 	
     class ACE_bloodIV_250 {
