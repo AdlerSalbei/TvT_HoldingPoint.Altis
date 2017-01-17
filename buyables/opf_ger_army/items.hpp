@@ -39,4 +39,25 @@ class Items {
         price = 200;
         stock = 40;
     };
+	
+	class ItemMap {
+        displayName = "Map";
+		description = "A map of this place.";
+        price = 500;
+        stock = 10;
+    };
+	
+	class ItemCompass {
+        displayName = "Compass";
+		description = "Just a standart army compass.";
+        price = 250;
+        stock = 20;
+    };
+	
+	class LIB_Binocular_GER {
+        displayName = "Binocular";
+		description = "Binocular with a scratch, no good Officer wants a damaged one.";
+        price = 700;
+        stock = 10;
+    };
 };
