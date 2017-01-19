@@ -48,11 +48,11 @@ if (uo_missionParam_PRESET == "CUSTOM") then {
 };
 
 if (uo_missionParam_PRESET == "DEBUG") then {
-    uo_missionParam_CONTROLRATIO = 2;
-    uo_missionParam_MONEYFACTOR = 1;
+    uo_missionParam_CONTROLRATIO = 1;
+    uo_missionParam_MONEYFACTOR = 2;
     uo_missionParam_CAPTURETIME= 60;
     uo_missionParam_DEFENSETIME = 900;
-    uo_missionParam_SETUPTIME = 5;
+    uo_missionParam_SETUPTIME = 10;
 };
 
 publicVariable "uo_missionParam_CONTROLRATIO";
