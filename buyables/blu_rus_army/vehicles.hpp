@@ -72,7 +72,7 @@ class Vehicles {
 		description = "Bomber mit einer 250KG Bombe bewaffnet. Desweiter Verfügt er über einen Heckschützen mit einem 7.92mm Maschiengewehr.";
         price = 1;
         stock = 1;
-		code = "deleteVehicle (_this select 2); [true] call HoldingPoint_choosePilot_fnc_open; [(_this select 1), (getPos player)] execVM 'functions\common\fn_planeSpawn.sqf';";
+		code = "deleteVehicle (_this select 2); [true] call HoldingPoint_choosePilot_fnc_open; [(_this select 1), (getPos player)] execVM 'functions/common/fn_planeSpawn.sqf';";
     };
 	
 	/*
