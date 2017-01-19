@@ -10,4 +10,6 @@ if (isNull _cv) exitWith {};
 
 
 //access opfor menu from commandvehicle (for debug purposes)
-[_cv,"opf_" + uo_missionParam_OPFORFACTION + "_army",_cv,_cv,"COMMANDVEHICLE","Buy Equipment", {side player == WEST}] call grad_lbm_fnc_addInteraction;
+if (uo_missionParam_PRESET == "DEBUG") then {
+  [_cv,"opf_" + uo_missionParam_OPFORFACTION + "_army",_cv,_cv,"COMMANDVEHICLE","Buy Equipment", {side player == WEST}] call grad_lbm_fnc_addInteraction;
+};
