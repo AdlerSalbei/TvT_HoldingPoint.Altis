@@ -1,6 +1,6 @@
 class opf_ger_army {
 	#include "weapons.hpp"
-    #include "ammo.hpp"
+	#include "ammo.hpp"
 	/*
 	#include "uniforms.hpp"
 	#include "vests.hpp"
@@ -9,6 +9,7 @@ class opf_ger_army {
 	#include "misc.hpp"
 	*/
 	#include "items.hpp"
+	#include "radios.hpp"
 	#include "vehicles.hpp"
-    #include "defenses.hpp"
+    	#include "defenses.hpp"
 };
