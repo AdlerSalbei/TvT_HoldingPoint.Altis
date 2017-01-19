@@ -61,7 +61,6 @@ class Vehicles {
 		code = "(_this select 2) removeMagazine 'LIB_30x_SprGr42_KwK42_HE';";
     };
 	
-	/*
 	class LIB_PzKpfwVI_E {
         displayName = "PzKpfw VI Tiger";
         price = 10000;
@@ -69,6 +68,7 @@ class Vehicles {
 		code = "(_this select 2) removeMagazine 'LIB_50x_SprGr_KwK36_HE';";
     };
 	
+	/*
 	 class LIB_PzKpfwVI_B_camo {
         condition = "!uo_missionParam_ISWOODLAND";
         displayName = "PzKpfw VI Königstiger";
