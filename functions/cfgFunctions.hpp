@@ -18,6 +18,7 @@ class uo {
         class getNumberOfTeammates {};
         class intro {};
         class isCommander {};
+        class planeSpawn {};
         class serverLog {};
         class sideHint {};
         class teleport {};
