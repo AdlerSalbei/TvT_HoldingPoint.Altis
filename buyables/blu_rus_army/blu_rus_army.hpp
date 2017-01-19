@@ -9,6 +9,6 @@ class blu_rus_army {
 	#include "misc.hpp"
 	*/
 	#include "items.hpp"
-	#inclued "radios.hpp"
+	#include "radios.hpp"
 	#include "vehicles.hpp"
 };
