@@ -1,6 +1,4 @@
-private ["_planeTyp", "_initialPos", "_initX", "_initY", "_spawnOpforPosX", "_spawnOpforPosY", "_dX", "_dY", "_ang", "_newX", "_newY"];
-
-_this params ["_planeTyp", "_initialPos"];
+params ["_planeTyp", "_initialPos"];
 
 _removeMag = {
 	
