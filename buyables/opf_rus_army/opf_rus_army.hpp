@@ -9,6 +9,7 @@ class opf_rus_army {
 	#include "misc.hpp"
 	*/
 	#include "items.hpp"
+	#include "radios.hpp"
 	#include "vehicles.hpp"
     #include "defenses.hpp"
 };
