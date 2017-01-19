@@ -23,7 +23,14 @@ class Vehicles {
         stock = 10;
     };
 
-    class LIB_T34_76 {
+    class LIB_M4A2_SOV {
+        displayName = "M4A2";
+        price = 4000;
+        stock = 10;
+		code = "(_this select 2) removeMagazine 'LIB_60x_M42A1_M1_HE';";
+    };
+
+	class LIB_T34_76 {
         displayName = "T34 76mm";
         price = 1800;
         stock = 10;
@@ -36,14 +43,7 @@ class Vehicles {
         stock = 10;
 		code = "(_this select 2) removeMagazine 'LIB_36x_O365_HE';";
     };
-
-    class LIB_M4A2_SOV {
-        displayName = "M4A2";
-        price = 4000;
-        stock = 10;
-		code = "(_this select 2) removeMagazine 'LIB_60x_M42A1_M1_HE';";
-    };
-
+	
 	class LIB_JS2_43 {
         displayName = "JS2";
         price = 1800;
@@ -51,27 +51,28 @@ class Vehicles {
 		code = "(_this select 2) removeMagazine 'LIB_16x_OF471_HE';";
     };
 	
+	/*
 	class LIB_SU85 {
         displayName = "SU85";
         price = 6000;
         stock = 10;
 		code = "(_this select 2) removeMagazine 'LIB_25x_O365_HE';";
     };
-	
+	*/
     class LIB_P39 {
         displayName = "P39";
-		description = "Jagdbomber mit einer 37mm Maschinenkanonen und vier 12.5mm Maschinenkanonen."
-        price = 20000;
+		description = "Jagdbomber mit einer 37mm Maschinenkanonen und vier 12.5mm Maschinenkanonen.";
+        price = 1;
         stock = 1;
 		code = "deleteVehicle (_this select 2); [false] call HoldingPoint_choosePilot_fnc_open; [(_this select 1), (getPos player)] execVM 'functions/common/fn_planeSpawn.sqf';";
     };
 	
 	class LIB_Pe2 {
         displayName = "Pe2";
-		description = "Bomber mit einer 250KG Bombe bewaffnet. Desweiter Verfügt er über einen Heckschützen mit einem 7.92mm Maschiengewehr."
-        price = 20000;
+		description = "Bomber mit einer 250KG Bombe bewaffnet. Desweiter Verfügt er über einen Heckschützen mit einem 7.92mm Maschiengewehr.";
+        price = 1;
         stock = 1;
-		code = "deleteVehicle (_this select 2); [true] call HoldingPoint_choosePilot_fnc_open; [(_this select 1), (getPos player)] execVM 'functions/common/fn_planeSpawn.sqf';";
+		code = "deleteVehicle (_this select 2); [true] call HoldingPoint_choosePilot_fnc_open; [(_this select 1), (getPos player)] execVM 'functions\common\fn_planeSpawn.sqf';";
     };
 	
 	/*

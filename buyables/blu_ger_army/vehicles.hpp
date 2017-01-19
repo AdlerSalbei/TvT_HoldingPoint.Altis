@@ -33,7 +33,7 @@ class Vehicles {
 	
 	class LIB_SdKfz251_FFV {
         displayName = "SdKfz 251";
-		description = "SonderKraftfahrzeug 251 mit MG42.";;
+		description = "SonderKraftfahrzeug 251 mit MG42.";
         price = 2500;
         stock = 10;
     };

@@ -1,4 +1,4 @@
-class uniform {
+class backpacks {
 	
 	class B_LIB_SOV_RA_GasBag{
         kindOf = "Wearables";
@@ -68,14 +68,6 @@ class uniform {
         kindOf = "Wearables";
 
         displayName = "9";
-        price = 10;
-        stock = 10;
-    };
-	
-	class B_LIB_SOV_RA_MGAmmoBag_Empty{
-        kindOf = "Wearables";
-
-        displayName = "10";
         price = 10;
         stock = 10;
     };

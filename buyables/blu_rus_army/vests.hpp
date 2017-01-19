@@ -1,4 +1,4 @@
-class uniform {
+class vests {
 	
 	class V_LIB_SOV_IShBrVestMG {
         kindOf = "Wearables";

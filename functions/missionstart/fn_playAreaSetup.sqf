@@ -17,7 +17,7 @@ _marker = createMarker ["BLUFORSPAWNOUTER", OPFORSPAWN];
 _marker setMarkerColor "COLORWEST";
 _marker setMarkerShape "ELLIPSE";
 _marker setMarkerBrush "Border";
-_marker setMarkerSize [BLUFORSPAWNDIST+BLUFORSPAWNBAND, BLUFORSPAWNDIST+BLUFORSPAWNBAND];
+_marker setMarkerSize [BLUFORSPAWNBAND, BLUFORSPAWNBAND];
 
 
 //CREATE EXPLANATION MARKERS FOR BLUFOR ========================================

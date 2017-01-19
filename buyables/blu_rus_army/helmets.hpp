@@ -1,4 +1,4 @@
-class uniforms {
+class helmets {
 	
 	class H_LIB_SOV_RA_PrivateCap{
         kindOf = "Wearables";
