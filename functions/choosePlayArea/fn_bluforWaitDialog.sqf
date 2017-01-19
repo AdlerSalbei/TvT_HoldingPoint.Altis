@@ -3,7 +3,7 @@ if (!hasInterface) exitWith {};
 [true,"OPFOR IS CHOOSING CITY","PLEASE WAIT"] call uo_ui_fnc_twoLineHint;
 
 
-[{!isNil "CITYPOSITION"}, {
+[{!isNil "OPFORSPAW"}, {
     [{
         if (SETUPTIMEREMAINING <= 1) then {
             [_this select 1] call CBA_fnc_removePerFrameHandler;
