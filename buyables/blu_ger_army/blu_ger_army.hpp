@@ -8,6 +8,7 @@ class blu_ger_army {
 	#include "helmets.hpp"
 	#include "misc.hpp"
 	*/
+	#inclued "radios.hpp"
 	#include "items.hpp"
 	#include "vehicles.hpp"
 };
