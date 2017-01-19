@@ -1,5 +1,5 @@
 class vests {
-	
+	displayName = "Vests";
 	kindOf = "Wearables";
 	
 	class V_LIB_SOV_IShBrVestMG {
