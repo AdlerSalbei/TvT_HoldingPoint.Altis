@@ -13,7 +13,7 @@
 //HEADER =======================================================================
 class Header
 {
-    gameType = Seize;
+    gameType = SC;
     minPlayers = 2;
     maxPlayers = 150;
 };
@@ -37,20 +37,11 @@ class CfgFunctions {
     #include "functions\cfgFunctions.hpp"
     #include "dialogs\cfgFunctions.hpp"
     #include "node_modules\grad-loadout\cfgFunctions.hpp"
-    #include "node_modules\grad-customGear\cfgFunctions.hpp"
     #include "node_modules\grad-listbuymenu\cfgFunctions.hpp"
 	#include "node_modules\choosePilot\include\CfgFunctions.hpp"
 	#include "node_modules\grad-moneymenu\cfgFunctions.hpp"
 };
 
-//CUSTOM GEAR ==================================================================
-class grad_customGear {
-    allowHelmet = 0;
-    allowGoggles = 1;
-    allowSimpleScopes = 0;
-    allowMagnifyingScopes = 0;
-    allowMarksmanScopes = 0;
-};
 
 //Money Menu ==================================================================
 class CfgGradMoneymenu {
