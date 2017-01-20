@@ -69,7 +69,7 @@ class Vehicles {
 		code = "[false] call HoldingPoint_choosePilot_fnc_open; [(_this select 1), (getPos player)] call uo_common_fnc_planeSpawn;";
     };
 	
-	/*
+
 	class LIB_Pe2 {
 		permissionLevel = 4;
 		 kindOf = "Other";
@@ -77,16 +77,16 @@ class Vehicles {
 		description = "Bomber mit einer 250KG Bombe bewaffnet. Desweiter Verfügt er über einen Heckschützen mit einem 7.92mm Maschiengewehr.";
         price = 1;
         stock = 1;
-		code = " [true] call HoldingPoint_choosePilot_fnc_open; [(_this select 1), (getPos player)] call uo_common_fnc_planeSpawn;";
+		code = "[false] call HoldingPoint_choosePilot_fnc_open; [(_this select 1), (getPos player)] call uo_common_fnc_planeSpawn;";
     };
 	
 	
 	class LIB_Li2 {
         displayName = "Li2";
-		description = "Bomber mit einer 250KG Bombe bewaffnet. Desweiter Verfügt er über einen Heckschützen mit einem 7.92mm Maschiengewehr."
+		description = "Bomber mit einer 250KG Bombe bewaffnet. Desweiter Verfügt er über einen Heckschützen mit einem 7.92mm Maschiengewehr.";
         price = 20000;
         stock = 1;
-		code = "deleteVehicle (_this select 2); [true] call HoldingPoint_choosePilot_fnc_open; [(_this select 1), (getPos player)] execVM 'functions/common/fn_planeSpawn.sqf';";
+		code = "[false] call HoldingPoint_choosePilot_fnc_open; [(_this select 1), (getPos player)] call uo_common_fnc_planeSpawn;";
     };
-	*/
+
 };
