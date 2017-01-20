@@ -63,4 +63,10 @@ class Weapons {
 		stock = 1;
 		code = "(_this select 0) addItemToVest 'lib_5Rnd_762x54'; (_this select 0) addItemToVest 'lib_5Rnd_762x54';";
 	};
+	class LIB_M1A1_Bazooka {
+		displayName = "M1A1 Bazooka + 1 Rocket";
+		price = 1200;
+		stock = 5;
+		code = "(_this select 0) addItemToBackpack 'LIB_1Rnd_60mm_M6';";
+	};
 };

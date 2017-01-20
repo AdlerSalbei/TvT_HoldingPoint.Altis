@@ -18,7 +18,7 @@ class Vehicles {
     };
 
     class LIB_SOV_M3_Halftrack {
-        displayName = "M3 Halftrack";
+        displayName = "M3 Half-track";
         price = 2000;
         stock = 10;
     };
@@ -66,7 +66,7 @@ class Vehicles {
 		description = "Jagdbomber mit einer 37mm Maschinenkanonen und vier 12.5mm Maschinenkanonen.";
         price = 1;
         stock = 1;
-		code = "[(_this select 1), (getPos player)] call uo_common_fnc_planeSpawn;";
+		code = "[(_this select 1), (getPos player)] call uo_fnc_planeSpawn;";
     };
 	
 
@@ -77,7 +77,7 @@ class Vehicles {
 		description = "Bomber mit einer 250KG Bombe bewaffnet. Desweiter Verfügt er über einen Heckschützen mit einem 7.92mm Maschiengewehr.";
         price = 1;
         stock = 1;
-		code = "[false] call HoldingPoint_choosePilot_fnc_open; [(_this select 1), (getPos player)] call uo_common_fnc_planeSpawn;";
+		code = " [(_this select 1), (getPos player)] call uo_fnc_planeSpawn;";
     };
 	
 /*	
@@ -86,7 +86,7 @@ class Vehicles {
 		description = "Bomber mit einer 250KG Bombe bewaffnet. Desweiter Verfügt er über einen Heckschützen mit einem 7.92mm Maschiengewehr.";
         price = 20000;
         stock = 1;
-		code = "[false] call HoldingPoint_choosePilot_fnc_open; [(_this select 1), (getPos player)] call uo_common_fnc_planeSpawn;";
+		code = "[(_this select 1), (getPos player)] call uo_fnc_planeSpawn;";
     };
 */
 };
