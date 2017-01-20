@@ -26,13 +26,6 @@ class Items {
         stock = 40;
     };
 	
-   class ACE_EntrenchingTool {
-        displayName = "Entrenching Tool";
-	description = "Tool to build small trenches.";
-        price = 50;
-        stock = 40;
-    };
-	
     class ACE_bloodIV_250 {
     
 	    displayName = "Blood Bag (250ml)";
@@ -67,5 +60,12 @@ class Items {
 		description = "Binocular with a scratch, no good Officer wants a damaged one.";
         price = 700;
         stock = 10;
+    };
+	
+	class ACE_EntrenchingTool {
+        displayName = "Entrenching Tool";
+	description = "Tool to build small trenches.";
+        price = 50;
+        stock = 40;
     };
 };
