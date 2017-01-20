@@ -59,7 +59,7 @@ The *Commandvehicles* position is marked on BLUFOR's map at the start.
 ## Factions
 Different factions for BLUFOR and OPFOR can be chosen during mission setup. The chosen faction will determine the loadouts, the *Commandvehicle* and the supplies that players can buy. Typical BLUFOR factions (e.g. Russia) can be chosen for the OPFOR side to put them in the defending role.
 
-Buyables for each faction depending on side (click the *EAST* tab on the bottom) can be found [here (Google Docs)](https://docs.google.com/spreadsheets/d/1WVtMfU6J_OVLaHgVwJEiCAwPaTKqynqdLrqvwLkI4s8/edit?usp=sharing).
+Buyables for each faction depending on side  can be found here [Google Docs](https://docs.google.com/spreadsheets/d/1WVtMfU6J_OVLaHgVwJEiCAwPaTKqynqdLrqvwLkI4s8/edit?usp=sharing).
 
 playable:
 * Germany
