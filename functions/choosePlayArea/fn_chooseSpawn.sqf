@@ -53,7 +53,7 @@ if (player != bluforcommander) exitWith {};
                         [WEST,"EXPLANATIONMARKER_CAPTURE_TEXT"] call uo_fnc_deleteSideMarker;
 						[WEST,"spawnMarker"] call uo_fnc_deleteSideMarker;
 						openMap [true, false];
-						[]execVM "functions/common/fn_removeMap.sqf";
+						[]call uo_fnc_removeMap;
 
                         ["mcd_chooseSpawn", "onMapSingleClick"] call BIS_fnc_removeStackedEventHandler;
                         (findDisplay 46) displayRemoveEventHandler ["KeyDown", mcd_onSpawnKeyDown];
