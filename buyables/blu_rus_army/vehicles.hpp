@@ -66,7 +66,7 @@ class Vehicles {
 		description = "Jagdbomber mit einer 37mm Maschinenkanonen und vier 12.5mm Maschinenkanonen.";
         price = 1;
         stock = 1;
-		code = "[false] call HoldingPoint_choosePilot_fnc_open; [(_this select 1), (getPos player)] call uo_common_fnc_planeSpawn;";
+		code = "[(_this select 1), (getPos player)] call uo_common_fnc_planeSpawn;";
     };
 	
 
@@ -80,7 +80,7 @@ class Vehicles {
 		code = "[false] call HoldingPoint_choosePilot_fnc_open; [(_this select 1), (getPos player)] call uo_common_fnc_planeSpawn;";
     };
 	
-	
+/*	
 	class LIB_Li2 {
         displayName = "Li2";
 		description = "Bomber mit einer 250KG Bombe bewaffnet. Desweiter Verfügt er über einen Heckschützen mit einem 7.92mm Maschiengewehr.";
@@ -88,5 +88,5 @@ class Vehicles {
         stock = 1;
 		code = "[false] call HoldingPoint_choosePilot_fnc_open; [(_this select 1), (getPos player)] call uo_common_fnc_planeSpawn;";
     };
-
+*/
 };
