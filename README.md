@@ -1,3 +1,4 @@
+![0_1484904792503_holdingpoint.jpg](https://i.imgur.com/oCIzUIr.jpg) 
 # Holding Point
 
 Holding Point is a dynamic seize/defend mission for all maps.  
