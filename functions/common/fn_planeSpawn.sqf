@@ -1,5 +1,13 @@
 params ["_planeTyp", "_initialPos"];
 
+switch _planeTyp do {
+	case "LIB_FW190F8" : {[false] call HoldingPoint_choosePilot_fnc_open;}; 
+	case "LIB_Ju87" : {[true] call HoldingPoint_choosePilot_fnc_open;}; 
+	case "LIB_P39" : {[false] call HoldingPoint_choosePilot_fnc_open;}; 
+	case "LIB_Pe2" : {[true] call HoldingPoint_choosePilot_fnc_open;}; 
+	case "LIB_Li2" : {[true] call HoldingPoint_choosePilot_fnc_open;}; 
+	case "LIB_P47" : {[false] call HoldingPoint_choosePilot_fnc_open;};
+};
 _removeMag = {
 	
 	_this params ["_typ", "_count"];
@@ -8,7 +16,7 @@ _removeMag = {
 	};
 };
 
-//calculate th 
+//calculate the x and y differentce
 _initX = _initialPos select 0;
 _initY = _initialPos select 1;
 
@@ -54,26 +62,11 @@ if (!isNil planeGUNNER) then {
 };
 
 ["fn_planeSpawn - Typ: %1 at %2 heading %3 at 200km/h, as Pilot: %4", _planeTyp, _newcoords, (_plane getDir OPFORSPAWN), PILOT] call uo_fnc_serverLog;
-/*
-_function = {
-    params ["_args", "_handle"];
-    _args params ["_initialPos"];
-
-    drawIcon3D ["a3\ui_f\data\gui\Rsc\RscDisplayIntel\azimuth_ca.paa", [1,1,1,1], _initialPos vectorAdd [0,0,1], 1, 1, 45, format ["%1 (%2m)", Bluforspawn, round (player distance _initialPos)], 1, 0.04, "PuristaMedium"];
-};
-_handle = [_function, 0, [_initialPos]] call CBA_fnc_addPerFrameHandler;
-
-[{
-    params ["_handle"];
-    [_handle] call CBA_fnc_removePerFrameHandler;
-}, _handle, 120] call CBA_fnc_waitAndExecute;
-*/
-
+[[_initialPos], "uo_fnc_markerBluforSpawn", (owner PILOT), false, true] call BIS_fnc_MP;
 PILOT = nil;
 planeGUNNER = nil;
 
-switch _planeTyp do 
-{
+switch _planeTyp do {
 	case "LIB_FW190F8" : {_plane removeWeapon "LIB_SC50_Bomb_Mount"; _plane removeWeapon "LIB_SC250_Bomb_Mount"; ["LIB_1Rnd_SC50", 4] call _removeMag; ["LIB_1Rnd_SC250", 1] call _removeMag;}; 
 	case "LIB_Ju87" : { _plane removeWeapon "LIB_SC250_Bomb_Mount"; ["LIB_1Rnd_SC50", 3] call _removeMag;["LIB_1Rnd_SC250", 1] call _removeMag;}; 
 	case "LIB_P39" : {_plane removeWeapon "LIB_FAB250_Bomb_Mount"; ["LIB_1Rnd_FAB250", 1] call _removeMag;}; 
@@ -103,4 +96,4 @@ diag_log format ["Spawning Plane: %1 at %2 heading %3 at 200km/h, as Pilot: %4",
 _waitingTime = random [30,150,300];
 sleep _waitingTime;
 
-[[true,"An Enemy " + _planeTyp + " has entered the Airspace!","All hands on Action Station"], "uo_ui_fnc_twoLineHint", "EAST"] call BIS_fnc_MP;
+[[true,"An Enemy " + _planeTyp + " has entered the Airspace!","All hands on Action Station"], "uo_ui_fnc_twoLineHint", "EAST", false, true] call BIS_fnc_MP;

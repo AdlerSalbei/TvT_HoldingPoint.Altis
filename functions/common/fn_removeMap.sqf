@@ -6,8 +6,3 @@
 		_x removeItem "ItemMap";
 	};
 }forEach allPlayers - entities "HeadlessClient_F";
-
-/*
-	Soldier_SL_F
-	Soldier_TL_F
-*/
