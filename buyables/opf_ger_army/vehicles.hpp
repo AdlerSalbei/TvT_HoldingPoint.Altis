@@ -94,19 +94,23 @@ class Vehicles {
     };
 	/*
 	class LIB_FW190F8 {
+		permissionLevel = 4;
+		kindOf = "Other";
         displayName = "Focke-Wulf FW190F8";
 		description = "Jagdbomber mit zwei 20mm und zwei 13mm Maschinenkanonen bewaffnet.";
         price = 10000;
         stock = 1;
-		code = "deleteVehicle (_this select 2); [_this select 1] execVM 'node_modules/choosePilot/planeSpawnInit.sqf;'";
+		code = " [(_this select 1), (getPos player)] call uo_fnc_planeSpawn;";
     };
 	
 	class LIB_Ju87 {
+		permissionLevel = 4;
+		kindOf = "Other";
         displayName = "Junkers JU87";
 		description = "Sturzkampfflugzeug mit zwei 20mm Maschinenkanonen und einer 50KG Bombe bewaffnet. Desweiter Verfügt es über einen Heckschützen mit einem 7.96mm Maschiengewehr."
         price = 10000;
         stock = 1;
-		code = "deleteVehicle (_this select 2); [_this select 1] execVM 'node_modules/choosePilot/planeSpawnInit.sqf;'";
+		code = " [(_this select 1), (getPos player)] call uo_fnc_planeSpawn;";
     };
 	*/
 };
