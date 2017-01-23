@@ -2,51 +2,51 @@ class Ammo {
     displayName = "Ammunition";
     kindOf = "Items";
 
-    class lib_8Rnd_9x19 {
-        displayName = "9mm 8Rnd";
-        description = "Used in:<br/>P38";
+    class LIB_7Rnd_45ACP {
+        displayName = "45ACP 7Rnd";
+        description = "Used in:<br/> Colt M1911";
         price = 10;
         stock = 500;
     };
 
-    class LIB_32Rnd_9x19 {
-        displayName = "9mm 32Rnd";
-        description = "Used in:<br/>MP40";
+    class LIB_30Rnd_45ACP {
+        displayName = "45ACP 30Rnd";
+        description = "Used in:<br/>M1A1 Thompson";
         price = 50;
         stock = 300;
     };
 
-    class lib_5Rnd_792x57 {
-        displayName = "7.92mm 5Rnd";
-        description = "Used in:<br/>K98k";
+    class LIB_8Rnd_762x63 {
+        displayName = "7.62mm 8Rnd";
+        description = "Used in:<br/>M1 Grand";
         price = 25;
         stock = 300;
     };
 
-    class lib_5Rnd_792x57_t {
-        displayName = "7.92mm 5Rnd tracer Rounds";
-        description = "Used in:<br/>K98k";
+    class LIB_15Rnd_762x33 {
+        displayName = "7.62mm 15Rnd";
+        description = "Used in:<br/>M1 Carbine";
+        price = 75;
+        stock = 70;
+    };
+	
+	class LIB_5Rnd_762x63 {
+        displayName = "7.62mm 5Rnd";
+        description = "Used in:<br/>M1903A4 Springfield";
         price = 50;
         stock = 150;
     };
 
-    class lib_30Rnd_792x33 {
-        displayName = "7.92mm 30Rnd";
-        description = "Used in:<br/>Sturmgewehr 44";
-        price = 200;
-        stock = 70;
-    };
-
-    class lib_50Rnd_792x57 {
-        displayName = "7.92mm 50Rnd";
-        description = "Used in:<br/>MG42";
+    class LIB_20Rnd_762x63 {
+        displayName = "7.62mm 20Rnd";
+        description = "Used in:<br/>BAR M1918";
         price = 100;
         stock = 150;
     };
 
-    class LIB_1Rnd_RPzB {
-        displayName = "30mm Anti-Panzer Rakete";
-        description = "Used in:<br/>Raketenpanzerbüchse";
+    class LIB_1Rnd_60mm_M6 {
+        displayName = "60mm Anti-Tank Rocket";
+        description = "Used in:<br/>M1A1 Bazooka";
         price = 200;
         stock = 10;
     };
