@@ -63,7 +63,7 @@ class Items {
 	
 	class ACE_EntrenchingTool {
         displayName = "Entrenching Tool";
-	description = "Tool to build small trenches.";
+		description = "Tool to build small trenches.";
         price = 50;
         stock = 40;
     };
