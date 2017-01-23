@@ -12,7 +12,7 @@ OPFOR chooses a point that they will have to defend for X minutes (*Capture Time
 	- [BLUFOR](#blufor)
 	- [OPFOR](#opfor)
 - [Barrel (OPFOR)](#the-barrel)
-- [Commandvehicles (BLUFOR)](#commandvehicles-blufor)
+- [Commandvehicle (BLUFOR)](#commandvehicles-blufor)
 - [Factions](#factions)
 - [Parameters](#parameters)
 - [Pictures](#pictures)
@@ -54,7 +54,7 @@ The *Barrel*'s position is marked on OPFOR's map. OPFOR units can buy supplies f
 ## Commandvehicles (BLUFOR)
 BLUFOR will start their game with a *Commandvehicle*. 
 
-The *Commandvehicles* position is marked on BLUFOR's map at the start. 
+The *Commandvehicle* position is marked on BLUFOR's map at the start. 
 
 ## Factions
 Different factions for BLUFOR and OPFOR can be chosen during mission setup. The chosen faction will determine the loadouts, the *Commandvehicle* and the supplies that players can buy. Typical BLUFOR factions (e.g. Russia) can be chosen for the OPFOR side to put them in the defending role.
@@ -81,7 +81,7 @@ Preset              | Custom       | sets all other parameters for you, unless *
 *CaptureTime*       | 10 min       | time that BLUFOR has to be in control of the *Location* to win
 *SetupTime*         | 3 min        | time after OPFOR spawn after which BLUFOR may choose their spawn
 *ControlRatio*      | 2:1          | ratio BLUFOR:OPFOR for BLUFOR to be considered in control of the *Location*
-Money               | Normal       | relative amount of money for both teams
+*Money*             | Normal       | relative amount of money for both teams
 
 ## Pictures
 
