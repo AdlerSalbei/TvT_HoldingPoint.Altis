@@ -72,7 +72,7 @@ class Vehicles {
 
 	class LIB_Pe2 {
 		permissionLevel = 4;
-		 kindOf = "Other";
+		kindOf = "Other";
         displayName = "Pe2";
 		description = "Bomber mit einer 250KG Bombe bewaffnet. Desweiter Verfügt er über einen Heckschützen mit einem 7.92mm Maschiengewehr.";
         price = 1;
@@ -82,11 +82,13 @@ class Vehicles {
 	
 /*	
 	class LIB_Li2 {
+		permissionLevel = 4;
+		kindOf = "Other";
         displayName = "Li2";
 		description = "Bomber mit einer 250KG Bombe bewaffnet. Desweiter Verfügt er über einen Heckschützen mit einem 7.92mm Maschiengewehr.";
         price = 20000;
         stock = 1;
-		code = "[(_this select 1), (getPos player)] call uo_fnc_planeSpawn;";
+		code = " [(_this select 1), (getPos player)] call uo_fnc_planeSpawn;";
     };
 */
 };
