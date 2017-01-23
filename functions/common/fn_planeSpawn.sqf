@@ -8,13 +8,22 @@ switch _planeTyp do {
 	case "LIB_Li2" : {[true] call HoldingPoint_choosePilot_fnc_open;}; 
 	case "LIB_P47" : {[false] call HoldingPoint_choosePilot_fnc_open;};
 };
+
 _removeMag = {
-	
-	_this params ["_typ", "_count"];
-	for _i from 1 to _count do {
-		_plane removeMagazine _typ;
-	};
-};
+				
+				_this params ["_typ", "_count"];
+				for _i from 1 to _count do {
+					_plane removeMagazine _typ;
+				};
+			};
+
+_playerByName = {
+					params ["_name"];
+					{
+						if (name _x isEqualTo _name) exitWith {_x};
+					} forEach allPlayers;
+					objNull 
+				};
 
 //calculate the x and y differentce
 _initX = _initialPos select 0;
@@ -49,51 +58,57 @@ diag_log format ["Position Calculated: initX: %1 Y: %2, OpforSX: %3 Y: %4, dX: %
 _newcoords = [ _newX, _newY, 500];
 
 waitUntil {!isNil "PILOT"};
+_pilot = [PILOT] call _playerByName
+_gunner = [planeGUNNER] call _playerByName
 
-createVehicle [_planeTyp, [0, 0, 1000], [], 0, "FLY"];
-_plane setPos _newcoords;
-_plane setDir (_plane getDir OPFORSPAWN);
-_plane engineOn true;
-_plane setVelocity 200;
-PILOT moveInDriver _plane;
-
-if (!isNil planeGUNNER) then {
-	planeGUNNER moveInGunner _plane;
-};
-
-["fn_planeSpawn - Typ: %1 at %2 heading %3 at 200km/h, as Pilot: %4", _planeTyp, _newcoords, (_plane getDir OPFORSPAWN), PILOT] call uo_fnc_serverLog;
-[[_initialPos], "uo_fnc_markerBluforSpawn", (owner PILOT), false, true] call BIS_fnc_MP;
 PILOT = nil;
 planeGUNNER = nil;
 
-switch _planeTyp do {
-	case "LIB_FW190F8" : {_plane removeWeapon "LIB_SC50_Bomb_Mount"; _plane removeWeapon "LIB_SC250_Bomb_Mount"; ["LIB_1Rnd_SC50", 4] call _removeMag; ["LIB_1Rnd_SC250", 1] call _removeMag;}; 
-	case "LIB_Ju87" : { _plane removeWeapon "LIB_SC250_Bomb_Mount"; ["LIB_1Rnd_SC50", 3] call _removeMag;["LIB_1Rnd_SC250", 1] call _removeMag;}; 
-	case "LIB_P39" : {_plane removeWeapon "LIB_FAB250_Bomb_Mount"; ["LIB_1Rnd_FAB250", 1] call _removeMag;}; 
-	case "LIB_Pe2" : {["LIB_1Rnd_FAB250", 3] call _removeMag;}; 
-	case "LIB_Li2" : {["LIB_1Rnd_FAB250", 3] call _removeMag;}; 
-	case "LIB_P47" : {_plane removeWeapon "LIB_US_500lb_Bomb_Mount"; _plane removeWeapon "LIB_M8_Launcher_P47"; ["LIB_1Rnd_US_500lb", 4] call _removeMag; ["LIB_6Rnd_M8_P47", 1] call _removeMag;}; 
+if (!isNil "_pilot") then {
+	_plane = createVehicle [_planeTyp, [0, 0, 1000], [], 0, "FLY"];
+	diag_log format ["Spawned Plane: %1 of Typ: %2", _plane , _planeTyp ];
+	_plane setPos _newcoords;
+	_plane setDir (_plane getDir OPFORSPAWN);
+	_plane engineOn true;
+	_pilot moveInDriver _plane;
+
+	if (!isNil "_gunner") then {
+		_gunner moveInGunner _plane;
+	};
+
+	["fn_planeSpawn - Typ: %1 at %2 heading %3 as Pilot: %4", _planeTyp, _newcoords, (_plane getDir OPFORSPAWN), PILOT] call uo_fnc_serverLog;
+	[[_initialPos], "uo_fnc_markerBluforSpawn", (owner PILOT), false, true] call BIS_fnc_MP;
+	
+
+	switch _planeTyp do {
+		case "LIB_FW190F8" : {_plane removeWeapon "LIB_SC50_Bomb_Mount"; _plane removeWeapon "LIB_SC250_Bomb_Mount"; ["LIB_1Rnd_SC50", 4] call _removeMag; ["LIB_1Rnd_SC250", 1] call _removeMag;}; 
+		case "LIB_Ju87" : { _plane removeWeapon "LIB_SC250_Bomb_Mount"; ["LIB_1Rnd_SC50", 3] call _removeMag;["LIB_1Rnd_SC250", 1] call _removeMag;}; 
+		case "LIB_P39" : {_plane removeWeapon "LIB_FAB250_Bomb_Mount"; ["LIB_1Rnd_FAB250", 1] call _removeMag;}; 
+		case "LIB_Pe2" : {["LIB_1Rnd_FAB250", 3] call _removeMag;}; 
+		case "LIB_Li2" : {["LIB_1Rnd_FAB250", 3] call _removeMag;}; 
+		case "LIB_P47" : {_plane removeWeapon "LIB_US_500lb_Bomb_Mount"; _plane removeWeapon "LIB_M8_Launcher_P47"; ["LIB_1Rnd_US_500lb", 4] call _removeMag; ["LIB_6Rnd_M8_P47", 1] call _removeMag;}; 
+	};
+
+	_planeString = "Spawned " + _planeTyp + "!";
+	[
+		WEST,
+		_planeString,
+		true,
+		_newcoords,
+	   "hd_dot",
+		"COLOREAST",
+		"CAPTURE ZONE",
+		"ICON",
+		1,
+		1
+	] call uo_fnc_createSideMarker;
+
+
+
+	diag_log format ["Spawning Plane: %1 at %2 heading %3 as Pilot: %4", _planeTyp, _newcoords, (_plane getDir OPFORSPAWN), PILOT];
+
+	_waitingTime = random [30,150,300];
+	sleep _waitingTime;
+
+	[[true,"An Enemy " + _planeTyp + " has entered the Airspace!","All hands on Action Station"], "uo_ui_fnc_twoLineHint", "EAST", false, true] call BIS_fnc_MP;
 };
-
-_planeString = "Spawned " + _planeTyp + "!";
-[
-    WEST,
-    _planeString,
-    true,
-    _newcoords,
-   "hd_dot",
-    "COLOREAST",
-    "CAPTURE ZONE",
-    "ICON",
-    1,
-    1
-] call uo_fnc_createSideMarker;
-
-
-
-diag_log format ["Spawning Plane: %1 at %2 heading %3 at 200km/h, as Pilot: %4", _planeTyp, _newcoords, (_cv getDir OPFORSPAWN), PILOT];
-
-_waitingTime = random [30,150,300];
-sleep _waitingTime;
-
-[[true,"An Enemy " + _planeTyp + " has entered the Airspace!","All hands on Action Station"], "uo_ui_fnc_twoLineHint", "EAST", false, true] call BIS_fnc_MP;

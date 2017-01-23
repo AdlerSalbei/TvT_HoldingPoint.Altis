@@ -1,6 +1,5 @@
 {	
-	diag_log format ["ReMap: Player: %1", _x];
-	if !(_x != "opforcommand" && _x != "bluforcommand") then {
+	if ([player] call uo_fnc_isCommander) then {
 		openMap [false, false];
 		_x unassignItem "ItemMap";
 		_x removeItem "ItemMap";
