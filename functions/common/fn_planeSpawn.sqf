@@ -76,8 +76,8 @@ if (!isNil "_pilot") then {
 		_gunner moveInGunner _plane;
 	};
 
-	["fn_planeSpawn - Typ: %1 at %2 heading %3 as Pilot: %4", _planeTyp, _newcoords, (_plane getDir OPFORSPAWN), PILOT] call uo_fnc_serverLog;
-	[[_initialPos], "uo_fnc_markerBluforSpawn", (owner PILOT), false, true] call BIS_fnc_MP;
+	["fn_planeSpawn - Typ: %1 at %2 heading %3 as Pilot: %4", _planeTyp, _newcoords, (_plane getDir OPFORSPAWN), _pilot] call uo_fnc_serverLog;
+	[[_initialPos], "uo_fnc_markerBluforSpawn", (owner _pilot), false, true] call BIS_fnc_MP;
 	
 
 	switch _planeTyp do {
@@ -105,7 +105,7 @@ if (!isNil "_pilot") then {
 
 
 
-	diag_log format ["Spawning Plane: %1 at %2 heading %3 as Pilot: %4", _planeTyp, _newcoords, (_plane getDir OPFORSPAWN), PILOT];
+	diag_log format ["Spawning Plane: %1 at %2 heading %3 as Pilot: %4", _planeTyp, _newcoords, (_plane getDir OPFORSPAWN), _pilot];
 
 	_waitingTime = random [30,150,300];
 	sleep _waitingTime;
