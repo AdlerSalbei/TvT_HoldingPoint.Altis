@@ -59,24 +59,30 @@ class Vehicles {
     };
 	/*
     class LIB_P39 {
+		permissionLevel = 4;
+		kindOf = "Other";
         displayName = "P39";
         price = 20000;
         stock = 1;
-		code = "deleteVehicle (_this select 2); [false] call HoldingPoint_choosePilot_fnc_open; [(_this select 1), (getPos player)] execVM 'functions/common/fn_planeSpawn.sqf';";
+		code = " [(_this select 1), (getPos player)] call uo_fnc_planeSpawn;";
     };
 	
 	class LIB_Pe2 {
+		permissionLevel = 4;
+		kindOf = "Other";
         displayName = "Pe2";
         price = 20000;
         stock = 1;
-		code = "deleteVehicle (_this select 2); [true] call HoldingPoint_choosePilot_fnc_open; [(_this select 1), (getPos player)] execVM 'functions/common/fn_planeSpawn.sqf';";
+		code = " [(_this select 1), (getPos player)] call uo_fnc_planeSpawn;";
     };
 	
 	class LIB_Li2 {
+		permissionLevel = 4;
+		kindOf = "Other";
         displayName = "Li2";
         price = 20000;
         stock = 1;
-		code = "deleteVehicle (_this select 2); [true] call HoldingPoint_choosePilot_fnc_open; [(_this select 1), (getPos player)] execVM 'functions/common/fn_planeSpawn.sqf';";
+		code = " [(_this select 1), (getPos player)] call uo_fnc_planeSpawn;";
     };
 	*/
 };

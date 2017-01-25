@@ -14,7 +14,7 @@ class us_wood {
 		nvgoggles = "";
 		radio = "";
 		binoculars = "";
-		map = "";
+		map = "ItemMap";
 		gps = "";
 		compass = "";
         addItemsToUniform[] = {
@@ -72,7 +72,7 @@ class us_wood {
 				"ACE_MapTools"
 			 };
 
-			binoculars = "Binocular";
+			binoculars = "LIB_Binocular_US";
 			map = "ItemMap";
 			compass = "ItemCompass";
         };
@@ -86,7 +86,7 @@ class us_wood {
 				"ACE_MapTools"
 			 };
 
-			binoculars = "Binocular";
+			binoculars = "LIB_Binocular_US";
 			map = "ItemMap";
 			compass = "ItemCompass";
 		};

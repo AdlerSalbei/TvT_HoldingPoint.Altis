@@ -1,6 +1,6 @@
 class cfgFactions {
     class us {
-        commandVehicles[] = {"LIB_Willys_MB", "LIB_Willys_MB"};
+        commandVehicles[] = {"LIB_US_Willys_MB", "LIB_US_Willys_MB"};
         loadoutWood = "us_wood";
         loadoutDes = "us_des";
     };

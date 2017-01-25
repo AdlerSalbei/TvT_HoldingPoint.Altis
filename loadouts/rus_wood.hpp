@@ -69,7 +69,7 @@ class rus_wood {
 				"ACE_MapTools"
 			};
 
-			binoculars = "Binocular";
+			binoculars = "LIB_Binocular_SU";
 			map = "ItemMap";
 			compass = "ItemCompass";	
         };
@@ -83,7 +83,7 @@ class rus_wood {
 				"ACE_MapTools"
 			};
 
-			binoculars = "Binocular";
+			binoculars = "LIB_Binocular_SU";
 			map = "ItemMap";
 			compass = "ItemCompass";
 		};

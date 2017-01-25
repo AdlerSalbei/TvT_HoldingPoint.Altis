@@ -31,6 +31,7 @@ class ger_wood {
          //medic
 		class Medic_F {
 			uniform = "U_LIB_GER_Medic";
+			backpack = "B_LIB_GER_MedicBackpack";
 			addItemsToBackpack[] = {
 				LIST_20("ACE_fieldDressing"),
 				LIST_10("ACE_fieldDressing"),

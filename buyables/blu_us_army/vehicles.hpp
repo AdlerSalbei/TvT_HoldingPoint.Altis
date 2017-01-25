@@ -4,52 +4,62 @@ class Vehicles {
     displayName = "Vehicles";
     kindOf = "Vehicles";
     spawnEmpty = 1;
-
-    class LIB_Willys_MB {
-        displayName = "Willys Jeep";
+	
+	class LIB_US_Willys_MB {
+        displayName = "Willys";
+        price = 500;
+        stock = 10;
+    };
+		
+	class LIB_US_GMC_Open {
+        displayName = "GMC open";
         price = 1000;
-        stock = 10;
+        stock = 20;
     };
-
-    class LIB_US_Willys_MB {
-        displayName = "Willys Jeep with HMG";
-        price = 2000;
-        stock = 10;
+	
+	class LIB_US_GMC_Tent {
+        displayName = "GMC tent";
+        price = 1000;
+        stock = 20;
     };
-
-    class LIB_US6_Open {
-        displayName = "US 6 Open";
-        price = 2000;
-        stock = 10;
-    };
-
-    class LIB_US6_Tent {
-        displayName = "US 6 Tent";
-        price = 1800;
-        stock = 10;
-    };
-
-    class LIB_US_GMC_Open {
-        displayName = "GMC";
-        price = 1800;
-        stock = 10;
-    };
-
-    class LIB_US_Scout_M3_FFV {
+	
+	class LIB_US_Scout_M3_FFV {
         displayName = "Scout M3";
-        price = 4000;
-        stock = 10;
+		description = "Scout Version of the M3 with M2.";
+        price = 2500;
+        stock = 5;
     };
-
-    class LIB_US_M3_Halftrack {
+	
+	class LIB_US_M3_Halftrack {
         displayName = "M3 Halftrack";
-        price = 4000;
+		description = "M3 Halftrack with M2.";
+        price = 2500;
         stock = 10;
     };
-
-    class LIB_M4A3_75 {
-        displayName = "M4A3";
-        price = 6000;
-        stock = 10;
+	
+	class LIB_US6_BM13 {
+        displayName = "US6 BM13";
+		description = "Mortar Vehicle.";
+        price = 3000;
+        stock = 5;
+    };
+	
+	class LIB_M4A3_75{
+        displayName = "Sherman M4A3";
+        price = 5000;
+        stock = 3;
+		code = "(_this select 2) removeMagazine 'LIB_60x_M42A1_M1_HE';";
+    };
+	
+	class LIB_P47 {
+		permissionLevel = 4;
+		kindOf = "Other";
+        displayName = "P47";
+		description = "Jagdbomber ";
+        price = 1;
+        stock = 1;
+		code = " [(_this select 1), (getPos player)] call uo_fnc_planeSpawn;";
     };
 };
+
+		
