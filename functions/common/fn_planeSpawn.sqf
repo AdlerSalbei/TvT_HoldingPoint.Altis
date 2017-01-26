@@ -45,13 +45,15 @@ _ang = _ang + 180;
 _ang = _ang mod 360;
 
 //find new coords
-_newX = _initX + sin(_ang)*1000;
-_newY = _initY + cos(_ang)*1000;
+_newX = _initX + sin(_ang)*2000;
+_newY = _initY + cos(_ang)*2000;
 
 _rand = random [100,250,500];
 if (_newX > _newY) then {
+	_newX = 0;
 	_newY = _newY + (_rand * 2);
 }else{
+	_newY = 0;
 	_newX = _newX + (_rand * 2);
 };
 diag_log format ["Position Calculated: initX: %1 Y: %2, OpforSX: %3 Y: %4, dX: %5 Y: %6, Ang: %7", _initX, _initY, _spawnOpforPosX, _spawnOpforPosY, _dX, _dY, _ang];
@@ -67,13 +69,25 @@ planeGUNNER = nil;
 if (!isNil "_pilot") then {
 	_plane = createVehicle [_planeTyp, [0, 0, 1000], [], 0, "FLY"];
 	_plane setPos _newcoords;
-	_plane setDir (_plane getDir OPFORSPAWN);
+	_dir = (_plane getDir OPFORSPAWN);
+    _v = velocity _plane;
+    _plane setDir _dir;
+    _plane setVelocity [
+        ((_v select 1) * sin _dir - (_v select 0) * cos _dir),
+        ((_v select 0) * sin _dir + (_v select 1) * cos _dir),
+        (_v select 2)];
 	_plane engineOn true;
+	_pilot allowDamage false;
 	_pilot moveInDriver _plane;
+	sleep 1;
+    _pilot allowDamage true;
 
 
 	if (!isNil "_gunner") then {
+		_gunner allowDamage false;
 		_gunner moveInGunner _plane;
+		sleep 1;
+		_gunner allowDamage true;
 	};
 
 	diag_log format["fn_planeSpawn - Typ: %1 at %2 heading %3 as Pilot: %4", _planeTyp, _newcoords, (_plane getDir OPFORSPAWN), _pilot];
@@ -90,18 +104,18 @@ if (!isNil "_pilot") then {
 	};
 
 	_planeString = "Spawned " + _planeTyp + "!";
-	_marker = [
-			WEST,
-			_planeString,
-			true,
-			_newcoords,
-		   "hd_dot",
-			"COLOREAST",
-			"CAPTURE ZONE",
-			"ICON",
-			1,
-			1
-		] call uo_fnc_createSideMarker;
+	[
+		WEST,
+		_planeString,
+		true,
+		_newcoords,
+		"hd_dot",
+		"COLORWEST",
+		_planeString,
+		"ICON",
+		2,
+		2
+	] call uo_fnc_createSideMarker;
 
 	diag_log format ["Spawning Plane: %1 at %2 heading %3 as Pilot: %4", _planeTyp, _newcoords, (_plane getDir OPFORSPAWN), _pilot];
 
@@ -110,5 +124,5 @@ if (!isNil "_pilot") then {
 
 	[[true,"An Enemy " + _planeTyp + " has entered the Airspace!","All hands on Action Station"], "uo_ui_fnc_twoLineHint", "EAST", false, true] call BIS_fnc_MP;
 
-	[WEST, _marker] call uo_fnc_deletSideMarker;
+	[WEST, _planeString] call uo_fnc_deletSideMarker;
 };
