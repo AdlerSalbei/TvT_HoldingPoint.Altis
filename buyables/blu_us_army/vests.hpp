@@ -120,10 +120,3 @@ class uniform {
         stock = 10;
     };
 };
-
-		
-		
-		
-		
-		
-		

@@ -200,10 +200,3 @@ class uniforms {
         stock = 10;
     };
 };
-
-		
-		
-		
-		
-		
-		

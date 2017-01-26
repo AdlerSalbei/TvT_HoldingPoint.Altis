@@ -61,5 +61,3 @@ class Vehicles {
 		code = " [(_this select 1), (getPos player)] call uo_fnc_planeSpawn;";
     };
 };
-
-		

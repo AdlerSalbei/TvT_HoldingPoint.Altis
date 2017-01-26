@@ -79,11 +79,4 @@ class uniform {
         price = 10;
         stock = 10;
     };
-};
-
-		
-		
-		
-		
-		
-		
+};		

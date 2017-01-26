@@ -81,7 +81,7 @@ Preset              | Custom       | sets all other parameters for you, unless *
 *CaptureTime*       | 10 min       | time that BLUFOR has to be in control of the *Location* to win
 *SetupTime*         | 3 min        | time after OPFOR spawn after which BLUFOR may choose their spawn
 *ControlRatio*      | 2:1          | ratio BLUFOR:OPFOR for BLUFOR to be considered in control of the *Location*
-Money               | Normal       | relative amount of money for both teams
+*Money*             | Normal       | relative amount of money for both teams
 
 ## Pictures
 
