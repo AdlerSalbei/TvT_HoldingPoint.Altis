@@ -56,7 +56,6 @@ if (_newX > _newY) then {
 	_newY = 0;
 	_newX = _newX + (_rand * 2);
 };
-diag_log format ["Position Calculated: initX: %1 Y: %2, OpforSX: %3 Y: %4, dX: %5 Y: %6, Ang: %7", _initX, _initY, _spawnOpforPosX, _spawnOpforPosY, _dX, _dY, _ang];
 _newcoords = [ _newX, _newY, 500];
 
 waitUntil {!isNil "PILOT"};
@@ -96,7 +95,6 @@ if (!isNil "_pilot") then {
 		_gunner allowDamage true;
 	};
 
-	diag_log format["fn_planeSpawn - Typ: %1 at %2 heading %3 as Pilot: %4", _planeTyp, _newcoords, (_plane getDir OPFORSPAWN), _pilot];
 	[[_initialPos], "uo_fnc_markerBluforSpawn", (owner _pilot), false, true] call BIS_fnc_MP;
 	
 
@@ -104,7 +102,7 @@ if (!isNil "_pilot") then {
 		case "LIB_FW190F8" : {_plane removeWeapon "LIB_SC50_Bomb_Mount"; _plane removeWeapon "LIB_SC250_Bomb_Mount"; ["LIB_1Rnd_SC50", 4] call _removeMag; ["LIB_1Rnd_SC250", 1] call _removeMag;}; 
 		case "LIB_Ju87" : { _plane removeWeapon "LIB_SC250_Bomb_Mount"; ["LIB_1Rnd_SC50", 3] call _removeMag;["LIB_1Rnd_SC250", 1] call _removeMag;}; 
 		case "LIB_P39" : {_plane removeWeapon "LIB_FAB250_Bomb_Mount"; ["LIB_1Rnd_FAB250", 1] call _removeMag;}; 
-		case "LIB_Pe2" : {["LIB_1Rnd_FAB250", 3] call _removeMag;}; 
+		case "LIB_Pe2" : {_plane removeWeapon "LIB_FAB250_Bomb_Mount"; ["LIB_1Rnd_FAB250", 4] call _removeMag;}; 
 		case "LIB_Li2" : {["LIB_1Rnd_FAB250", 3] call _removeMag;}; 
 		case "LIB_P47" : {_plane removeWeapon "LIB_US_500lb_Bomb_Mount"; _plane removeWeapon "LIB_M8_Launcher_P47"; ["LIB_1Rnd_US_500lb", 4] call _removeMag; ["LIB_6Rnd_M8_P47", 1] call _removeMag;}; 
 	};
