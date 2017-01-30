@@ -110,7 +110,7 @@ if (!isNil "_pilot") then {
 	_planeString = "Spawned " + _planeTyp + "!";
 	[
 		WEST,
-		_planeString,
+		"plane",
 		true,
 		_newcoords,
 		"hd_dot",
@@ -128,5 +128,5 @@ if (!isNil "_pilot") then {
 
 	[[true,"An Enemy " + _planeTyp + " has entered the Airspace!","All hands on Action Station"], "uo_ui_fnc_twoLineHint", "EAST", false, true] call BIS_fnc_MP;
 
-	[WEST, _planeString] call uo_fnc_deletSideMarker;
+	[WEST, "plane"] call uo_fnc_deletSideMarker;
 };
