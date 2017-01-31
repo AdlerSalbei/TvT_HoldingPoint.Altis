@@ -79,19 +79,15 @@ if (!isNil "_pilot") then {
 	_pilot allowDamage false;
 	_pilot moveInDriver _plane;
 	sleep 1;
-	if ([_pilot] call ACE_fnc_isUncon) then {
-		[_pilot, false] call ace_medical_fnc_setUnconscious;
-	};
+	[_pilot, false] call ace_medical_fnc_setUnconscious;
     _pilot allowDamage true;
 
 
-	if (!isNil "_gunner") then {
+	if !(isNil "_gunner" && isNull _gunner && _gunner == _pilot) then {
 		_gunner allowDamage false;
 		_gunner moveInGunner _plane;
 		sleep 1;
-		if ([_gunner] call ACE_fnc_isUncon) then {
-			[_gunner, false] call ace_medical_fnc_setUnconscious;
-		};
+		[_gunner, false] call ace_medical_fnc_setUnconscious;
 		_gunner allowDamage true;
 	};
 

@@ -9,8 +9,8 @@ _killer = player getVariable ["ace_medical_lastDamageSource", objNull];
 
 if (!isNull _killer) then {
 	_pos = getPos _killer;
-	_pos set [1, _pos select 1 + 10];
-	_pos set [2, _pos select 2 + 3];
+	_pos set [1, ((_pos select 1) + 10)];
+	_pos set [2, ((_pos select 2) + 3)];
 
 	[0, _killer, -2, _pos] call ace_spectator_fnc_setCameraAttributes;
 };
