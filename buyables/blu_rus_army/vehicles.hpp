@@ -66,7 +66,7 @@ class Vehicles {
 		description = "Jagdbomber mit einer 37mm Maschinenkanonen und vier 12.5mm Maschinenkanonen.";
         price = 1;
         stock = 1;
-		code = "[(_this select 1), (getPos player)] call uo_fnc_planeSpawn;";
+		code = "[(_this select 1), (getPos player)] call uo_fnc_planeSpawn; diag_log format ['BuyMenu: Bought %1', __this select 1];";
     };
 	
 
@@ -77,7 +77,7 @@ class Vehicles {
 		description = "Bomber mit einer 12,7mm Kanone einem Heckschützen mit einem 7.92mm Maschiengewehr.";
         price = 1;
         stock = 1;
-		code = " [(_this select 1), (getPos player)] call uo_fnc_planeSpawn;";
+		code = " [(_this select 1), (getPos player)] call uo_fnc_planeSpawn;  diag_log format ['BuyMenu: Bought %1', __this select 1];";
     };
 	
 /*	
