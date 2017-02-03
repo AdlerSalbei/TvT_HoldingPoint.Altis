@@ -16,6 +16,7 @@ OPFOR chooses a point that they will have to defend for X minutes (*Capture Time
 - [Factions](#factions)
 - [Parameters](#parameters)
 - [Pictures](#pictures)
+- [Credits](#credits)
 
 <!-- /TOC -->
 
@@ -85,10 +86,12 @@ Preset              | Custom       | sets all other parameters for you, unless *
 
 ## Pictures
 Choosing spawn position
-https://imgur.com/G7YhWgf
+![](https://imgur.com/G7YhWgf)
 
 Opfor buymenu
-https://imgur.com/wZ8XsMb
+![](https://imgur.com/wZ8XsMb)
 
 
- 
+## Credits
+### Creative Commons
+https://creativecommons.org/licenses/by/3.0/
