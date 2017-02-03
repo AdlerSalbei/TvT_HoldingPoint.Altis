@@ -84,7 +84,11 @@ Preset              | Custom       | sets all other parameters for you, unless *
 *Money*             | Normal       | relative amount of money for both teams
 
 ## Pictures
+Choosing spawn position
+https://imgur.com/G7YhWgf
 
+Opfor buymenu
+https://imgur.com/wZ8XsMb
 
 
  
