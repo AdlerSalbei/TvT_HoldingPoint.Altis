@@ -8,7 +8,8 @@ if (str _pos == "[]") then {_pos = _searchPos};
 _cv = COMMANDVEHICLECLASS createVehicle _pos;
 [{!isNull (_this select 0)}, {
     params ["_cv"];
-
+    
+    _cv setDamage 0;
     [_cv] call uo_fnc_setCommandVehicle;
     diag_log format ["fn_createCommandVehicle - Command vehicle %1 created.", _cv];
     missionNamespace setVariable ["uo_init_cvCreated", true, true];
