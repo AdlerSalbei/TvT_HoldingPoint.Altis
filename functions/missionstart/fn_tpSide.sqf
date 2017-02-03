@@ -24,5 +24,9 @@ private ["_pos"];
 	[{
 		player allowDamage true;
 		openMap [false, false];
+		if !([_x] call uo_fnc_isCommander) then {
+			_x unassignItem "ItemMap";
+			_x removeItem "ItemMap";
+		};
 	}, [], 2] call CBA_fnc_waitAndExecute;
 }, []] call CBA_fnc_waitUntilAndExecute;
