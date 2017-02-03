@@ -1,6 +1,6 @@
 if (!hasInterface) exitWith {};
 if (player getVariable ["originalSide", "UNKNOWN"] != "EAST") exitWith {};
-
+if (missionNamespace getVariable ["uo_init_cityChosen", false]) exitWith {};
 
 [{!isNull (findDisplay 46)}, {
     openMap [true, true];
@@ -38,7 +38,6 @@ if (player getVariable ["originalSide", "UNKNOWN"] != "EAST") exitWith {};
 					uo_init_cityChosen = true;
 					publicVariable "uo_init_cityChosen";
 					publicVariable "OPFORSPAWN";
-					openMap [true, false];
 					
 					["mcd_chooseCity", "onMapSingleClick"] call BIS_fnc_removeStackedEventHandler;
 					(findDisplay 46) displayRemoveEventHandler ["KeyDown", mcd_onCityKeyDown];
