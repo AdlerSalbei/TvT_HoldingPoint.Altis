@@ -1,7 +1,7 @@
 if (!isServer) exitWith {};
 
 //SETTINGS =====================================================================
-BLUFORSPAWNBAND = 2500;
+BLUFORSPAWNBAND = 1500;
 
 publicVariable "BLUFORSPAWNBAND";
 
