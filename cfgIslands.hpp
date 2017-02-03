@@ -12,7 +12,55 @@ class CfgIslands {
 		spawnPosBlu[] = {6782.67,7289.29,0};
 		spawnPosOpf[] = {1932.13,929.365,0};
 	};
+		
+	class Colleville {
+		displayName = "Colleville";
+		isWoodland = true;
+		spawnPosBlu[] = {763.133,369.379,0};
+		spawnPosOpf[] = {4891.63,4888.77,0};
+	};
 	
+	class ivachev {
+		displayName = "Ivachev";
+		isWoodland = true;
+		spawnPosBlu[] = {577.271,565.21,0};
+		spawnPosOpf[] = {87.342,50.7844,0};
+	};
+	
+	class Panovo {
+		displayName = "Panovo";
+		isWoodland = true;
+		spawnPosBlu[] = {4138.71,4182.15,0};
+		spawnPosOpf[] = {1886.75,836.175,0};
+	};
+	
+	
+	
+	class Stratis {
+		displayName = "Stratis";
+		isWoodland = true;
+		spawnPosBlu[] = {7093.92,5945.18,0};
+		spawnPosOpf[] = {7102.51,5981.09,0};
+	};
+
+	class Staszow {
+		displayName = "Staszow";
+		isWoodland = true;
+		spawnPosBlu[] = {3825.85,2928.56,0};
+		spawnPosOpf[] = {14205.2,13251.9,0};
+	};
+		
+	class Tanoa {
+		displayName = "Tanoa";
+		isWoodland = true;
+		spawnPosBlu[] = {1389.42,947.902,0};
+		spawnPosOpf[] = {1150.11,593.379,0};
+	};
+	
+};
+
+/*
+
 	class Beketov {
 		displayName = "Beketov";
 		type = "russian";
@@ -37,33 +85,12 @@ class CfgIslands {
 		spawnPosOpf[] = {15128.1,13945.9,0};
 	};
 	
-	class Colleville {
-		displayName = "Colleville";
-		isWoodland = true;
-		spawnPosBlu[] = {763.133,369.379,0};
-		spawnPosOpf[] = {4891.63,4888.77,0};
-	};
-	
 	class fata {
 		displayName = "Fata";
 		type = "middle eastern";
 		isWoodland = false;
 		spawnPosBlu[] = {10616.3,8942.11,0};
 		spawnPosOpf[] = {10723.9,10105,0};
-	};
-
-	class ivachev {
-		displayName = "Ivachev";
-		isWoodland = true;
-		spawnPosBlu[] = {577.271,565.21,0};
-		spawnPosOpf[] = {87.342,50.7844,0};
-	};
-	
-	class Panovo {
-		displayName = "Panovo";
-		isWoodland = true;
-		spawnPosBlu[] = {4138.71,4182.15,0};
-		spawnPosOpf[] = {1886.75,836.175,0};
 	};
 	
 	class mbg_celle2 {
@@ -90,33 +117,12 @@ class CfgIslands {
 		spawnPosOpf[] = {2626.44,2236.07,0};
 	};
 	
-	class Stratis {
-		displayName = "Stratis";
-		isWoodland = true;
-		spawnPosBlu[] = {7093.92,5945.18,0};
-		spawnPosOpf[] = {7102.51,5981.09,0};
-	};
-
-	class Staszow {
-		displayName = "Staszow";
-		isWoodland = true;
-		spawnPosBlu[] = {3825.85,2928.56,0};
-		spawnPosOpf[] = {14205.2,13251.9,0};
-	};
-	
 	class Takistan {
 		displayName = "Takistan";
 		type = "middle eastern";
 		isWoodland = false;
 		spawnPosBlu[] = {13662.5,3886.99,0};
 		spawnPosOpf[] = {13727.4,4748.37,0};
-	};
-	
-	class Tanoa {
-		displayName = "Tanoa";
-		isWoodland = true;
-		spawnPosBlu[] = {1389.42,947.902,0};
-		spawnPosOpf[] = {1150.11,593.379,0};
 	};
 	
 	class utes {
@@ -142,5 +148,4 @@ class CfgIslands {
 		spawnPosBlu[] = {7396.98,5339.07,0};
 		spawnPosOpf[] = {7756.23,5303.44,0};
 	};
-};
-	
+*/
