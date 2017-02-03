@@ -1,5 +1,7 @@
 params ["_planeTyp", "_initialPos"];
 
+diag_log format ["Reached Plane Menu with Typ: %1 and Pos %2", _planeTyp, _initialPos];
+
 switch _planeTyp do {
 	case "LIB_FW190F8" : {[false] call HoldingPoint_choosePilot_fnc_open;}; 
 	case "LIB_Ju87" : {[true] call HoldingPoint_choosePilot_fnc_open;}; 
