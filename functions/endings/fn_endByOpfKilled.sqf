@@ -1,8 +1,12 @@
+#define PREFIX uo
+#define COMPONENT civs
+#include "\x\cba\addons\main\script_macros_mission.hpp"
+
 if (!isServer) exitWith {};
 
 uo_fnc_endByOpfKilled_preEliminated = {
     [{
-        if (({side _x == east} count playableUnits) == 0 && DEALERKILLED && BLUFORINCONTROL) then {
+        if (({side _x == east} count playableUnits) == 0 && BLUFORINCONTROL) then {
             [] call uo_fnc_endByOpfKilled_eliminated;
             [_this select 1] call CBA_fnc_removePerFrameHandler;
         };
@@ -12,7 +16,7 @@ uo_fnc_endByOpfKilled_preEliminated = {
 
 uo_fnc_endByOpfKilled_eliminated = {
     [{
-        if (({side _x == east} count playableUnits) == 0 && DEALERKILLED && BLUFORINCONTROL) then {
+        if (({side _x == east} count playableUnits) == 0 && BLUFORINCONTROL) then {
             _downSince = missionNamespace getVariable ["uo_opfDownSince", 0];
             missionNamespace setVariable ["uo_opfDownSince", _downSince + 1];
         } else {
@@ -22,6 +26,12 @@ uo_fnc_endByOpfKilled_eliminated = {
         };
 
         if (missionNamespace getVariable ["uo_opfDownSince", 0] > 15) then {
+            if (missionNamespace getVariable ["uo_endInProgressServer", false]) exitWith {INFO("A different ending is already in progress.")};
+            uo_endInProgressServer = true;
+
+            uo_missionStats = [uo_teammembersBlufor,uo_teammembersOpfor,["BLUFOR"],["OPFOR"]] call grad_winrateTracker_fnc_saveWinrate;
+            publicVariable "uo_missionStats";
+
             missionNamespace setVariable ["uo_gameEnded", ["WEST", "OPFOR ELIMINATED!"], true];
             [_this select 1] call CBA_fnc_removePerFrameHandler;
         };
