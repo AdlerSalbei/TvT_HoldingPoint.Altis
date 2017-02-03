@@ -17,10 +17,9 @@ class uo {
         class getIslandCfgValue {};
         class getNumberOfTeammates {};
         class intro {};
-		class markerBluforSpawn {};
+	class markerBluforSpawn {};
         class isCommander {};
         class planeSpawn {};
-		class removeMap {};
         class serverLog {};
         class sideHint {};
         class teleport {};
