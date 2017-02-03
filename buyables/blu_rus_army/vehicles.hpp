@@ -74,7 +74,7 @@ class Vehicles {
 		permissionLevel = 4;
 		kindOf = "Other";
         displayName = "Pe2";
-		description = "Bomber mit einer 250KG Bombe bewaffnet. Desweiter Verfügt er über einen Heckschützen mit einem 7.92mm Maschiengewehr.";
+		description = "Bomber mit einer 12,7mm Kanone einem Heckschützen mit einem 7.92mm Maschiengewehr.";
         price = 1;
         stock = 1;
 		code = " [(_this select 1), (getPos player)] call uo_fnc_planeSpawn;";
