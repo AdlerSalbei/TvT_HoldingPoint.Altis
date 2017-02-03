@@ -40,8 +40,8 @@ class CfgIslands {
 	class Colleville {
 		displayName = "Colleville";
 		isWoodland = true;
-		spawnPosBlu[] = {7396.98,5339.07,0};
-		spawnPosOpf[] = {7756.23,5303.44,0};
+		spawnPosBlu[] = {763.133,369.379,0};
+		spawnPosOpf[] = {4891.63,4888.77,0};
 	};
 	
 	class fata {
@@ -55,8 +55,8 @@ class CfgIslands {
 	class ivachev {
 		displayName = "Ivachev";
 		isWoodland = true;
-		spawnPosBlu[] = {7396.98,5339.07,0};
-		spawnPosOpf[] = {7756.23,5303.44,0};
+		spawnPosBlu[] = {577.271,565.21,0};
+		spawnPosOpf[] = {87.342,50.7844,0};
 	};
 	
 	class Panovo {
@@ -143,12 +143,4 @@ class CfgIslands {
 		spawnPosOpf[] = {7756.23,5303.44,0};
 	};
 };
-/* Omaha
-[763.133,369.379,0]
-[4891.63,4888.77,0]
-
-Ivachev
-[577.271,565.21,0]
-[87.342,50.7844,0]
-
 	
