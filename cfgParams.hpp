@@ -37,7 +37,7 @@ class Params
         title = "Preset";
         values[] = {0,1};
         texts[] = {"Custom", "Debug (Parameters below will be ignored.)"};
-        default = 1;
+        default = 0;
     };
 
     class DefenseTime
@@ -61,7 +61,7 @@ class Params
         title = "Opfor Setup Time (Minutes)";
         values[] = {0,60,120,180,240,300,360,420,480,540,600};
         texts[] = {"0","1", "2", "3","4","5","6","8","9","10"};
-        default = 0;
+        default = 1;
     };
 
     class ControlRatio

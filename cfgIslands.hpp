@@ -9,8 +9,8 @@ class CfgIslands {
 	class Baranow {
 		displayName = "Baranow";
 		isWoodland = true;
-		spawnPosBlu[] = {5709.2,6239.52,0};
-		spawnPosOpf[] = {6156.56,5841.48,0};
+		spawnPosBlu[] = {6782.67,7289.29,0};
+		spawnPosOpf[] = {1932.13,929.365,0};
 	};
 	
 	class Beketov {
@@ -62,8 +62,8 @@ class CfgIslands {
 	class Panovo {
 		displayName = "Panovo";
 		isWoodland = true;
-		spawnPosBlu[] = {7396.98,5339.07,0};
-		spawnPosOpf[] = {7756.23,5303.44,0};
+		spawnPosBlu[] = {4138.71,4182.15,0};
+		spawnPosOpf[] = {1886.75,836.175,0};
 	};
 	
 	class mbg_celle2 {
@@ -100,8 +100,8 @@ class CfgIslands {
 	class Staszow {
 		displayName = "Staszow";
 		isWoodland = true;
-		spawnPosBlu[] = {4377.08,2324.57,0};
-		spawnPosOpf[] = {4315.79,2452.54,0};
+		spawnPosBlu[] = {3825.85,2928.56,0};
+		spawnPosOpf[] = {14205.2,13251.9,0};
 	};
 	
 	class Takistan {
@@ -143,5 +143,12 @@ class CfgIslands {
 		spawnPosOpf[] = {7756.23,5303.44,0};
 	};
 };
+/* Omaha
+[763.133,369.379,0]
+[4891.63,4888.77,0]
+
+Ivachev
+[577.271,565.21,0]
+[87.342,50.7844,0]
 
 	
