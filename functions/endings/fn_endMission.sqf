@@ -13,7 +13,7 @@ if (hasInterface) then {
 
             if (missionNamespace getVariable ["uo_endInProgressClient", false]) exitWith {INFO("A different ending is already in progress.")};
             uo_endInProgressClient = true;
-	    MISSION_COMPLETED = true;
+			MISSION_COMPLETED = true;
             _winningText = switch (_winningSide) do {
                 case "WEST": {"BLUFOR WINS"};
                 case "EAST": {"OPFOR WINS"};

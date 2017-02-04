@@ -17,7 +17,7 @@ class uo {
         class getIslandCfgValue {};
         class getNumberOfTeammates {};
         class intro {};
-	class markerBluforSpawn {};
+		class markerBluforSpawn {};
         class isCommander {};
         class planeSpawn {};
         class serverLog {};
@@ -26,10 +26,10 @@ class uo {
     };
 
     class endings {
-        class endByBluKilled {};
-        class endByControl {};
-        class endByOpfKilled {};
-        class endByTimeout {};
+        class checkBluKilled {};
+        class checkCapture {};
+        class checkDefense {};
+        class checkOpfKilled {};
         class endMission {};
     };
 

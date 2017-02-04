@@ -9,5 +9,4 @@ missionNamespace setVariable ["uo_cv_allCVs", _allCVs, true];
 
 [_cv] call uo_fnc_emptyContainer;
 [_cv] remoteExec ["uo_fnc_bluforBuyAction",0,true];
-[] remoteExec ["uo_fnc_opforBuyAction",0,true];
 [_cv, _id+1] remoteExec ["uo_fnc_commandVehicleMarker",0,true];

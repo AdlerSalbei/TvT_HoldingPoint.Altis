@@ -14,10 +14,8 @@ _h = [{
     };
 
     //get distance
-    _dist = CITYPOSITION distance2D _cv;
+    _dist = OPFORSPAWN distance2D _cv;
 
-    //check if enemies near
-    _nearestObjects = nearestObjects [_cv, ["Man"], CVENEMYRADIUS];
 
     _cvactive = switch (true) do {
         case (_dist < _inner): {false};
@@ -26,12 +24,5 @@ _h = [{
         case ({alive _x && side _x == east} count _nearestObjects > 0): {false};
         default {true}
     };
-
-    _current = _cv getVariable ["uo_respawnObject_isActive", false];
-    if ((_cvactive && !_current) || (!_cvactive && _current)) then {
-        _cv setVariable ["uo_respawnObject_isActive", _cvactive, true];
-        diag_log format ["fn_checkCommandVehicle - Command Vehicle %1 is now %2.", _cv, if (_cvactive) then {"active"} else {"inactive"}];
-    };
-} , 1, [_cv, BLUFORSPAWNDIST, BLUFORSPAWNDIST+BLUFORSPAWNBAND, CVENEMYRADIUS]] call CBA_fnc_addPerFrameHandler;
 
 diag_log format ["fn_checkCommandVehicle - Loop created. Handle: %1.", _h];

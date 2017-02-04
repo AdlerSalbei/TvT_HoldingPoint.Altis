@@ -38,6 +38,7 @@ if (missionNamespace getVariable ["uo_init_cityChosen", false]) exitWith {};
 					uo_init_cityChosen = true;
 					publicVariable "uo_init_cityChosen";
 					publicVariable "OPFORSPAWN";
+					[] remoteExec ["uo_fnc_opforBuyAction",0,true];
 					
 					["mcd_chooseCity", "onMapSingleClick"] call BIS_fnc_removeStackedEventHandler;
 					(findDisplay 46) displayRemoveEventHandler ["KeyDown", mcd_onCityKeyDown];

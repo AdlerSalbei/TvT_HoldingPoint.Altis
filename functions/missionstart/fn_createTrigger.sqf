@@ -21,8 +21,8 @@ _onDeactivation = "
     [[],'Report','BLUFOR is no longer in control.'] remoteExec ['uo_common_fnc_sideNotification',0,false];
 ";
 
-_trigger = createTrigger ["EmptyDetector", CITYPOSITION, false];
-_trigger setTriggerArea [CITYAREASIZE,CITYAREASIZE,0,false];
+_trigger = createTrigger ["EmptyDetector", OPFORSPAWN, false];
+_trigger setTriggerArea [15,15,0,false];
 _trigger setTriggerActivation ["ANY", "PRESENT", true];
 _trigger setTriggerStatements [_condition,_onActivation,_onDeactivation];
 _trigger setTriggerTimeout [5,10,20,true];
