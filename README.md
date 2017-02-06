@@ -28,6 +28,15 @@ OPFOR chooses a point that they will have to defend for X minutes (*Capture Time
 * Permadeath: On
 * Spectator: On
 
+## Dependencies
+These addons are required to run the scenario:
+
+   - [CBA](https://github.com/CBATeam/CBA_A3/releases)
+   - [ACE](https://github.com/acemod/ACE3/releases)
+   - [IFA3L](https://forums.bistudio.com/topic/190809-iron-front-in-arm3-lite-preview-versions/)
+   - [IFA3L_ACE_Compat](https://github.com/bux/IFA3_ACE_COMPAT)
+   - [TFAR](http://radio.task-force.ru/en/)
+
 ## Game Flow
 1. OPFOR commander chooses one of the available *Locations* from the map (OPFOR players can watch)
 2. OPFOR spawns at the chosen *Location* and has X minutes (*SetupTime*) to prepare for the attack
