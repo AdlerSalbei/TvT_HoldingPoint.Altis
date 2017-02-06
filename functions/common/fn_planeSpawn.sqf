@@ -1,3 +1,4 @@
+if (!hasInterface) exitWith {}
 params ["_planeTyp", "_initialPos"];
 
 diag_log format ["Reached Plane Menu with Typ: %1 and Pos %2", _planeTyp, _initialPos];
