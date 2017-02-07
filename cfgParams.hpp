@@ -39,6 +39,25 @@ class Params
         texts[] = {"Custom", "Debug (Parameters below will be ignored.)"};
         default = 0;
     };
+    
+    /*
+     class CaptureZirkle
+    {
+        title = "Size of Capuring Zone (Meters)";
+        values[] = {5, 10, 15, 20, 25, 50, 75, 100, 1000};
+        texts[] = {"5","10","15","20","25","50","75","100","Random"};
+        default = 15;
+    };
+    
+     class MinSpawnDistanceBlufor
+    {
+        title = "Minimum Spawn Distance for Blufor (Meters)";
+        values[] = {100,500,1000,1500,2000,2500,3000,3500,4000,4500,5000};
+        texts[] = {"100","500","1000","1500","2000","2500","3000","3500","4000","4500","5000"};
+        default = 1500;
+    };
+    
+    */
 
     class DefenseTime
     {
