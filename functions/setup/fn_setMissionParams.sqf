@@ -45,6 +45,10 @@ if (uo_missionParam_PRESET == "CUSTOM") then {
     uo_missionParam_CAPTURETIME= "CaptureTime" call BIS_fnc_getParamValue;
     uo_missionParam_DEFENSETIME = "DefenseTime" call BIS_fnc_getParamValue;
     uo_missionParam_SETUPTIME = "SetupTime" call BIS_fnc_getParamValue;
+    /*
+    hp_missionParam_CAPTUREZONESIZE = "CaptureZirkle" call BIS_fnc_getParamValue;
+    hp_missionParam_BLUFORSPAWNBAND = "MinSpawnDistanceBlufor" call BIS_fnc_getParamValue;
+    */
 };
 
 if (uo_missionParam_PRESET == "DEBUG") then {
@@ -53,8 +57,14 @@ if (uo_missionParam_PRESET == "DEBUG") then {
     uo_missionParam_CAPTURETIME= 60;
     uo_missionParam_DEFENSETIME = 900;
     uo_missionParam_SETUPTIME = 10;
+    /*
+    hp_missionParam_CAPTUREZONESIZE = 15;
+    hp_missionParam_BLUFORSPAWNBAND = 100;
+    */
 };
 
+// publicVariable "hp_missionParam_CAPTUREZONESIZE";
+// publicVariable "hp_missionParam_BLUFORSPAWNBAND";
 publicVariable "uo_missionParam_CONTROLRATIO";
 publicVariable "uo_missionParam_MONEYFACTOR";
 publicVariable "uo_missionParam_CAPTURETIME";
