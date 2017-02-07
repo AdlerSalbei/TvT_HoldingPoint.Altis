@@ -16,7 +16,7 @@ if (missionNamespace getVariable ["uo_init_cityChosen", false]) exitWith {};
         "mcd_chooseCity",
         "onMapSingleClick",
         {
-            [EAST,"selectionMarker",true,_pos,"hd_start","ColorGreen"] call uo_fnc_createSideMarker;
+            [EAST,"selectionMarker",true,_pos,"hd_start","ColorRed"] call uo_fnc_createSideMarker;
 			OPFORSPAWN = _pos;
         }
     ] call BIS_fnc_addStackedEventHandler;
