@@ -30,6 +30,7 @@ if (!isServer) then {
 
 _trigger = createTrigger ["EmptyDetector", OPFORSPAWN, false];
 _trigger setTriggerArea [15,15,0,false];
+// _trigger setTriggerArea [hp_missionParam_CAPTUREZONESIZE,hp_missionParam_CAPTUREZONESIZE,0,false];
 _trigger setTriggerActivation ["ANY", "PRESENT", true];
 _trigger setTriggerStatements [_condition,_onActivation,_onDeactivation];
 _trigger setTriggerTimeout [5,10,20,true];
