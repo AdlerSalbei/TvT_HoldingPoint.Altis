@@ -34,6 +34,11 @@ _marker setMarkerSize [BLUFORSPAWNBAND, BLUFORSPAWNBAND];
     1,
     "SolidFull"
 ] call uo_fnc_createSideMarker;
+/*
+    [hp_missionParam_CAPTUREZONESIZE,hp_missionParam_CAPTUREZONESIZE],
+    OPFORSPAWN vectorAdd [hp_missionParam_CAPTUREZONESIZE,hp_missionParam_CAPTUREZONESIZE,0],
+*/
+
 
 [
     WEST,
