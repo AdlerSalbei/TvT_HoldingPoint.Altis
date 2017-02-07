@@ -12,8 +12,9 @@ _marker setMarkerColor "COLOREAST";
 _marker setMarkerShape "ELLIPSE";
 _marker setMarkerBrush "Border";
 _marker setMarkerSize [15, 15];
+// _marker setMarkerSize [hp_missionParam_CAPTUREZONESIZE, hp_missionParam_CAPTUREZONESIZE];
 
-_marker = createMarker ["BLUFORSPAWNOUTER", OPFORSPAWN];
+_marker = createMarker ["BLUFORMINSPAWNDISTANCE", OPFORSPAWN];
 _marker setMarkerColor "COLORWEST";
 _marker setMarkerShape "ELLIPSE";
 _marker setMarkerBrush "Border";
@@ -34,11 +35,11 @@ _marker setMarkerSize [BLUFORSPAWNBAND, BLUFORSPAWNBAND];
     1,
     "SolidFull"
 ] call uo_fnc_createSideMarker;
+
 /*
     [hp_missionParam_CAPTUREZONESIZE,hp_missionParam_CAPTUREZONESIZE],
     OPFORSPAWN vectorAdd [hp_missionParam_CAPTUREZONESIZE,hp_missionParam_CAPTUREZONESIZE,0],
 */
-
 
 [
     WEST,
