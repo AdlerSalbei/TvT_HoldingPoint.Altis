@@ -1,5 +1,6 @@
 #define PREFIX uo
 #include "\x\cba\addons\main\script_macros_mission.hpp"
+diag_log format ["Reached createTrigger!"];
 
 private ["_condition","_onActivation","_onDeactivation"];
 
@@ -26,6 +27,9 @@ if (!isServer) then {
     _onDeactivation = "";
 };
 
+diag_log format ["Condition: %1", _condition];
+diag_log format ["Activation: %1", _onActivation];
+diag_log format ["Deactivation: %1", _onDeactivation];
 
 _trigger = createTrigger ["EmptyDetector", OPFORSPAWN, false];
 _trigger setTriggerArea [15,15,0,false];
