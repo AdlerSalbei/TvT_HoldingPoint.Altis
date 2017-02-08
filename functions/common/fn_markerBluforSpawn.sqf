@@ -12,4 +12,4 @@ _handle = [_function, 0, [_initialPos]] call CBA_fnc_addPerFrameHandler;
 [{
     params ["_handle"];
     [_handle] call CBA_fnc_removePerFrameHandler;
-}, _handle, 180] call CBA_fnc_waitAndExecute;
+}, _handle, 120] call CBA_fnc_waitAndExecute;

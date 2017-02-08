@@ -1,9 +1,5 @@
-/*    Saves text under a category and diag_logs it line per line
-*
-*/
-
 params ["_mode", "_category", ["_log", ""]];
-_varName = "mcd_diagReport_" + _category;
+_varName = "slb_diagReport_" + _category;
 
 switch (_mode) do {
     case "LOG": {
