@@ -1,5 +1,4 @@
 #define PREFIX uo
-#define COMPONENT setup
 #include "\x\cba\addons\main\script_macros_mission.hpp"
 
 if (!isServer) exitWith {};
