@@ -1,6 +1,4 @@
-
 #define PREFIX uo
-#define COMPONENT missionstart
 #include "\x\cba\addons\main\script_macros_mission.hpp"
 
 params ["_side"];
@@ -18,7 +16,7 @@ if (hasInterface && {playerSide == _side}) then {
 	[{_pos = player getVariable "startPosition"; !isNil "_pos"}, {
 		[false] call uo_ui_fnc_twoLineHint;
 
-		if !([player] call uo_common_fnc_isCommander) then {
+		if !([player] call uo_fnc_isCommander) then {
 			player say "taskSucceeded";
 		};
 

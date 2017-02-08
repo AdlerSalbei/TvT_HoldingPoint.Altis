@@ -1,5 +1,4 @@
 #define PREFIX uo
-#define COMPONENT missionstart
 #include "\x\cba\addons\main\script_macros_mission.hpp"
 
 private ["_condition","_onActivation","_onDeactivation"];
