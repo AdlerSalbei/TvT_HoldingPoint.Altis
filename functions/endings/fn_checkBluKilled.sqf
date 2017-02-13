@@ -16,7 +16,7 @@ uo_fnc_endByBluKilled_preEliminated = {
 
 uo_fnc_endByBluKilled_eliminated = {
     [{
-        if (missionNamespace getVariable ["uo_endInProgressServer", false]) exitWith {INFO("A different ending is already in progress.")};
+        if (missionNamespace getVariable ["uo_endInProgressServer", false]) exitWith {INFO("A different ending is already in progress. Bluforkilled")};
         uo_endInProgressServer = true;
 
         missionNamespace setVariable ["uo_gameEnded", ["EAST", "BLUFOR ELIMINATED!"], true];
