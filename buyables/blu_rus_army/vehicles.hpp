@@ -14,68 +14,68 @@ class Vehicles {
     class LIB_zis5v {
         displayName = "zis5v";
         price = 2000;
-        stock = 10;
+        stock = 20;
     };
 
     class LIB_SOV_M3_Halftrack {
         displayName = "M3 Half-track";
-        price = 2000;
-        stock = 10;
+        price = 2500;
+        stock = 5;
     };
 
     class LIB_M4A2_SOV {
         displayName = "M4A2";
-        price = 4000;
-        stock = 10;
+        price = 4500;
+        stock = 2;
 		code = "(_this select 2) removeMagazine 'LIB_60x_M42A1_M1_HE';";
     };
 
 	class LIB_T34_76 {
         displayName = "T34 76mm";
-        price = 1800;
-        stock = 10;
+        price = 5500;
+        stock = 2;
 		code = "(_this select 2) removeMagazine 'LIB_50x_OF350_HE';";
     };
 
     class LIB_T34_85 {
         displayName = "T34 85mm";
-        price = 4000;
-        stock = 10;
+        price = 7000;
+        stock = 2;
 		code = "(_this select 2) removeMagazine 'LIB_36x_O365_HE';";
     };
 	
-	class LIB_JS2_43 {
+    class LIB_JS2_43 {
         displayName = "JS2";
-        price = 1800;
-        stock = 10;
-		code = "(_this select 2) removeMagazine 'LIB_16x_OF471_HE';";
+        price = 10000;
+        stock = 1;
+	code = "(_this select 2) removeMagazine 'LIB_16x_OF471_HE';";
     };
 	
 	/*
 	class LIB_SU85 {
         displayName = "SU85";
-        price = 6000;
-        stock = 10;
+        price = 3000;
+        stock = 3;
 		code = "(_this select 2) removeMagazine 'LIB_25x_O365_HE';";
     };
 	*/
     class LIB_P39 {
-	    permissionLevel = 4;
-	    kindOf = "Other";
+	permissionLevel = 4;
+	kindOf = "Other";
         displayName = "P39";
-		description = "Jagdbomber mit einer 37mm Maschinenkanonen und vier 12.5mm Maschinenkanonen.";
-        price = 1;
+	description = "Jagdbomber mit einer 37mm Maschinenkanonen und vier 12.5mm Maschinenkanonen.";
+        price = 10000;
         stock = 1;
-		code = "[(_this select 1), (getPos player)] call uo_fnc_planeSpawn; diag_log format ['BuyMenu: Bought %1', __this select 1];";
+	code = "[(_this select 1), (getPos player)] call uo_fnc_planeSpawn; diag_log format ['BuyMenu: Bought %1', __this select 1];";
     };
 	
 
 	class LIB_Pe2 {
-		permissionLevel = 4;
-		kindOf = "Other";
+	permissionLevel = 4;
+	kindOf = "Other";
         displayName = "Pe2";
-		description = "Bomber mit einer 12,7mm Kanone einem Heckschützen mit einem 7.92mm Maschiengewehr.";
-        price = 1;
+	description = "Bomber mit einer 12,7mm Kanone einem Heckschützen mit einem 7.92mm Maschiengewehr.";
+        price = 12000;
         stock = 1;
 		code = " [(_this select 1), (getPos player)] call uo_fnc_planeSpawn;  diag_log format ['BuyMenu: Bought %1', __this select 1];";
     };
