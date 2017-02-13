@@ -14,9 +14,6 @@
 [{missionNamespace getVariable ["uo_init_pubVarsDone", false]}, {[] call uo_fnc_chooseSpawn}, []] call CBA_fnc_waitUntilAndExecute;
 [{missionNamespace getVariable ["uo_init_pubVarsDone", false]}, {[] call uo_fnc_setMoney}, []] call CBA_fnc_waitUntilAndExecute;
 
-//exit JIP
-if (hasInterface && missionNamespace getVariable ["uo_init_gamestarted", false] && {(playerSide == WEST && _westCondition) || (playerSide == EAST && _eastCondition)}) exitWith {player setDamage 1};
-
 //report
 if (isServer) then {[{["PRINT", "SERVER_SETUP"] call uo_fnc_diagReport}, [], 15] call CBA_fnc_waitAndExecute};
 
