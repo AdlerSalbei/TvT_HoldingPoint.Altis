@@ -8,7 +8,7 @@ INFO_1("Defense time check starting... OPFOR has to defend for %1s", uo_missionP
 
 [{
     [{!BLUFORINCONTROL}, {
-        if (missionNamespace getVariable ["uo_endInProgressServer", false]) exitWith {INFO("A different ending is already in progress.")};
+        if (missionNamespace getVariable ["uo_endInProgressServer", false]) exitWith {INFO("A different ending is already in progress. Defense")};
         uo_endInProgressServer = true;
 
         missionNamespace setVariable ["uo_gameEnded", ["EAST","LOCATION DEFENDED!"], true];
