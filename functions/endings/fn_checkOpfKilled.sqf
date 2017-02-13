@@ -25,7 +25,7 @@ uo_fnc_endByOpfKilled_eliminated = {
         };
 
         if (missionNamespace getVariable ["uo_opfDownSince", 0] > 15) then {
-            if (missionNamespace getVariable ["uo_endInProgressServer", false]) exitWith {INFO("A different ending is already in progress.")};
+            if (missionNamespace getVariable ["uo_endInProgressServer", false]) exitWith {INFO("A different ending is already in progress. Opforkilled")};
             uo_endInProgressServer = true;
 
             missionNamespace setVariable ["uo_gameEnded", ["WEST", "OPFOR ELIMINATED!"], true];
