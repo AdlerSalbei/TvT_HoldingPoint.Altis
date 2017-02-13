@@ -56,7 +56,7 @@ if (uo_missionParam_PRESET == "DEBUG") then {
     uo_missionParam_MONEYFACTOR = 10;
     uo_missionParam_CAPTURETIME= 60;
     uo_missionParam_DEFENSETIME = 900;
-    uo_missionParam_SETUPTIME = 10;
+    uo_missionParam_SETUPTIME = 1;
     /*
     hp_missionParam_CAPTUREZONESIZE = 15;
     hp_missionParam_BLUFORSPAWNBAND = 100;
