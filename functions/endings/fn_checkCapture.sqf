@@ -9,7 +9,7 @@ if (!isServer) exitWith {};
         publicVariable "CAPTURETIMEREMAINING";
 
         if (CAPTURETIMEREMAINING <= 0) then {
-            if (missionNamespace getVariable ["uo_endInProgressServer", false]) exitWith {INFO("A different ending is already in progress.")};
+            if (missionNamespace getVariable ["uo_endInProgressServer", false]) exitWith {INFO("A different ending is already in progress. Captured")};
             uo_endInProgressServer = true;
 
             missionNamespace setVariable ["uo_gameEnded", ["WEST", "LOCATION CAPTURED!"], true];
