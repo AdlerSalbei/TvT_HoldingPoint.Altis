@@ -31,7 +31,7 @@ if (!MISSION_COMPLETED) then {
 		_newZ = _initZ +3;
 		_pos = [ _newX, _newY, _newZ];
 
-		[0, _killer, -2, _pos] call ace_spectator_fnc_setCameraAttributes;
+		[0, _killer, -2, _pos,,-30] call ace_spectator_fnc_setCameraAttributes;
 		_string = format ['Killed by %1',_killer];
 		[_string] call EFUNC(common,displayTextStructured);
 	};
