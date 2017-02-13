@@ -1,7 +1,8 @@
 #include "\z\ace\addons\main\script_component.hpp"
 
-if (!MISSION_COMPLETED) then {
+if (!MISSION_COMPLETED) exitWith {
 	[true] call ace_spectator_fnc_setSpectator;
+	[player, true] call TFAR_fnc_forceSpectator;
 
 	_killer = player getVariable ["ace_medical_lastDamageSource", objNull];
 
@@ -35,5 +36,4 @@ if (!MISSION_COMPLETED) then {
 		_string = format ['Killed by %1',_killer];
 		[_string] call EFUNC(common,displayTextStructured);
 	};
-};
-[player, true] call TFAR_fnc_forceSpectator;
+
