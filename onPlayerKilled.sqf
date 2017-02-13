@@ -3,6 +3,8 @@
 if (!MISSION_COMPLETED) exitWith {};
 	[true] call ace_spectator_fnc_setSpectator;
 	[player, true] call TFAR_fnc_forceSpectator;
+	[[(side player)], [east, civilian, independent]] call ace_spectator_fnc_updateSpectatableSides;
++		[[1], [0,2]] call ace_spectator_fnc_updateCameraModes;
 
 	_killer = player getVariable ["ace_medical_lastDamageSource", objNull];
 
