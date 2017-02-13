@@ -14,46 +14,47 @@ class Vehicles {
     class LIB_zis5v {
         displayName = "zis5v";
         price = 2000;
-        stock = 10;
+        stock = 20;
     };
 
     class LIB_SOV_M3_Halftrack {
         displayName = "M3 Halftrack";
-        price = 2000;
-        stock = 10;
+        price = 2500;
+        stock = 5;
     };
+	
+    class LIB_M4A2_SOV {
+        displayName = "M4A2";
+        price = 4500;
+        stock = 2;
+	code = "(_this select 2) removeMagazine 'LIB_60x_M42A1_M1_HE';";
+    };
+	    
 
     class LIB_T34_76 {
         displayName = "T34 76mm";
-        price = 1800;
-        stock = 10;
+        price = 5500;
+        stock = 2;
 		code = "(_this select 2) removeMagazine 'LIB_50x_OF350_HE';";
     };
 
     class LIB_T34_85 {
         displayName = "T34 85mm";
-        price = 4000;
-        stock = 10;
+        price = 7000;
+        stock = 2;
 		code = "(_this select 2) removeMagazine 'LIB_36x_O365_HE';";
     };
 
-    class LIB_M4A2_SOV {
-        displayName = "M4A2";
-        price = 4000;
-        stock = 10;
-		code = "(_this select 2) removeMagazine 'LIB_60x_M42A1_M1_HE';";
-    };
-
-	class LIB_JS2_43 {
+    class LIB_JS2_43 {
         displayName = "JS2";
-        price = 1800;
+        price = 10000;
         stock = 10;
 		code = "(_this select 2) removeMagazine 'LIB_16x_OF471_HE';";
     };
 	
 	class LIB_SU85 {
         displayName = "SU85";
-        price = 6000;
+        price = 3000;
         stock = 10;
 		code = "(_this select 2) removeMagazine 'LIB_25x_O365_HE';";
     };
