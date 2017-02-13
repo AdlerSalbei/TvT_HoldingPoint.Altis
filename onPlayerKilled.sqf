@@ -1,6 +1,6 @@
 #include "\z\ace\addons\main\script_component.hpp"
 
-if (!MISSION_COMPLETED) exitWith {
+if (!MISSION_COMPLETED) exitWith {};
 	[true] call ace_spectator_fnc_setSpectator;
 	[player, true] call TFAR_fnc_forceSpectator;
 
