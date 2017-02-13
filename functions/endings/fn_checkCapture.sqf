@@ -12,10 +12,7 @@ if (!isServer) exitWith {};
             if (missionNamespace getVariable ["uo_endInProgressServer", false]) exitWith {INFO("A different ending is already in progress.")};
             uo_endInProgressServer = true;
 
-            uo_missionStats = [uo_teammembersBlufor,uo_teammembersOpfor,["BLUFOR"],["OPFOR"]] call grad_winrateTracker_fnc_saveWinrate;
-            publicVariable "uo_missionStats";
-
-            missionNamespace setVariable ["uo_gameEnded", ["WEST", "CITY CAPTURED!"], true];
+            missionNamespace setVariable ["uo_gameEnded", ["WEST", "LOCATION CAPTURED!"], true];
             [_this select 1] call CBA_fnc_removePerFrameHandler;
         };
     };

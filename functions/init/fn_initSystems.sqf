@@ -9,7 +9,6 @@
 [{missionNamespace getVariable ["uo_init_missionParamsDone", false]}, {[] call uo_fnc_setTime}, []] call CBA_fnc_waitUntilAndExecute;
 [{missionNamespace getVariable ["uo_init_missionParamsDone", false]}, {[] call uo_fnc_setWeather}, []] call CBA_fnc_waitUntilAndExecute;
 [{missionNamespace getVariable ["uo_init_missionParamsDone", false]}, {[] call uo_fnc_setupCountdown}, []] call CBA_fnc_waitUntilAndExecute;
-[{missionNamespace getVariable ["uo_init_pubVarsDone", false]}, {[] call uo_fnc_setLocationMarkers}, []] call CBA_fnc_waitUntilAndExecute;
 [{missionNamespace getVariable ["uo_init_pubVarsDone", false]}, {[] call uo_fnc_chooseCity}, []] call CBA_fnc_waitUntilAndExecute;
 [{missionNamespace getVariable ["uo_init_pubVarsDone", false]}, {[] call uo_fnc_chooseSpawn}, []] call CBA_fnc_waitUntilAndExecute;
 [{missionNamespace getVariable ["uo_init_pubVarsDone", false]}, {[] call uo_fnc_setMoney}, []] call CBA_fnc_waitUntilAndExecute;

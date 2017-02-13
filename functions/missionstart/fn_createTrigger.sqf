@@ -3,7 +3,7 @@
 
 private ["_condition","_onActivation","_onDeactivation"];
 
-if (hasInterface) then {
+if (!isServer) then {
     _condition = "
         uo_unitsInCityArea = thisList;
         ((west countSide thisList) max 0.01)/((east countSide thisList) max 0.1) >= uo_missionParam_CONTROLRATIO;

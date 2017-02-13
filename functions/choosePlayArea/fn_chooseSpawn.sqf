@@ -49,7 +49,7 @@ if (player != bluforcommander) exitWith {};
                         publicVariable "uo_init_spawnChosen";
                         publicVariable "BLUFORSPAWN";
 			
-			[WEST,"spawnMarker"] call uo_fnc_deleteSideMarker;	
+						[WEST,"spawnMarker"] call uo_fnc_deleteSideMarker;	
 
                         ["mcd_chooseSpawn", "onMapSingleClick"] call BIS_fnc_removeStackedEventHandler;
                         (findDisplay 46) displayRemoveEventHandler ["KeyDown", mcd_onSpawnKeyDown];
