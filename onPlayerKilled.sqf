@@ -20,6 +20,7 @@ if (!MISSION_COMPLETED) then {
 
 		//get angle between markers and add 180
 		_ang = _dX atan2 _dY;
+		_ang = _ang + 180;
 
 		//fix angle if <0 or >360
 		_ang = _ang mod 360;
