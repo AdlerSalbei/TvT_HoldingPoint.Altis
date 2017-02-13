@@ -1,10 +1,9 @@
 #define PREFIX uo
 #include "\x\cba\addons\main\script_macros_mission.hpp"
-diag_log format ["Reached createTrigger!"];
 
 private ["_condition","_onActivation","_onDeactivation"];
 
-if (!isServer) then {
+if (hasInterface) then {
     _condition = "
         uo_unitsInCityArea = thisList;
         ((west countSide thisList) max 0.01)/((east countSide thisList) max 0.1) >= uo_missionParam_CONTROLRATIO;
