@@ -94,7 +94,7 @@ if (!isNil "_pilot") then {
 		_gunner allowDamage true;
 	};
 
-	[[_initialPos], "uo_fnc_markerBluforSpawn", (owner _pilot), false, true] call BIS_fnc_MP;
+	[[_initialPos], "hp_fnc_markerBluforSpawn", (owner _pilot), false, true] call BIS_fnc_MP;
 	
 
 	switch _planeTyp do {
@@ -118,14 +118,14 @@ if (!isNil "_pilot") then {
 		"ICON",
 		2,
 		2
-	] call uo_fnc_createSideMarker;
+	] call hp_fnc_createSideMarker;
 
 	diag_log format ["Spawning Plane: %1 at %2 heading %3 as Pilot: %4", _planeTyp, _newcoords, (_plane getDir OPFORSPAWN), _pilot];
 
 	_waitingTime = random [30,150,300];
 	sleep _waitingTime;
 
-	[[true,"An Enemy " + _planeTyp + " has entered the Airspace!","All hands on Action Station"], "uo_ui_fnc_twoLineHint", "EAST", false, true] call BIS_fnc_MP;
+	[[true,"An Enemy " + _planeTyp + " has entered the Airspace!","All hands on Action Station"], "hp_ui_fnc_twoLineHint", "EAST", false, true] call BIS_fnc_MP;
 
-	[WEST, "plane"] call uo_fnc_deletSideMarker;
+	[WEST, "plane"] call hp_fnc_deletSideMarker;
 };

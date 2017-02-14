@@ -1,209 +1,202 @@
 class uniforms {
-	
-	class U_LIB_SOV_Strelok{
-        kindOf = "Wearables";
-
+	kindOf = "Wearables";
+	displayName = "Uniforms";
+		
+	class U_LIB_GER_Soldier_camo {
         displayName = "1";
-        price = 10;
-        stock = 10;
+        price = 0;
+        stock = 100;
     };	
 	
-	class U_LIB_SOV_Strelok_summer{
-        kindOf = "Wearables";
-
+	class U_LIB_GER_Soldier_camo2 {
         displayName = "2";
-        price = 10;
-        stock = 10;
+        price = 0;
+        stock = 100;
     };	
 	
-	class U_LIB_SOV_Strelokart{
-        kindOf = "Wearables";
-
+	class U_LIB_GER_Soldier_camo3 {
         displayName = "3";
-        price = 10;
-        stock = 10;
+        price = 0;
+        stock = 100;
     };
 	
-	class U_LIB_SOV_Tank_private_field{
-        kindOf = "Wearables";
-
+	class U_LIB_GER_Soldier_camo4 {
         displayName = "4";
-        price = 10;
-        stock = 10;
+        price = 0;
+        stock = 100;
     };
 	
-	class U_LIB_SOV_Starshina{
-        kindOf = "Wearables";
-
+	class U_LIB_GER_Soldier_camo5 {
         displayName = "5";
-        price = 10;
-        stock = 10;
+        price = 0;
+        stock = 100;
     };
 	
-	class U_LIB_SOV_Efreitor{
-        kindOf = "Wearables";
-
+	class U_LIB_GER_Soldier {
         displayName = "6";
-        price = 10;
-        stock = 10;
+        price = 0;
+        stock = 100;
     };
 	
-	class U_LIB_SOV_Efreitor_summer{
-        kindOf = "Wearables";
-
+	class U_LIB_GER_Soldier2 {
         displayName = "7";
-        price = 10;
-        stock = 10;
+        price = 0;
+        stock = 100;
     };
 	
-	class U_LIB_SOV_Sergeant{
-        kindOf = "Wearables";
-
+	class U_LIB_GER_Soldier3 {
         displayName = "8";
-        price = 10;
-        stock = 10;
+        price = 0;
+        stock = 100;
     };
 	
-	class U_LIB_SOV_Pilot{
-        kindOf = "Wearables";
-
+	class U_LIB_GER_Schutze {
         displayName = "9";
-        price = 10;
-        stock = 10;
+        price = 0;
+        stock = 100;
     };
 	
-	class U_LIB_SOV_Leutenant{
-        kindOf = "Wearables";
-
+	class U_LIB_GER_Pionier {
         displayName = "10";
-        price = 10;
-        stock = 10;
+        price = 0;
+        stock = 100;
     };
 	
-	class U_LIB_SOV_Artleutenant{
-        kindOf = "Wearables";
-
+	class U_LIB_GER_LW_pilot {
         displayName = "11";
-        price = 10;
-        stock = 10;
+        price = 0;
+        stock = 100;
     };
 	
-	class U_LIB_SOV_Stleutenant{
-        kindOf = "Wearables";
-
+	class U_LIB_GER_Officer_camo {
         displayName = "12";
-        price = 10;
-        stock = 10;
+        price = 0;
+        stock = 100;
     };
 	
-	class U_LIB_SOV_Kapitan{
-        kindOf = "Wearables";
-
+	class U_LIB_GER_Funker {
         displayName = "14";
-        price = 10;
-        stock = 10;
+        price = 0;
+        stock = 100;
     };
 	
-	class U_LIB_SOV_Kapitan_summer{
-        kindOf = "Wearables";
-
+	class U_LIB_GER_Art_schutze {
         displayName = "15";
-        price = 10;
-        stock = 10;
+        price = 0;
+        stock = 100;
     };
 	
-	class U_LIB_SOV_Razvedchik_am{
-        kindOf = "Wearables";
-
-        displayName = "16";
-        price = 10;
-        stock = 10;
+	class U_LIB_GER_Oberschutze {
+		displayName = "16";
+        price = 0;
+        stock = 100;
     };
 	
-	class U_LIB_SOV_Razvedchik_lis{
-        kindOf = "Wearables";
-
+	class U_LIB_GER_Gefreiter {
         displayName = "17";
-        price = 10;
-        stock = 10;
+        price = 0;
+        stock = 100;
     };
 	
-	class U_LIB_SOV_Razvedchik_mix{
-        kindOf = "Wearables";
-
+	class U_LIB_GER_Unterofficer {
         displayName = "18";
-        price = 10;
-        stock = 10;
+        price = 0;
+        stock = 100;
     };
 	
-	class U_LIB_SOV_Razvedchik_autumn{
-        kindOf = "Wearables";
-
+	class U_LIB_GER_Art_unterofficer{
         displayName = "19";
-        price = 10;
-        stock = 10;
+        price = 0;
+        stock = 100;
     };
 	
-	class U_LIB_SOV_Sniper{
-        kindOf = "Wearables";
-
+	class U_LIB_GER_Recruit {
         displayName = "20";
-        price = 10;
-        stock = 10;
+        price = 0;
+        stock = 100;
     };
 	
-	class U_LIB_SOV_Sniper_spring{
-        kindOf = "Wearables";
-
+	class U_LIB_GER_Medic {
         displayName = "21";
-        price = 10;
-        stock = 10;
+        price = 0;
+        stock = 100;
     };
 	
-	class U_LIB_SOV_Sniper_autumn{
-        kindOf = "Wearables";
-
+	class U_LIB_GER_Leutnant {
         displayName = "22";
-        price = 10;
-        stock = 10;
+        price = 0;
+        stock = 100;
     };
 	
-	class U_LIB_SOV_Tank_ryadovoi{
-        kindOf = "Wearables";
-
+	class U_LIB_GER_Art_leutnant {
         displayName = "23";
-        price = 10;
-        stock = 10;
+        price = 0;
+        stock = 100;
     };
 	
-	class U_LIB_SOV_Tank_sergeant{
-        kindOf = "Wearables";
-
+	class U_LIB_GER_Oberleutnant {
         displayName = "24";
-        price = 10;
-        stock = 10;
+        price = 0;
+        stock = 100;
     };
 	
-	class U_LIB_SOV_Tank_leutenant{
-        kindOf = "Wearables";
-
+	class U_LIB_GER_Hauptmann {
         displayName = "25";
-        price = 10;
-        stock = 10;
+        price = 0;
+        stock = 100;
     };
 	
-	class U_LIB_SOV_Tank_kapitan{
-        kindOf = "Wearables";
-
+	class U_LIB_GER_Oberst {
         displayName = "26";
-        price = 10;
-        stock = 10;
+        price = 0;
+        stock = 100;
+    };
+	
+	class U_LIB_GER_Scharfschutze {
+        displayName = "27";
+        price = 0;
+        stock = 100;
+    };
+	
+	class U_LIB_GER_MG_schutze {
+        displayName = "28";
+        price = 0;
+        stock = 100;
+    };
+	
+	class U_LIB_GER_Tank_crew_private {
+        displayName = "29";
+        price = 0;
+        stock = 100;
+    };
+	
+	class U_LIB_GER_Tank_crew_unterofficer {
+        displayName = "30";
+        price = 0;
+        stock = 100;
+    };
+	
+	class U_LIB_GER_Tank_crew_leutnant {
+        displayName = "31";
+        price = 0;
+        stock = 100;
+    };
+	
+	class U_LIB_GER_Spg_crew_private {
+        displayName = "32";
+        price = 0;
+        stock = 100;
+    };
+	
+	class U_LIB_GER_Spg_crew_unterofficer {
+        displayName = "33";
+        price = 0;
+        stock = 100;
+    };
+	
+	class U_LIB_GER_Spg_crew_leutnant {
+        displayName = "34";
+        price = 0;
+        stock = 100;
     };
 };
-
-		
-		
-		
-		
-		
-		

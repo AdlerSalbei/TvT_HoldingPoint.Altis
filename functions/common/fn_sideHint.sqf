@@ -6,4 +6,4 @@ params ["_side", "_title", "_text", ["_condition",{true}]];
  if !(side player in _side) exitWith {};
  if !(call _condition) exitWith {};
  
-["uo_notification",[_title,_text]] call bis_fnc_showNotification;
+["hp_notification",[_title,_text]] call bis_fnc_showNotification;

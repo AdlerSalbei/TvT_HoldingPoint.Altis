@@ -1,112 +1,112 @@
 class helmets {
 	kindOf = "Wearables";
+	displayName = "Helmets";
 	
 	class H_LIB_GER_Helmet {
-        displayName = "1";
+        displayName = "Helmet";
         price = 0;
         stock = 10;
     };	
 	
 	class H_LIB_GER_Helmet_net {
-        displayName = "2";
+        displayName = "Helmet_net";
         price = 0;
         stock = 10;
     };	
 	
 	class H_LIB_GER_Helmet_ns {
-        displayName = "3";
+        displayName = "Helmet NS";
         price = 0;
         stock = 10;
     };
 	
 	class H_LIB_GER_Helmet_painted {
-        displayName = "4";
+        displayName = "Helmet Painted";
         price = 0;
         stock = 10;
     };
 	
 	class H_LIB_GER_Helmet_net_painted {
-        displayName = "5";
+        displayName = "Helmet Net Painted";
         price = 0;
         stock = 10;
     };
 	
 	class H_LIB_GER_Helmet_ns_painted {
-        displayName = "6";
+        displayName = "Helmet NS Painted";
         price = 0;
         stock = 10;
     };
 	
 	class H_LIB_GER_HelmetCamo {
-        displayName = "7";
+        displayName = "Helmet Camo";
         price = 0;
         stock = 10;
     };
 	
 	class H_LIB_GER_HelmetCamo2 {
-        displayName = "8";
+        displayName = "Helmet Camo 2";
         price = 0;
         stock = 10;
     };
 	
 	class H_LIB_GER_OfficerCap {
-        displayName = "9";
+        displayName = "Officer Cap";
         price = 0;
         stock = 10;
     };
 	
 	class H_LIB_GER_Cap {
-        displayName = "10";
+        displayName = "Cap";
         price = 0;
         stock = 10;
     };
 	
 	class H_LIB_GER_Fieldcap {
-        displayName = "11";
+        displayName = "Field Cap";
         price = 0;
         stock = 10;
     };
 	
 	class H_LIB_GER_LW_PilotHelmet {
-        displayName = "12";
+        displayName = "Pilot Helmet";
         price = 0;
         stock = 10;
     };
 	
 	class H_LIB_GER_Ushanka {
-        displayName = "13";
+        displayName = "Ushanka";
         price = 0;
         stock = 10;
     };
 	
 	class H_LIB_GER_TankOfficerCap {
-        displayName = "14";
+        displayName = "Tank Officer Cap";
         price = 0;
         stock = 10;
     };
 	
 	class H_LIB_GER_TankOfficerCap2 {
-        displayName = "15";
+        displayName = "Tank Officer Cap 2";
         price = 0;
         stock = 10;
     };
 	
 	class H_LIB_GER_TankPrivateCap {
-        displayName = "16";
+        displayName = "Tank Private Cap";
         price = 0;
         stock = 10;
     };
 	
 	class H_LIB_GER_TankPrivateCap2 {
-        displayName = "17";
+        displayName = "Tank Private Cap 2";
         price = 0;
         stock = 10;
     };
 	
 	class H_LIB_GER_SPGPrivateCap {
-        displayName = "18";
+        displayName = "SPG Private Cap";
         price = 0;
         stock = 10;
     };
 };
-	

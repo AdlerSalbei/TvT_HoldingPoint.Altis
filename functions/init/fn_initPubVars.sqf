@@ -1,7 +1,7 @@
 if (!isServer) exitWith {};
 
 //SETTINGS =====================================================================
-BLUFORSPAWNBAND = 1500;
+BLUFORSPAWNBAND = 2000;
 
 publicVariable "BLUFORSPAWNBAND";
 
@@ -13,7 +13,7 @@ GAMEENDED = false;
 BLUFORINCONTROL = false;
 BLUFORELIMINATED = false;
 OPFORELIMINATED = false;
-CAPTURETIMEREMAINING = uo_missionParam_CAPTURETIME;
+CAPTURETIMEREMAINING = hp_missionParam_CAPTURETIME;
 
 publicVariable "OPFORTELEPORTED";
 publicVariable "BLUFORTELEPORTED";
@@ -25,4 +25,4 @@ publicVariable "OPFORELIMINATED";
 publicVariable "CAPTURETIMEREMAINING";
 
 //DONE =========================================================================
-missionNamespace setVariable ["uo_init_pubVarsDone", true, true];
+missionNamespace setVariable ["hp_init_pubVarsDone", true, true];

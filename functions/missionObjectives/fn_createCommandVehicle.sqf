@@ -9,9 +9,9 @@ _cv = COMMANDVEHICLECLASS createVehicle _pos;
 [{!isNull (_this select 0)}, {
     params ["_cv"];
    
-    [_cv] call uo_fnc_setCommandVehicle;
+    [_cv] call hp_fnc_setCommandVehicle;
     diag_log format ["fn_createCommandVehicle - Command vehicle %1 created.", _cv];
-    missionNamespace setVariable ["uo_init_cvCreated", true, true];
+    missionNamespace setVariable ["hp_init_cvCreated", true, true];
     _cv setDamage 0;
-    
+    _cv setVehicleLock "LOCKED";
 }, [_cv]] call CBA_fnc_waitUntilAndExecute;

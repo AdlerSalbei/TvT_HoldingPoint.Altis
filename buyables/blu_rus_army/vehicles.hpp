@@ -7,39 +7,39 @@ class Vehicles {
 
     class LIB_Willys_MB {
         displayName = "Willys";
-        price = 1000;
+        price = 2000;
         stock = 10;
     };
 
     class LIB_zis5v {
         displayName = "zis5v";
-        price = 2000;
+        price = 4000;
         stock = 20;
     };
 
     class LIB_SOV_M3_Halftrack {
         displayName = "M3 Half-track";
-        price = 2500;
+        price = 5000;
         stock = 5;
     };
 
     class LIB_M4A2_SOV {
         displayName = "M4A2";
-        price = 4500;
+        price = 7000;
         stock = 2;
 		code = "(_this select 2) removeMagazine 'LIB_60x_M42A1_M1_HE';";
     };
 
 	class LIB_T34_76 {
         displayName = "T34 76mm";
-        price = 5500;
+        price = 8000;
         stock = 2;
 		code = "(_this select 2) removeMagazine 'LIB_50x_OF350_HE';";
     };
 
     class LIB_T34_85 {
         displayName = "T34 85mm";
-        price = 7000;
+        price = 9000;
         stock = 2;
 		code = "(_this select 2) removeMagazine 'LIB_36x_O365_HE';";
     };
@@ -64,7 +64,7 @@ class Vehicles {
 	kindOf = "Other";
         displayName = "P39";
 	description = "Jagdbomber mit einer 37mm Maschinenkanonen und vier 12.5mm Maschinenkanonen.";
-        price = 10000;
+        price = 12000;
         stock = 1;
 	code = "[(_this select 1), (getPos player)] call uo_fnc_planeSpawn; diag_log format ['BuyMenu: Bought %1', __this select 1];";
     };
@@ -75,7 +75,7 @@ class Vehicles {
 	kindOf = "Other";
         displayName = "Pe2";
 	description = "Bomber mit einer 12,7mm Kanone einem Heckschützen mit einem 7.92mm Maschiengewehr.";
-        price = 12000;
+        price = 14000;
         stock = 1;
 		code = " [(_this select 1), (getPos player)] call uo_fnc_planeSpawn;  diag_log format ['BuyMenu: Bought %1', __this select 1];";
     };

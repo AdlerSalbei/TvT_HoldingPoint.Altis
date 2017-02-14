@@ -8,8 +8,8 @@ _h = [{
 
     //cv is gone
     if (isNull _cv || !alive _cv) exitWith {
-        _cv setVariable ["uo_respawnObject_isActive", false, true];
-        missionNamespace setVariable ["uo_cv_allCVs", (missionNamespace getVariable ["uo_cv_allCVs", []]) - [_cv], true];
+        _cv setVariable ["hp_respawnObject_isActive", false, true];
+        missionNamespace setVariable ["hp_cv_allCVs", (missionNamespace getVariable ["hp_cv_allCVs", []]) - [_cv], true];
         [_this select 1] call CBA_fnc_removePerFrameHandler;
     };
 

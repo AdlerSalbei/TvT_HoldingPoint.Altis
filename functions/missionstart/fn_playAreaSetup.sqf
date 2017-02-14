@@ -34,7 +34,7 @@ _marker setMarkerSize [BLUFORSPAWNBAND, BLUFORSPAWNBAND];
     [15,15],
     1,
     "SolidFull"
-] call uo_fnc_createSideMarker;
+] call hp_fnc_createSideMarker;
 
 /*
     [hp_missionParam_CAPTUREZONESIZE,hp_missionParam_CAPTUREZONESIZE],
@@ -52,7 +52,10 @@ _marker setMarkerSize [BLUFORSPAWNBAND, BLUFORSPAWNBAND];
     "ICON",
     1,
     1
-] call uo_fnc_createSideMarker;
+] call hp_fnc_createSideMarker;
 
-missionNamespace setVariable ["uo_init_playAreaSetupDone", true, true];
+missionNamespace setVariable ["hp_init_playAreaSetupDone", true, true];
 diag_log "fn_playAreaSetup - Player area set up.";
+
+waitUntil {!isNil "BLUFORSPAWN"};
+deleteMarker "BLUFORMINSPAWNDISTANCE";

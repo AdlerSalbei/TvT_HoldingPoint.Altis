@@ -1,5 +1,6 @@
 class uniforms {
 	kindOf = "Wearables";
+	displayName = "Uniforms";
 		
 	class U_LIB_GER_Soldier_camo {
         displayName = "1";
@@ -199,4 +200,3 @@ class uniforms {
         stock = 100;
     };
 };
-		

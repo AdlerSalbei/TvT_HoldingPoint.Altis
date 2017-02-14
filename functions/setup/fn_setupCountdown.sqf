@@ -1,12 +1,12 @@
-#define PREFIX uo
+#define PREFIX hp
 #include "\x\cba\addons\main\script_macros_mission.hpp"
 
 if (!isServer) exitWith {};
 
-SETUPTIMEREMAINING = uo_missionParam_SETUPTIME;
+SETUPTIMEREMAINING = hp_missionParam_SETUPTIME;
 publicVariable "SETUPTIMEREMAINING";
 
-[{!isNil "OPFORSPAWN" && (missionNamespace getVariable ["uo_init_briefingDone", false])}, {
+[{!isNil "OPFORSPAWN" && (missionNamespace getVariable ["hp_init_briefingDone", false])}, {
     INFO("Setup countdown starting...");
     _countdown = {
         SETUPTIMEREMAINING = SETUPTIMEREMAINING - 1;

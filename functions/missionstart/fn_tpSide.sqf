@@ -1,12 +1,12 @@
-#define PREFIX uo
+#define PREFIX hp
 #include "\x\cba\addons\main\script_macros_mission.hpp"
 
 params ["_side"];
 
 if (isServer) then {
 	if (_side == WEST) then {
-		missionNamespace setVariable ["uo_init_gameStartTime", serverTime, true];
-		missionNamespace setVariable ["uo_init_gamestarted", true, true];
+		missionNamespace setVariable ["hp_init_gameStartTime", serverTime, true];
+		missionNamespace setVariable ["hp_init_gamestarted", true, true];
 	};
 	INFO_1("Players of side %1 teleported.", _side);
 };
@@ -14,9 +14,9 @@ if (isServer) then {
 if (hasInterface && {playerSide == _side}) then {
 	private ["_pos"];
 	[{_pos = player getVariable "startPosition"; !isNil "_pos"}, {
-		[false] call uo_ui_fnc_twoLineHint;
+		[false] call hp_ui_fnc_twoLineHint;
 
-		if !([player] call uo_fnc_isCommander) then {
+		if !([player] call hp_fnc_isCommander) then {
 			player say "taskSucceeded";
 		};
 
@@ -27,7 +27,7 @@ if (hasInterface && {playerSide == _side}) then {
 		[{
 			player allowDamage true;
 			openMap [false, false];
-			if !([player] call uo_fnc_isCommander) then {
+			if !([player] call hp_fnc_isCommander) then {
 				player unassignItem "ItemMap";
 				player removeItem "ItemMap";
 			};

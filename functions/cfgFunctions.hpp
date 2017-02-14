@@ -1,4 +1,4 @@
-class uo {
+class hp {
     class choosePlayArea {
         class bluforWaitDialog {};
         class chooseCity {};

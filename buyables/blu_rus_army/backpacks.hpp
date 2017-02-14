@@ -50,7 +50,7 @@ class backpacks {
         stock = 10;
     };
 	
-	class B_LIB_SOV_RA_MGAmmoBagt{
+	class B_LIB_SOV_RA_MGAmmoBag{
             displayName = "9";
         price = 10;
         stock = 10;
