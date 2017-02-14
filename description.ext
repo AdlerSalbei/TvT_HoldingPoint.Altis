@@ -8,6 +8,7 @@
 #include "node_modules\grad-listBuymenu\grad_listBuymenu.hpp"
 #include "node_modules\choosePilot\include\description.hpp"
 #include "node_modules\grad-moneymenu\grad_moneymenu.hpp"
+#include "node_modules\grad-armorBar\grad_armorBar.hpp"
 
 
 //HEADER =======================================================================
@@ -15,7 +16,7 @@ class Header
 {
     gameType = SC;
     minPlayers = 2;
-    maxPlayers = 150;
+    maxPlayers = 84;
 };
 
 //LOAD SCREEN ==================================================================
@@ -28,9 +29,11 @@ loadScreen = "data\logo.paa";
 respawn = 3;
 respawnDelay = 9999999;
 respawnTemplates[] = {"ace_spectator"};
-disabledAI = 1;
+disabledAI = 0;
 enableDebugConsole = 2;
-//disableChannels[] = {1,2,3,4};
+disableChannels[]={{0,false,true},{1,true,true},{2,true,true},{3,true,true},{4,false,true},{5,false,true},{6,false,true}};
+showGPS = 0;
+
 
 //FUNCTIONS ====================================================================
 class CfgFunctions {
@@ -40,6 +43,7 @@ class CfgFunctions {
     #include "node_modules\grad-listbuymenu\cfgFunctions.hpp"
 	#include "node_modules\choosePilot\include\CfgFunctions.hpp"
 	#include "node_modules\grad-moneymenu\cfgFunctions.hpp"
+	#include "node_modules\grad-armorBar\cfgFunctions.hpp"
 };
 
 

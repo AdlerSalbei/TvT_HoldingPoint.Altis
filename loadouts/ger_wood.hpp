@@ -9,7 +9,7 @@ class ger_wood {
 		handgunWeapon = "LIB_P38";
 		uniform = "U_LIB_GER_Recruit";
         vest = "V_LIB_GER_VestKar98";
-		backpack = "B_LIB_GER_Backpack";
+		backpack = "B_LIB_GER_K89AmmoBag";
 		headgear = "H_LIB_GER_Helmet";
 		nvgoggles = "";
 		radio = "";
@@ -26,8 +26,41 @@ class ger_wood {
 			LIST_2("LIB_8Rnd_9x19")
 		};
 	};
-
+	
 	class Type {
+        //rifleman
+		class Soldier_F {
+			primaryWeapon = "LIB_K98";
+			addItemsToVest[] = {
+				LIST_7("lib_5Rnd_792x57")
+			};
+		};
+
+        //autorifleman
+		class Soldier_AR_F: Soldier_F {
+			primaryWeapon = "LIB_MG42";
+			backpack = "MGAmmoBag";
+			addItemsToVest[] = {
+				"lib_50Rnd_792x57"
+			};
+			addItemsToBackpack[] = {
+				LIST_2("lib_50Rnd_792x57")
+			};
+		};
+
+        //light AT
+		class Soldier_LAT_F: Soldier_F {
+			secondaryWeapon = "rhs_weap_rpg26";
+		};
+
+        //ammo bearer
+		class Soldier_A_F: Soldier_F {
+			backpack = "MGAmmoBag";
+			addItemsToBackpack[] = {
+				LIST_2("lib_50Rnd_792x57")
+			};
+		};
+
          //medic
 		class Medic_F {
 			uniform = "U_LIB_GER_Medic";
@@ -45,7 +78,7 @@ class ger_wood {
         class Soldier_SL_F {
 			uniform = "U_LIB_GER_Hauptmann";
 			vest = "V_LIB_SOV_RA_Belt";
-			backpack = "";
+			backpack = "B_LIB_GER_Backpack";
 			headgear = "H_LIB_GER_OfficerCap";
 			googles = selectRandom ["G_LIB_GER_Gloves1","G_LIB_GER_Gloves2","G_LIB_GER_Gloves3","G_LIB_GER_Gloves4"];
 			addItemsToUniform[] = {
@@ -61,7 +94,7 @@ class ger_wood {
 		class Soldier_TL_F {
 			uniform = "U_LIB_GER_Hauptmann";
 			vest = "V_LIB_SOV_RA_Belt";
-			backpack = "";
+			backpack = "B_LIB_GER_Backpack";
 			headgear = "H_LIB_GER_OfficerCap";
 			googles = selectRandom ["G_LIB_GER_Gloves1","G_LIB_GER_Gloves2","G_LIB_GER_Gloves3","G_LIB_GER_Gloves4"];
 			addItemsToUniform[] = {

@@ -27,25 +27,44 @@ class rus_wood {
         addItemsToBackpack[] = {};
 	};
 
-	class Type {
+	cclass Type {
         //rifleman
 		class Soldier_F {
-
+			primaryWeapon = "LIB_M9130";
+			addItemsToVest[] = {
+				LIST_7("lib_5Rnd_762x54")
+			};
 		};
 
         //autorifleman
-		class Soldier_AR_F {
-
+		class Soldier_AR_F: Soldier_F {
+			primaryWeapon = "LIB_DP28";
+			headgear = "H_LIB_SOV_Ushanka";
+			vest = "V_LIB_SOV_RA_MGBelt";
+			backpack = "B_LIB_SOV_RA_MGAmmoBag";
+			addItemsToVest[] = {
+				"lib_47Rnd_762x54"
+			};
+			addItemsToBackpack[] = {
+				LIST_2("lib_47Rnd_762x54")
+			};
 		};
 
         //light AT
-		class Soldier_LAT_F {
-
+		class Soldier_LAT_F: Soldier_F {
+			secondaryWeapon = "LIB_M1A1_Bazooka";
+			addItemsToBackpack[] = {
+				"LIB_1Rnd_60mm_M6"
+			};
 		};
 
         //ammo bearer
-		class Soldier_A_F {
-			
+		class Soldier_A_F: Soldier_F {
+			vest = "V_LIB_SOV_IShBrVestMG";
+			backpack = "B_LIB_SOV_RA_MGAmmoBag";
+			addItemsToBackpack[] = {
+				LIST_2("lib_47Rnd_762x54")
+			};
 		};
 
         //medic
