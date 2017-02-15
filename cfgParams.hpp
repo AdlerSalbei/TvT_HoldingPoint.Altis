@@ -40,12 +40,11 @@ class Params
         default = 0;
     };
     
-    /*
-     class CaptureZirkle
+     class CaptureCircle
     {
         title = "Size of Capuring Zone (Meters)";
-        values[] = {5, 10, 15, 20, 25, 50, 75, 100, 1000};
-        texts[] = {"5","10","15","20","25","50","75","100","Random"};
+        values[] = {5, 10, 15, 20, 25, 50, 75, 100};
+        texts[] = {"5","10","15","20","25","50","75","100"};
         default = 15;
     };
     
@@ -57,7 +56,7 @@ class Params
         default = 1500;
     };
     
-    */
+    
 
     class DefenseTime
     {
@@ -77,7 +76,7 @@ class Params
 
     class SetupTime
     {
-        title = "Opfor Setup Time (Minutes)";
+        title = "Opfor Setup Time (Seconds)";
         values[] = {1,60,120,180,240,300,360,420,480,540,600};
         texts[] = {"0","1", "2", "3","4","5","6","8","9","10"};
         default = 60;
