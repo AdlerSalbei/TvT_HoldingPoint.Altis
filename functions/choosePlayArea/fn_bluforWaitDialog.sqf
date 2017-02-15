@@ -4,11 +4,12 @@ if (!hasInterface) exitWith {};
 
 
 [{!isNil "OPFORSPAWN"}, {
+	[player,"blu_" + hp_missionParam_BLUFORFACTION + "_army",BLUFORBUYBOX,player,"SELF-INTERACT","Buy Equipment", {side player == WEST && !isNil "BLUFORSPAWN"}] call grad_lbm_fnc_addInteraction;
     [{
         if (SETUPTIMEREMAINING <= 1) then {
             [_this select 1] call CBA_fnc_removePerFrameHandler;
         };
-        [true, format ["TIME REMAINING: %1", ([SETUPTIMEREMAINING,"MM:SS"] call BIS_fnc_secondsToString)], "PLEASE WAIT"] call hp_ui_fnc_twoLineHint;
+        [true, format ["TIME REMAINING: %1 PLEASE WAIT", ([SETUPTIMEREMAINING,"MM:SS"] call BIS_fnc_secondsToString)], "BUYMENU ACCESSIBLE"] call hp_ui_fnc_twoLineHint;
     } , 1, []] call CBA_fnc_addPerFrameHandler;
 }, []] call CBA_fnc_waitUntilAndExecute;
 

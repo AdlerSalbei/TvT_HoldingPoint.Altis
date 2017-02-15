@@ -17,7 +17,9 @@ class hp {
         class getIslandCfgValue {};
         class getNumberOfTeammates {};
         class intro {};
+		class delayedVehicleSpawn {};
 		class markerBluforSpawn {};
+		class markPlane {};
         class isCommander {};
         class planeSpawn {};
         class serverLog {};

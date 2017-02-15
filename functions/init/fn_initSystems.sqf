@@ -9,9 +9,9 @@
 [{missionNamespace getVariable ["hp_init_missionParamsDone", false]}, {[] call hp_fnc_setTime}, []] call CBA_fnc_waitUntilAndExecute;
 [{missionNamespace getVariable ["hp_init_missionParamsDone", false]}, {[] call hp_fnc_setWeather}, []] call CBA_fnc_waitUntilAndExecute;
 [{missionNamespace getVariable ["hp_init_missionParamsDone", false]}, {[] call hp_fnc_setupCountdown}, []] call CBA_fnc_waitUntilAndExecute;
+[{missionNamespace getVariable ["hp_init_pubVarsDone", false]}, {[] call hp_fnc_setMoney}, []] call CBA_fnc_waitUntilAndExecute;
 [{missionNamespace getVariable ["hp_init_pubVarsDone", false]}, {[] call hp_fnc_chooseCity}, []] call CBA_fnc_waitUntilAndExecute;
 [{missionNamespace getVariable ["hp_init_pubVarsDone", false]}, {[] call hp_fnc_chooseSpawn}, []] call CBA_fnc_waitUntilAndExecute;
-[{missionNamespace getVariable ["hp_init_pubVarsDone", false]}, {[] call hp_fnc_setMoney}, []] call CBA_fnc_waitUntilAndExecute;
 
 //report
 if (isServer) then {[{["PRINT", "SERVER_SETUP"] call hp_fnc_diagReport}, [], 15] call CBA_fnc_waitAndExecute};

@@ -48,6 +48,9 @@ if (player != bluforcommander) exitWith {};
                         hp_init_spawnChosen = true;
                         publicVariable "hp_init_spawnChosen";
                         publicVariable "BLUFORSPAWN";
+						[] call hp_fnc_delayedVehicleSpawn;
+						[player, 6] call grad_lbm_fnc_setPermissionLevel
+						BLUFORBUYBOX setPos ;
 			
 						[WEST,"spawnMarker"] call hp_fnc_deleteSideMarker;	
 
