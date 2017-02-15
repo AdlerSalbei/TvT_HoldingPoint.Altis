@@ -68,6 +68,9 @@ _gunner = [planeGUNNER] call _playerByName;
 PILOT = nil;
 planeGUNNER = nil;
 
+publicVariable "PILOT";
+publicVariable "planeGUNNER";
+
 if (!isNil "_pilot") then {
 	_plane = createVehicle [_planeTyp, [0, 0, 1000], [], 0, "FLY"];
 	_plane setPos _newcoords;
@@ -122,10 +125,9 @@ if (!isNil "_pilot") then {
 
 	diag_log format ["Spawning Plane: %1 at %2 heading %3 as Pilot: %4", _planeTyp, _newcoords, (_plane getDir OPFORSPAWN), _pilot];
 
-	_waitingTime = random [30,150,300];
-	sleep _waitingTime;
-
 	[[true,"An Enemy " + _planeTyp + " has entered the Airspace!","All hands on Action Station"], "hp_ui_fnc_twoLineHint", "EAST", false, true] call BIS_fnc_MP;
-
+	[[_plane], "hp_fnc_markPlane", "WEST", false, true] call BIS_fnc_MP;
+	
+	sleep 150;
 	[WEST, "plane"] call hp_fnc_deletSideMarker;
 };

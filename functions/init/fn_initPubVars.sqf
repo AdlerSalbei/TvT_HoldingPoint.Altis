@@ -1,11 +1,6 @@
 if (!isServer) exitWith {};
 
-//SETTINGS =====================================================================
-BLUFORSPAWNBAND = 2000;
-
-publicVariable "BLUFORSPAWNBAND";
-
-//OTHER ========================================================================
+//PubVars ========================================================================
 OPFORTELEPORTED = false;
 BLUFORTELEPORTED = false;
 GAMESTARTED = false;
