@@ -46,6 +46,13 @@ class CfgFunctions {
 	#include "node_modules\grad-armorBar\cfgFunctions.hpp"
 };
 
+//Loadout =====================================================================
+class Loadouts {
+    baseDelay = 5; // minimum time to wait after connect before applying loadout
+    perPersonDelay = 1; // added random delay based on number of players
+    handleRadios =1; // if radios should be handled. defaults to 0
+    resetLoadout = 0; // start with empty loadouts instead of modifying existing loadout
+};
 
 //Money Menu ==================================================================
 class CfgGradMoneymenu {
