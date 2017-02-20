@@ -7,56 +7,62 @@ class Vehicles {
 	
 	class LIB_US_Willys_MB {
         displayName = "Willys";
-        price = 500;
+        price = 2000;
         stock = 10;
+		code = "if (isNil 'BLUFORSPAWN' && isServer) then {deleteVehicle (_this select 2); VEHICLEARRAY pushBack [(_this select 1), 0]; publicVariable 'VEHICLEARRAY';};";
     };
 		
 	class LIB_US_GMC_Open {
         displayName = "GMC open";
-        price = 1000;
+        price = 4000;
         stock = 20;
+		code = "if (isNil 'BLUFORSPAWN' && isServer) then {deleteVehicle (_this select 2); VEHICLEARRAY pushBack [(_this select 1), 0]; publicVariable 'VEHICLEARRAY';};";
     };
 	
 	class LIB_US_GMC_Tent {
         displayName = "GMC tent";
-        price = 1000;
+        price = 4000;
         stock = 20;
+		code = "if (isNil 'BLUFORSPAWN' && isServer) then {deleteVehicle (_this select 2); VEHICLEARRAY pushBack [(_this select 1), 0]; publicVariable 'VEHICLEARRAY';};";
     };
 	
 	class LIB_US_Scout_M3_FFV {
         displayName = "Scout M3";
 		description = "Scout Version of the M3 with M2.";
-        price = 2500;
+        price = 4500;
         stock = 5;
+		code = "if (isNil 'BLUFORSPAWN' && isServer) then {deleteVehicle (_this select 2); VEHICLEARRAY pushBack [(_this select 1), 0]; publicVariable 'VEHICLEARRAY';};";
     };
 	
 	class LIB_US_M3_Halftrack {
         displayName = "M3 Halftrack";
 		description = "M3 Halftrack with M2.";
-        price = 2500;
+        price = 5000;
         stock = 10;
+		code = "if (isNil 'BLUFORSPAWN' && isServer) then {deleteVehicle (_this select 2); VEHICLEARRAY pushBack [(_this select 1), 0]; publicVariable 'VEHICLEARRAY';};";
     };
-	
+	/*
 	class LIB_US6_BM13 {
         displayName = "US6 BM13";
 		description = "Mortar Vehicle.";
-        price = 3000;
+        price = 9000;
         stock = 5;
+		code = "if (isNil 'BLUFORSPAWN' && isServer) then {deleteVehicle (_this select 2); VEHICLEARRAY pushBack [(_this select 1), 0]; publicVariable 'VEHICLEARRAY';};";
     };
-	
+	*/
 	class LIB_M4A3_75{
         displayName = "Sherman M4A3";
-        price = 5000;
+        price = 6000;
         stock = 3;
-		code = "(_this select 2) removeMagazine 'LIB_60x_M42A1_M1_HE';";
+		code = "(_this select 2) removeMagazine 'LIB_60x_M42A1_M1_HE'; if (isNil 'BLUFORSPAWN' && isServer) then {deleteVehicle (_this select 2); VEHICLEARRAY pushBack [(_this select 1), 'LIB_60x_M42A1_M1_HE']; publicVariable 'VEHICLEARRAY';};";
     };
 	
 	class LIB_P47 {
-		permissionLevel = 4;
+		permissionLevel = 6;
 		kindOf = "Other";
         displayName = "P47";
 		description = "Jagdbomber ";
-        price = 1;
+        price = 12000;
         stock = 1;
 		code = " [(_this select 1), (getPos player)] call uo_fnc_planeSpawn;";
     };
