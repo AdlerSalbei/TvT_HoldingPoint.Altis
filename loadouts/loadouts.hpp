@@ -1,9 +1,10 @@
 #include ".\list_macros.hpp"
 
 class Loadouts {
-    resetLoadout = 0;
-    baseDelay = 10;
-    handleRadios = 1;
+    baseDelay = 10; // minimum time to wait after connect before applying loadout
+    perPersonDelay = 0; // added random delay based on number of players
+    handleRadios = 1; // if radios should be handled. defaults to 0
+    resetLoadout = 1; // start with empty loadouts instead of modifying existing loadout
 
     class Faction {
         #include "ger_wood.hpp"

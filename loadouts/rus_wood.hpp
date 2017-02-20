@@ -4,9 +4,15 @@ class rus_wood {
 		primaryWeaponMuzzle = "";
         primaryWeaponOptics = "";
 		primaryWeaponPointer = "";
+		primaryWeaponMagazine = "";
 		primaryWeaponUnderbarrel = "";
+		primaryWeaponUnderbarrelMagazine = "";
 		secondaryWeapon = "";
+		secondaryWeaponMagazine = "";
+		secondaryWeaponUnderbarrelMagazine = "";
 		handgunWeapon = "LIB_TT33";
+		handgunWeaponMagazine = "lib_8Rnd_762x25";
+		handgunWeaponUnderbarrelMagazine = "";
 		uniform = "U_LIB_SOV_Efreitor_summer";
         vest = "V_LIB_SOV_RA_MosinBelt";
 		backpack = "B_LIB_SOV_RA_Rucksack_Green";
@@ -31,14 +37,16 @@ class rus_wood {
         //rifleman
 		class Soldier_F {
 			primaryWeapon = "LIB_M9130";
+			primaryWeaponMagazine = "lib_5Rnd_762x54";
 			addItemsToVest[] = {
 				LIST_7("lib_5Rnd_762x54")
 			};
 		};
 
         //autorifleman
-		class Soldier_AR_F: Soldier_F {
+		class Soldier_AR_F {
 			primaryWeapon = "LIB_DP28";
+			primaryWeaponMagazine = "lib_47Rnd_762x54";
 			headgear = "H_LIB_SOV_Ushanka";
 			vest = "V_LIB_SOV_RA_MGBelt";
 			backpack = "B_LIB_SOV_RA_MGAmmoBag";
@@ -53,13 +61,14 @@ class rus_wood {
         //light AT
 		class Soldier_LAT_F: Soldier_F {
 			secondaryWeapon = "LIB_M1A1_Bazooka";
+			secondaryWeaponMagazine = "LIB_1Rnd_60mm_M6";
 			addItemsToBackpack[] = {
 				"LIB_1Rnd_60mm_M6"
 			};
 		};
 
         //ammo bearer
-		class Soldier_A_F: Soldier_F {
+		class Soldier_A_F : Soldier_F{
 			vest = "V_LIB_SOV_IShBrVestMG";
 			backpack = "B_LIB_SOV_RA_MGAmmoBag";
 			addItemsToBackpack[] = {
@@ -68,7 +77,7 @@ class rus_wood {
 		};
 
         //medic
-		class Medic_F {
+		class Medic_F: Soldier_F  {
 			backpack = "B_LIB_SOV_RA_MedicalBag_Empty";
 			addItemsToBackpack[] = {
 				LIST_20("ACE_fieldDressing"),
@@ -80,28 +89,26 @@ class rus_wood {
 		};
 
         //squad leader
-        class Soldier_SL_F {
+        class Soldier_SL_F: Soldier_F  {
 			uniform = "U_LIB_SOV_Kapitan_summer";
 			vest = "V_LIB_SOV_RAZV_OfficerVest";
 			headgear = "H_LIB_SOV_RA_OfficerCap";
 			addItemsToUniform[] = {
 				"ACE_MapTools"
 			};
-
 			binoculars = "LIB_Binocular_SU";
 			map = "ItemMap";
 			compass = "ItemCompass";	
         };
 
         //team leader
-		class Soldier_TL_F {
+		class Soldier_TL_F: Soldier_F  {
 			uniform = "U_LIB_SOV_Kapitan_summer";
 			vest = "V_LIB_SOV_RAZV_OfficerVest";
 			headgear = "H_LIB_SOV_RA_OfficerCap";
 			addItemsToUniform[] = {
 				"ACE_MapTools"
 			};
-
 			binoculars = "LIB_Binocular_SU";
 			map = "ItemMap";
 			compass = "ItemCompass";
