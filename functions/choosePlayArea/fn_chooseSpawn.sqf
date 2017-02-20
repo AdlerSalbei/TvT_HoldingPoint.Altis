@@ -45,11 +45,13 @@ if (player != bluforcommander) exitWith {};
                         //position successfully chosen
                         ["fn_chooseSpawn - %1 chose spawn at %2.", profileName, BLUFORSPAWN] call hp_fnc_serverLog;
 
-                        hp_init_spawnChosen = true;
+						[player, 6] call grad_lbm_fnc_setPermissionLevel;
+						_boxPos = [BLUFORSPAWN] call hp_fnc_findRandomPos;
+						BLUFORBUYBOX setPos _boxPos;
+						
+						hp_init_spawnChosen = true;
                         publicVariable "hp_init_spawnChosen";
                         publicVariable "BLUFORSPAWN";
-						[player, 6] call grad_lbm_fnc_setPermissionLevel;
-						BLUFORBUYBOX setPos ;
 			
 						[WEST,"spawnMarker"] call hp_fnc_deleteSideMarker;	
 
