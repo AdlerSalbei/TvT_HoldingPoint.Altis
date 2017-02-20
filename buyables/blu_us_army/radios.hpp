@@ -3,7 +3,7 @@ class radios {
   kindOf = "Wearables";
   class B_LIB_US_Radio{
     displayName = "Radio";
-    price = 1000;
+    price = 2000;
     stock = 5;
   };
 };

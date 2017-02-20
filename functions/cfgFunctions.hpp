@@ -7,6 +7,7 @@ class hp {
     };
 
     class common {
+		class bluforBuyBox;
         class createSideMarker {};
         class createSideMarkerRemote {};
         class deleteSideMarker {};
