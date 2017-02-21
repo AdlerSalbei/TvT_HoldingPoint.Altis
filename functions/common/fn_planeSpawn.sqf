@@ -108,10 +108,11 @@ if (!isNil "_pilot") then {
 		case "LIB_Li2" : {["LIB_1Rnd_FAB250", 3] call _removeMag;}; 
 		case "LIB_P47" : {_plane removeWeapon "LIB_US_500lb_Bomb_Mount"; _plane removeWeapon "LIB_M8_Launcher_P47"; ["LIB_1Rnd_US_500lb", 4] call _removeMag; ["LIB_6Rnd_M8_P47", 1] call _removeMag;}; 
 	};
-
+	
 	_planeString = "Spawned " + _planeTyp + "!";
+	
 	[
-		WEST,
+		(side player),
 		"plane",
 		true,
 		_newcoords,
@@ -119,15 +120,19 @@ if (!isNil "_pilot") then {
 		"COLORWEST",
 		_planeString,
 		"ICON",
-		2,
-		2
+		1,
+		1
 	] call hp_fnc_createSideMarker;
 
 	diag_log format ["Spawning Plane: %1 at %2 heading %3 as Pilot: %4", _planeTyp, _newcoords, (_plane getDir OPFORSPAWN), _pilot];
-
-	[[true,"An Enemy " + _planeTyp + " has entered the Airspace!","All hands on Action Station"], "hp_ui_fnc_twoLineHint", "EAST", false, true] call BIS_fnc_MP;
-	[[_plane], "hp_fnc_markPlane", "WEST", false, true] call BIS_fnc_MP;
+	
+	switch (side player) do {
+		case "WEST": {[[true,"An Enemy " + _planeTyp + " has entered the Airspace!","All hands on Action Station!"], "hp_ui_fnc_twoLineHint", "EAST", false, true] call BIS_fnc_MP;};
+		case "EAST": {[[true,"An Enemy " + _planeTyp + " has entered the Airspace!","All hands on Action Station!"], "hp_ui_fnc_twoLineHint", "WEST", false, true] call BIS_fnc_MP;};
+	};
+	
+	[[_plane], "hp_fnc_markPlane", (str (side player)), false, true] call BIS_fnc_MP;
 	
 	sleep 150;
-	[WEST, "plane"] call hp_fnc_deletSideMarker;
+	[(side player), "plane"] call hp_fnc_deletSideMarker;
 };
