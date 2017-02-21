@@ -8,7 +8,7 @@
 #include "node_modules\grad-listBuymenu\grad_listBuymenu.hpp"
 #include "node_modules\choosePilot\include\description.hpp"
 #include "node_modules\grad-moneymenu\grad_moneymenu.hpp"
-#include "node_modules\grad-armorBar\grad_armorBar.hpp"
+//#include "node_modules\grad-armorBar\grad_armorBar.hpp"
 
 
 //HEADER =======================================================================
@@ -43,9 +43,10 @@ class CfgFunctions {
     #include "node_modules\grad-listbuymenu\cfgFunctions.hpp"
 	#include "node_modules\choosePilot\include\CfgFunctions.hpp"
 	#include "node_modules\grad-moneymenu\cfgFunctions.hpp"
-	#include "node_modules\grad-armorBar\cfgFunctions.hpp"
+	//#include "node_modules\grad-armorBar\cfgFunctions.hpp"
 };
 
+/*
 //Loadout =====================================================================
 class Loadouts {
     baseDelay = 5; // minimum time to wait after connect before applying loadout
@@ -53,6 +54,7 @@ class Loadouts {
     handleRadios =1; // if radios should be handled. defaults to 0
     resetLoadout = 0; // start with empty loadouts instead of modifying existing loadout
 };
+*/
 
 //Money Menu ==================================================================
 class CfgGradMoneymenu {

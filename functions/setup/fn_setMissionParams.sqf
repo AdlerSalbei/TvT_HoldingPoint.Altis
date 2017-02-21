@@ -46,7 +46,7 @@ if (hp_missionParam_PRESET == "CUSTOM") then {
     hp_missionParam_DEFENSETIME = "DefenseTime" call BIS_fnc_getParamValue;
     hp_missionParam_SETUPTIME = "SetupTime" call BIS_fnc_getParamValue;
     hp_missionParam_CAPTUREZONESIZE = "CaptureCircle" call BIS_fnc_getParamValue;
-    hp_missionParam_BLUFORSPAWNBAND = "MinSpawnDistanceBlufor" call BIS_fnc_getParamValue;
+    BLUFORSPAWNBAND = "MinSpawnDistanceBlufor" call BIS_fnc_getParamValue;
 };
 
 if (hp_missionParam_PRESET == "DEBUG") then {
@@ -56,11 +56,11 @@ if (hp_missionParam_PRESET == "DEBUG") then {
     hp_missionParam_DEFENSETIME = 900;
     hp_missionParam_SETUPTIME = 1;
     hp_missionParam_CAPTUREZONESIZE = 15;
-    hp_missionParam_BLUFORSPAWNBAND = 100;
+    BLUFORSPAWNBAND = 100;
 };
 
 publicVariable "hp_missionParam_CAPTUREZONESIZE";
-publicVariable "hp_missionParam_BLUFORSPAWNBAND";
+publicVariable "BLUFORSPAWNBAND";
 publicVariable "hp_missionParam_CONTROLRATIO";
 publicVariable "hp_missionParam_MONEYFACTOR";
 publicVariable "hp_missionParam_CAPTURETIME";
@@ -73,6 +73,6 @@ publicVariable "hp_missionParam_SETUPTIME";
 ["LOG", "SERVER_SETUP", "hp_missionParam_DEFENSETIME"] call hp_fnc_diagReport;
 ["LOG", "SERVER_SETUP", "hp_missionParam_SETUPTIME"] call hp_fnc_diagReport;
 ["LOG", "SERVER_SETUP", "hp_missionParam_CAPTUREZONESIZE"] call hp_fnc_diagReport;
-["LOG", "SERVER_SETUP", "hp_missionParam_BLUFORSPAWNBAND"] call hp_fnc_diagReport;
+["LOG", "SERVER_SETUP", "BLUFORSPAWNBAND"] call hp_fnc_diagReport;
 //DONE =========================================================================
 missionNamespace setVariable ["hp_init_missionParamsDone", true, true];

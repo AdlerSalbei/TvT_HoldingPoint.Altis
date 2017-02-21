@@ -33,7 +33,7 @@ class rus_wood {
         addItemsToBackpack[] = {};
 	};
 
-	cclass Type {
+	class Type {
         //rifleman
 		class Soldier_F {
 			primaryWeapon = "LIB_M9130";

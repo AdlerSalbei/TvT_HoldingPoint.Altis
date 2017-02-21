@@ -56,8 +56,6 @@ class Params
         default = 1500;
     };
     
-    
-
     class DefenseTime
     {
         title = "Time to Defend the Point (Minutes)";
