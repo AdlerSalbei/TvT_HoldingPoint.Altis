@@ -18,14 +18,14 @@ class Vehicles {
     };
 	
 	class LIB_opelblitz_open_y_camo {
-        condition = "!uo_missionParam_ISWOODLAND";
+        condition = "uo_missionParam_ISWOODLAND == 1";
         displayName = "Opelblitz";
         price = 4000;
         stock = 20;
     };
 	
 	class LIB_opelblitz_open_g_camo {
-        condition = "uo_missionParam_ISWOODLAND";
+        condition = "uo_missionParam_ISWOODLAND == 0";
         displayName = "Opelblitz";
         price = 4000;
         stock = 20;

@@ -75,7 +75,7 @@ class Vehicles {
     };
 	
 	 class LIB_PzKpfwVI_B_camo {
-        condition = "!uo_missionParam_ISWOODLAND";
+        condition = "uo_missionParam_ISWOODLAND == 1";
         displayName = "PzKpfw VI Königstiger";
         price = 10000;
         stock = 1;
@@ -83,7 +83,7 @@ class Vehicles {
     };
 	
 	class LIB_PzKpfwVI_B {
-        condition = "uo_missionParam_ISWOODLAND";
+        condition = "uo_missionParam_ISWOODLAND == 0";
         displayName = "PzKpfw VI Königstiger";
         price = 10000;
         stock = 1;

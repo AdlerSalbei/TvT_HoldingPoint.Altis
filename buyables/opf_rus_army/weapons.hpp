@@ -2,14 +2,14 @@ class Weapons {
 	displayName = "Weapons";
 	kindOf = "Weapons";
 	class LIB_PPSh41_m {
-		condition = "uo_missionParam_ISWOODLAND";
+		condition = "uo_missionParam_ISWOODLAND == 0";
 		displayName = "PPSh 41 + 2 Magazins";
 		price = 550;
 		stock = 20;
 		code = "(_this select 0) addItemToVest 'lib_35Rnd_762x25'; (_this select 0) addItemToVest 'lib_35Rnd_762x25';";
 	};
 	class LIB_PPSh41_d {
-		condition = "!uo_missionParam_ISWOODLAND";
+		condition = "uo_missionParam_ISWOODLAND == 1";
 		displayName = "PPSh 41 + 2 Magazins";
 		price = 550;
 		stock = 20;

@@ -2,7 +2,7 @@ class Weapons {
 	displayName = "Weapons";
 	kindOf = "Weapons";
 	class LIB_PPSh41_m {
-		condition = "uo_missionParam_ISWOODLAND";
+		condition = "uo_missionParam_ISWOODLAND == 0";
 		displayName = "PPSh 41 + 2 Magazins";
 		description = "The PPSh is a magazine-fed selective fire submachine gun using an open-bolt, blowback action.<br/> Made largely of stamped steel, it can be loaded with either a box or drum magazine,<br/> and fires the 7.62×25mm Tokarev pistol round.";
 		price = 550;
@@ -10,7 +10,7 @@ class Weapons {
 		code = "(_this select 0) addItemToVest 'lib_35Rnd_762x25'; (_this select 0) addItemToVest 'lib_35Rnd_762x25';";
 	};
 	class LIB_PPSh41_d {
-		condition = "!uo_missionParam_ISWOODLAND";
+		condition = "uo_missionParam_ISWOODLAND == 1";
 		displayName = "PPSh 41 + 2 Magazins";
 		description = "The PPSh is a magazine-fed selective fire submachine gun using an open-bolt, blowback action.<br/> Made largely of stamped steel, it can be loaded with either a box or drum magazine,<br/> and fires the 7.62×25mm Tokarev pistol round.";
 		price = 550;
