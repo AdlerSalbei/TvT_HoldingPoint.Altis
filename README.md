@@ -11,7 +11,7 @@ OPFOR chooses a point that they will have to defend for X minutes (*Capture Time
 - [Objectives](#objectives)
 	- [BLUFOR](#blufor)
 	- [OPFOR](#opfor)
-- [Barrel (OPFOR)](#the-barrel)
+- [Box (OPFOR)](#the-Box)
 - [Commandvehicle (BLUFOR)](#commandvehicles-blufor)
 - [Factions](#factions)
 - [Parameters](#parameters)
@@ -40,7 +40,7 @@ These addons are required to run the scenario:
 ## Game Flow
 1. OPFOR commander chooses one of the available *Locations* from the map (OPFOR players can watch)
 2. OPFOR spawns at the chosen *Location* and has X minutes (*SetupTime*) to prepare for the attack
-3. OPFOR can buy equipment from the *Barrel* 
+3. OPFOR can buy equipment from the *Box* 
 4. BLUFOR is on the map during preparation time and can make plans to attack (they see the chosen *Location*)
 5. BLUFOR commander chooses a start position outside of the *blue circle*
 6. BLUFOR can buy equipment at the *Commandvehicle* (spawns on start position, marked on map, visible to BLUFOR)
@@ -58,8 +58,8 @@ OPFOR wins when:
 * all BLUFOR units have been eliminated.
 * the *Location* has been defended for X minutes (*DefenseTime*)
 
-## The Barrel (OPFOR)
-The *Barrel*'s position is marked on OPFOR's map. OPFOR units can buy supplies from the *Barrel*. 
+## The Box (OPFOR)
+The *Box*'s position is marked on OPFOR's map. OPFOR units can buy supplies from the *Box*. 
 
 ## Commandvehicles (BLUFOR)
 BLUFOR will start their game with a *Commandvehicle*. 
