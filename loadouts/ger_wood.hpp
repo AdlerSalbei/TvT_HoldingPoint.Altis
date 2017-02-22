@@ -74,7 +74,7 @@ class ger_wood {
 		};
 
          //medic
-		class Medic_F {
+		class Medic_F: Soldier_F {
 			uniform = "U_LIB_GER_Medic";
 			backpack = "B_LIB_GER_MedicBackpack";
 			addItemsToBackpack[] = {
@@ -89,7 +89,7 @@ class ger_wood {
         //squad leader
         class Soldier_SL_F: Soldier_F {
 			uniform = "U_LIB_GER_Hauptmann";
-			vest = "V_LIB_SOV_RA_Belt";
+			vest = "V_LIB_GER_OfficerBelt";
 			backpack = "B_LIB_GER_Backpack";
 			headgear = "H_LIB_GER_OfficerCap";
 			googles = selectRandom ["G_LIB_GER_Gloves1","G_LIB_GER_Gloves2","G_LIB_GER_Gloves3","G_LIB_GER_Gloves4"];
@@ -104,7 +104,7 @@ class ger_wood {
         //team leader
 		class Soldier_TL_F: Soldier_F {
 			uniform = "U_LIB_GER_Hauptmann";
-			vest = "V_LIB_SOV_RA_Belt";
+			vest = "V_LIB_GER_OfficerBelt";
 			backpack = "B_LIB_GER_Backpack";
 			headgear = "H_LIB_GER_OfficerCap";
 			googles = selectRandom ["G_LIB_GER_Gloves1","G_LIB_GER_Gloves2","G_LIB_GER_Gloves3","G_LIB_GER_Gloves4"];

@@ -9,11 +9,14 @@ class Loadouts {
     class Faction {
         #include "ger_wood.hpp"
 		#include "ger_des.hpp"
+		#include "ger_win.hpp"
 		
         #include "rus_wood.hpp"
         #include "rus_des.hpp"
+		#include "rus_win.hpp"
 		
 		#include "us_wood.hpp"
 		#include "us_des.hpp"
+		#include "us_win.hpp"
     };
 };
